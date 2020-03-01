@@ -1,35 +1,34 @@
-body{
-min-height:100vh;
-display: flex;
-justify-content: center;
-
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.container{
-text-align: center;
+.container {
+    text-align: center;
 }
 
-.hexColor{
+.hexColor {
     text-transform: capitalize;
 }
 
-.hex{
-
-    font-size: 9rem;
+.hex {
+    font-size: 3rem;
 }
 
-.hexBtn{
-    color: #f15025;
-    border: 6px solid #f15025;
+.hexBtn {
+    color: yellowgreen;
+    padding: 0.25rem 0.5 rem;
+    border: 5px #fefefe;
     border-radius: 9px;
     background: rgba(0, 0, 0, 0.6);
-    font-size: 1.6rem;
-    padding: 0.25rem 0.5rem;
+    font-size: 1.95rem;
     cursor: pointer;
     outline: none;
+    text-transform: capitalize;
 }
 
-.hexBtn:hover{
-background-color: rgba(0, 0, 0, 0.6);
-
+.colorBtn:hover {
+    background: rgba(0, 0, 0, 0.6);
 }
