@@ -1,0 +1,12 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #48f0d4;
+    color: brown;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 500;
+}
+
+.container {}
