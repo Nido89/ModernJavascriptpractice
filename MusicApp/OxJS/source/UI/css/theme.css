@@ -1,0 +1,1547 @@
+body.$themeClass {
+    background-color: $bodyBackground;
+}
+body.$themeClass:fullscreen {
+    background-color: $bodyBackground;
+}
+body.$themeClass:-moz-full-screen {
+    background-color: $bodyBackground;
+}
+body.$themeClass:-ms-full-screen {
+    background-color: $bodyBackground;
+}
+body.$themeClass:-webkit-full-screen {
+    background-color: $bodyBackground;
+    width: 100%;
+    height: 100%;
+}
+.$themeClass a,
+.$themeClass .OxLink {
+    color: $bodyLinkColor;
+}
+.$themeClass div {
+    color: $bodyColor;
+}
+.$themeClass .OxHighlight {
+    background-image: -moz-linear-gradient(top, $bodyHighlightGradient);
+    background: -ms-linear-gradient(top, $bodyHighlightGradient);
+    background-image: -o-linear-gradient(top, $bodyHighlightGradient);
+    background-image: -webkit-linear-gradient(top, $bodyHighlightGradient);
+    background-image: linear-gradient(top, $bodyHighlightGradient);
+    color: $bodyHighlightColor;
+}
+.$themeClass .OxSpecialLink {
+    background-image: -moz-linear-gradient(top, $bodySpecialLinkGradient);
+    background: -ms-linear-gradient(top, $bodySpecialLinkGradient);
+    background-image: -o-linear-gradient(top, $bodySpecialLinkGradient);
+    background-image: -webkit-linear-gradient(top, $bodySpecialLinkGradient);
+    background-image: linear-gradient(top, $bodySpecialLinkGradient);
+    color: $bodySpecialLinkColor;
+}
+.$themeClass .OxSpecialLink.OxActive {
+    background-image: -moz-linear-gradient(top, $bodySpecialLinkActiveGradient);
+    background: -ms-linear-gradient(top, $bodySpecialLinkActiveGradient);
+    background-image: -o-linear-gradient(top, $bodySpecialLinkActiveGradient);
+    background-image: -webkit-linear-gradient(top, $bodySpecialLinkActiveGradient);
+    background-image: linear-gradient(top, $bodySpecialLinkActiveGradient);
+    color: $bodySpecialLinkActiveColor;
+}
+.$themeClass .OxBright {
+    color: $bodyBrightColor;
+}
+.$themeClass .OxLight {
+    color: $bodyLightColor;
+}
+.$themeClass .OxSelected .OxLight {
+    color: $bodySelectedLightColor;
+}
+.$themeClass .OxFocus .OxSelected .OxLight {
+    color: $bodyFocusSelectedLightColor;
+}
+.$themeClass .OxGrid {
+    background-color: $gridGradient[0];
+    background-image:
+        -moz-linear-gradient(45deg, $gridGradient[1] 25%, transparent 25%, transparent 75%, $gridGradient[1] 75%, $gridGradient[1]),
+	    -moz-linear-gradient(45deg, $gridGradient[1] 25%, transparent 25%, transparent 75%, $gridGradient[1] 75%, $gridGradient[1]);
+    background:
+        -ms-linear-gradient(45deg, $gridGradient[1] 25%, transparent 25%, transparent 75%, $gridGradient[1] 75%, $gridGradient[1]),
+	    -ms-linear-gradient(45deg, $gridGradient[1] 25%, transparent 25%, transparent 75%, $gridGradient[1] 75%, $gridGradient[1]);
+    background-image:
+        -o-linear-gradient(45deg, $gridGradient[1] 25%, transparent 25%, transparent 75%, $gridGradient[1] 75%, $gridGradient[1]),
+	    -o-linear-gradient(45deg, $gridGradient[1] 25%, transparent 25%, transparent 75%, $gridGradient[1] 75%, $gridGradient[1]);
+    background-image:
+        -webkit-linear-gradient(45deg, $gridGradient[1] 25%, transparent 25%, transparent 75%, $gridGradient[1] 75%, $gridGradient[1]),
+    	-webkit-linear-gradient(45deg, $gridGradient[1] 25%, transparent 25%, transparent 75%, $gridGradient[1] 75%, $gridGradient[1]);
+    background-image:
+        linear-gradient(45deg, $gridGradient[1] 25%, transparent 25%, transparent 75%, $gridGradient[1] 75%, $gridGradient[1]),
+	    linear-gradient(45deg, $gridGradient[1] 25%, transparent 25%, transparent 75%, $gridGradient[1] 75%, $gridGradient[1]);
+}
+.$themeClass .OxReflection > div {
+    background-image: -moz-linear-gradient(top, $bodyReflectionGradient);
+    background: -ms-linear-gradient(top, $bodyReflectionGradient);
+    background-image: -o-linear-gradient(top, $bodyReflectionGradient);
+    background-image: -webkit-linear-gradient(top, $bodyReflectionGradient);
+    background-image: linear-gradient(top, $bodyReflectionGradient);
+}
+
+/*
+================================================================================
+Bars
+================================================================================
+*/
+
+.$themeClass .OxBar.OxHorizontal {
+    background-image: -moz-linear-gradient(top, $barGradient);
+    background: -ms-linear-gradient(top, $barGradient);
+    background-image: -o-linear-gradient(top, $barGradient);
+    background-image: -webkit-linear-gradient(top, $barGradient);
+    background-image: linear-gradient(top, $barGradient);
+}
+
+.$themeClass .OxProgressbar {
+    border-color: $formelementBorder;
+    background-image: -moz-linear-gradient(top, $buttonGradient);
+    background: -ms-linear-gradient(top, $buttonGradient);
+    background-image: -o-linear-gradient(top, $buttonGradient);
+    background-image: -webkit-linear-gradient(top, $buttonGradient);
+    background-image: linear-gradient(top, $buttonGradient);
+}
+.$themeClass .OxProgressbar .OxTrack {
+    border-color: $formelementBorder;
+    background-image: -moz-linear-gradient(top, $inputGradient);
+    background: -ms-linear-gradient(top, $inputGradient);
+    background-image: -o-linear-gradient(top, $inputGradient);
+    background-image: -webkit-linear-gradient(top, $inputGradient);
+    background-image: linear-gradient(top, $inputGradient);
+}
+.$themeClass .OxProgressbar .OxProgress {
+    border-color: $formelementBorder;
+    background-image:
+        -moz-repeating-linear-gradient(
+            -45deg, transparent 0, transparent 25%,
+            $progressbarBackground 25%, $progressbarBackground 50%,
+            transparent 50%, transparent 75%,
+            $progressbarBackground 75%, $progressbarBackground 100%
+        ),
+        -moz-linear-gradient(top, $buttonGradient);
+    background:
+        -ms-repeating-linear-gradient(
+            -45deg, transparent 0, transparent 25%,
+            $progressbarBackground 25%, $progressbarBackground 50%,
+            transparent 50%, transparent 75%,
+            $progressbarBackground 75%, $progressbarBackground 100%
+        ),
+        -ms-linear-gradient(top, $buttonGradient);
+    background-image:
+        -o-repeating-linear-gradient(
+            -45deg, transparent 0, transparent 25%,
+            $progressbarBackground 25%, $progressbarBackground 50%,
+            transparent 50%, transparent 75%,
+            $progressbarBackground 75%, $progressbarBackground 100%
+        ),
+        -o-linear-gradient(top, $buttonGradient);
+    background-image:
+        -webkit-repeating-linear-gradient(
+            -45deg, transparent 0, transparent 25%,
+            $progressbarBackground 25%, $progressbarBackground 50%,
+            transparent 50%, transparent 75%,
+            $progressbarBackground 75%, $progressbarBackground 100%
+        ),
+        -webkit-linear-gradient(top, $buttonGradient);
+    background-image:
+        repeating-linear-gradient(
+            -45deg, transparent 0, transparent 25%,
+            $progressbarBackground 25%, $progressbarBackground 50%,
+            transparent 50%, transparent 75%,
+            $progressbarBackground 75%, $progressbarBackground 100%
+        ),
+        linear-gradient(top, $buttonGradient);
+    background-size: 32px 32px, 16px 16px;
+}
+.$themeClass .OxProgressbar .OxProgress.OxAnimate {
+    background-image:
+        -moz-repeating-linear-gradient(
+            -45deg, transparent 0, transparent 25%,
+            $progressbarAnimateBackground 25%, $progressbarAnimateBackground 50%,
+            transparent 50%, transparent 75%,
+            $progressbarAnimateBackground 75%, $progressbarAnimateBackground 100%
+        ),
+        -moz-linear-gradient(top, $buttonGradient);
+    background:
+        -ms-repeating-linear-gradient(
+            -45deg, transparent 0, transparent 25%,
+            $progressbarAnimateBackground 25%, $progressbarAnimateBackground 50%,
+            transparent 50%, transparent 75%,
+            $progressbarAnimateBackground 75%, $progressbarAnimateBackground 100%
+        ),
+        -ms-linear-gradient(top, $buttonGradient);
+    background-image:
+        -o-repeating-linear-gradient(
+            -45deg, transparent 0, transparent 25%,
+            $progressbarAnimateBackground 25%, $progressbarAnimateBackground 50%,
+            transparent 50%, transparent 75%,
+            $progressbarAnimateBackground 75%, $progressbarAnimateBackground 100%
+        ),
+        -o-linear-gradient(top, $buttonGradient);
+    background-image:
+        -webkit-repeating-linear-gradient(
+            -45deg, transparent 0, transparent 25%,
+            $progressbarAnimateBackground 25%, $progressbarAnimateBackground 50%,
+            transparent 50%, transparent 75%,
+            $progressbarAnimateBackground 75%, $progressbarAnimateBackground 100%
+        ),
+        -webkit-linear-gradient(top, $buttonGradient);
+    background-image:
+        repeating-linear-gradient(
+            -45deg, transparent 0, transparent 25%,
+            $progressbarAnimateBackground 25%, $progressbarAnimateBackground 50%,
+            transparent 50%, transparent 75%,
+            $progressbarAnimateBackground 75%, $progressbarAnimateBackground 100%
+        ),
+        linear-gradient(top, $buttonGradient);
+}
+
+.$themeClass .OxResizebar > .OxLine {
+    background-color: $bodyBorder;
+}
+
+/*
+================================================================================
+Calendar
+================================================================================
+*/
+
+.$themeClass .OxCalendar .OxTimeline > div.odd {
+    background-image: -moz-linear-gradient(top, $calendarTimelineOddGradient);
+    background: -ms-linear-gradient(top, $calendarTimelineOddGradient);
+    background-image: -o-linear-gradient(top, $calendarTimelineOddGradient);
+    background-image: -webkit-linear-gradient(top, $calendarTimelineOddGradient);
+    background-image: linear-gradient(top, $calendarTimelineOddGradient);
+}
+
+.$themeClass .OxCalendar .OxTimeline > div.even {
+    background-image: -moz-linear-gradient(top, $calendarTimelineEvenGradient);
+    background: -ms-linear-gradient(top, $calendarTimelineEvenGradient);
+    background-image: -o-linear-gradient(top, $calendarTimelineEvenGradient);
+    background-image: -webkit-linear-gradient(top, $calendarTimelineEvenGradient);
+    background-image: linear-gradient(top, $calendarTimelineEvenGradient);
+}
+
+.$themeClass .OxCalendar .OxBackground > div {
+    background-color: $calendarBackground;
+}
+.$themeClass .OxCalendar .OxBackground > div.line {
+    background-color: $calendarLineBackground;
+}
+
+.$themeClass .OxCalendar .OxLine > .OxEvent {
+    color: $calendarEventColor;
+}
+.$themeClass .OxCalendar .OxLine > .OxEvent.OxSelected {
+    box-shadow: inset 0 0 1px $calendarEventShadow,
+        inset 0 0 1px $calendarEventShadow,
+        inset 0 0 1px $calendarEventShadow,
+        inset 0 0 1px $calendarEventShadow;
+}
+.$themeClass .OxEvent.OxDate {
+    background-image: -moz-linear-gradient(top, $calendarEventDateGradient);
+    background: -ms-linear-gradient(top, $calendarEventDateGradient);
+    background-image: -o-linear-gradient(top, $calendarEventDateGradient);
+    background-image: -webkit-linear-gradient(top, $calendarEventDateGradient);
+    background-image: linear-gradient(top, $calendarEventDateGradient);
+}
+.$themeClass .OxEvent.OxOther {
+    background-image: -moz-linear-gradient(top, $calendarEventOtherGradient);
+    background: -ms-linear-gradient(top, $calendarEventOtherGradient);
+    background-image: -o-linear-gradient(top, $calendarEventOtherGradient);
+    background-image: -webkit-linear-gradient(top, $calendarEventOtherGradient);
+    background-image: linear-gradient(top, $calendarEventOtherGradient);
+}
+.$themeClass .OxEvent.OxPerson {
+    background-image: -moz-linear-gradient(top, $calendarEventPersonGradient);
+    background: -ms-linear-gradient(top, $calendarEventPersonGradient);
+    background-image: -o-linear-gradient(top, $calendarEventPersonGradient);
+    background-image: -webkit-linear-gradient(top, $calendarEventPersonGradient);
+    background-image: linear-gradient(top, $calendarEventPersonGradient);
+}
+.$themeClass .OxEvent.OxPlace {
+    background-image: -moz-linear-gradient(top, $calendarEventPlaceGradient);
+    background: -ms-linear-gradient(top, $calendarEventPlaceGradient);
+    background-image: -o-linear-gradient(top, $calendarEventPlaceGradient);
+    background-image: -webkit-linear-gradient(top, $calendarEventPlaceGradient);
+    background-image: linear-gradient(top, $calendarEventPlaceGradient);
+}
+
+.$themeClass .OxCalendar .OxOverlay div:nth-child(odd) {
+    background-color: $calendarOverlayOddBackground;
+}
+.$themeClass .OxCalendar .OxOverlay div:nth-child(even) {
+    background-color: $calendarOverlayEvenBackground;
+    box-shadow: inset 0 0 2px $calendarOverlayEvenShadow;
+}
+
+.$themeClass .OxCalendar .OxCalendarControl,
+.$themeClass .OxCalendar .OxEventControl {
+    border-color: calendarControlBorder;
+    background-image: -moz-linear-gradient(top, $calendarControlGradient);
+    background: -ms-linear-gradient(top, $calendarControlGradient);
+    background-image: -o-linear-gradient(top, $calendarControlGradient);
+    background-image: -webkit-linear-gradient(top, $calendarControlGradient);
+    background-image: linear-gradient(top, $calendarControlGradient);
+    color: $calendarControlColor;
+}
+
+.$themeClass .OxCalendarEditor .OxWarning {
+    border-bottom: 2px dotted $bodyWarningBorder;
+}
+
+/*
+================================================================================
+Dialog
+================================================================================
+*/
+
+.$themeClass .OxDialog {
+    -moz-box-shadow: 0 2px 8px $dialogShadow;
+    -ms-box-shadow: 0 2px 8px $dialogShadow;
+    -o-box-shadow: 0 2px 8px $dialogShadow;
+    -webkit-box-shadow: 0 2px 8px $dialogShadow;
+    box-shadow: 0 2px 8px $dialogShadow;
+}
+
+.$themeClass .OxDialog .OxBar {
+    background-image: -moz-linear-gradient(top, $dialogBarGradient);
+    background: -ms-linear-gradient(top, $dialogBarGradient);
+    background-image: -o-linear-gradient(top, $dialogBarGradient);
+    background-image: -webkit-linear-gradient(top, $dialogBarGradient);
+    background-image: linear-gradient(top, $dialogBarGradient);
+}
+
+.$themeClass .OxDialog .OxContent {
+    background-color: $dialogBackground;
+}
+.$themeClass .OxDialog .OxIconList .OxContent {
+    background-color: transparent;
+}
+.$themeClass .OxDialog .OxReflection > div {
+    background-image: -moz-linear-gradient(top, $dialogReflectionGradient);
+    background: -ms-linear-gradient(top, $dialogReflectionGradient);
+    background-image: -o-linear-gradient(top, $dialogReflectionGradient);
+    background-image: -webkit-linear-gradient(top, $dialogReflectionGradient);
+    background-image: linear-gradient(top, $dialogReflectionGradient);
+}
+
+.$themeClass .OxLayer {
+    background-color: $dialogLayerBackground;
+}
+
+/*
+================================================================================
+DocPage
+================================================================================
+*/
+
+.$themeClass .OxFailed {
+    color: $documentWarningColor;
+}
+
+/*
+================================================================================
+Document
+================================================================================
+*/
+
+.$themeClass .OxDocument code {
+    color: $documentCodeColor;
+}
+.$themeClass .OxDocument div {
+    border-color: $documentBorder;
+}
+
+/*
+================================================================================
+Forms
+================================================================================
+*/
+
+.$themeClass .OxButton,
+.$themeClass input.OxCheckbox,
+.$themeClass input.OxInput,
+.$themeClass textarea,
+.$themeClass .OxLabel,
+.$themeClass .OxTrack {
+    border-color: $formelementBorder;
+    color: $formelementColor;
+}
+.$themeClass .OxSelect {
+    border-color: $formelementBorder;
+}
+.$themeClass .OxSelect > .OxTitle {
+    color: $formelementColor;
+}
+.$themeClass .OxInputLabel {
+    color: $formelementColor;
+}
+.$themeClass .OxButton,
+.$themeClass div.OxInput,
+.$themeClass .OxSelect {
+    background-image: -moz-linear-gradient(top, $buttonGradient);
+    background: -ms-linear-gradient(top, $buttonGradient);
+    background-image: -o-linear-gradient(top, $buttonGradient);
+    background-image: -webkit-linear-gradient(top, $buttonGradient);
+    background-image: linear-gradient(top, $buttonGradient);
+}
+.$themeClass div.OxInput.OxTextarea {
+    background-color: transparent;
+}
+.$themeClass .OxButton:active {
+    background-image: -moz-linear-gradient(top, $buttonActiveGradient);
+    background: -ms-linear-gradient(top, $buttonActiveGradient);
+    background-image: -o-linear-gradient(top, $buttonActiveGradient);
+    background-image: -webkit-linear-gradient(top, $buttonActiveGradient);
+    background-image: linear-gradient(top, $buttonActiveGradient);
+    color: $buttonActiveColor;
+}
+.$themeClass .OxCheckbox:active {
+    background-image: -moz-linear-gradient(top, $inputActiveGradient);
+    background: -ms-linear-gradient(top, $inputActiveGradient);
+    background-image: -o-linear-gradient(top, $inputActiveGradient);
+    background-image: -webkit-linear-gradient(top, $inputActiveGradient);
+    background-image: linear-gradient(top, $inputActiveGradient);
+}
+.$themeClass .OxButton:focus {
+    -moz-box-shadow: 0 0 2px $formelementFocusShadow;
+    -ms-box-shadow: 0 0 2px $formelementFocusShadow;
+    -o-box-shadow: 0 0 2px $formelementFocusShadow;
+    -webkit-box-shadow: 0 0 2px $formelementFocusShadow;
+    box-shadow: 0 0 2px $formelementFocusShadow;
+}
+.$themeClass .OxButton.OxDisabled {
+    background-image: -moz-linear-gradient(top, $buttonDisabledGradient);
+    background: -ms-linear-gradient(top, $buttonDisabledGradient);
+    background-image: -o-linear-gradient(top, $buttonDisabledGradient);
+    background-image: -webkit-linear-gradient(top, $buttonDisabledGradient);
+    background-image: linear-gradient(top, $buttonDisabledGradient);
+    color: $buttonDisabledColor;
+}
+
+.$themeClass .OxButton.OxSymbol,
+.$themeClass .OxButton.OxSymbol:active,
+.$themeClass .OxButton.OxSymbol.OxDisabled,
+.$themeClass .OxButton.OxVideo,
+.$themeClass .OxButton.OxVideo:active,
+.$themeClass .OxButton.OxVideo.OxDisabled {
+    border-color: transparent;
+    background-color: transparent;
+    background-image: none;
+}
+
+
+.$themeClass .OxButton.OxSelected,
+.$themeClass .OxSelect.OxSelected,
+.$themeClass .OxCollapsePanel > .OxBar > .OxExtras > .OxSelect.OxSelected {
+    background-image: -moz-linear-gradient(top, $buttonSelectedGradient);
+    background: -ms-linear-gradient(top, $buttonSelectedGradient);
+    background-image: -o-linear-gradient(top, $buttonSelectedGradient);
+    background-image: -webkit-linear-gradient(top, $buttonSelectedGradient);
+    background-image: linear-gradient(top, $buttonSelectedGradient);
+}
+.$themeClass .OxButton.OxSelected,
+.$themeClass .OxSelect.OxSelected:not(.OxColor) > .OxTitle,
+.$themeClass .OxCollapsePanel > .OxBar > .OxExtras > .OxSelect.OxSelected {
+    color: $buttonSelectedColor;
+}
+.$themeClass .OxSelect.OxSelected.OxColor > .OxButton.OxSelected {
+    background: transparent;
+}
+.$themeClass .OxButton.OxTab.OxSelected {
+    border-bottom: 1px solid $buttonSelectedGradient[1];
+}
+
+
+.$themeClass .OxButton.OxOverlay {
+    border-color: $formelementOverlayBorder;
+    background-image: -moz-linear-gradient(top, $buttonOverlayGradient);
+    background: -ms-linear-gradient(top, $buttonOverlayGradient);
+    background-image: -o-linear-gradient(top, $buttonOverlayGradient);
+    background-image: -webkit-linear-gradient(top, $buttonOverlayGradient);
+    background-image: linear-gradient(top, $buttonOverlayGradient);
+    color: $formelementOverlayColor;
+    -moz-box-shadow: 0 0 2px $formelementOverlayShadow;
+    -ms-box-shadow: 0 0 2px $formelementOverlayShadow;
+    -o-box-shadow: 0 0 2px $formelementOverlayShadow;
+    -webkit-box-shadow: 0 0 2px $formelementOverlayShadow;
+    box-shadow: 0 0 2px $formelementOverlayShadow;
+}
+.$themeClass .OxButton.OxOverlay:active {
+    border-color: $formelementOverlayBorder;
+    background-image: -moz-linear-gradient(top, $buttonOverlayActiveGradient);
+    background: -ms-linear-gradient(top, $buttonOverlayActiveGradient);
+    background-image: -o-linear-gradient(top, $buttonOverlayActiveGradient);
+    background-image: -webkit-linear-gradient(top, $buttonOverlayActiveGradient);
+    background-image: linear-gradient(top, $buttonOverlayActiveGradient);
+    color: $buttonOverlayActiveColor;
+}
+.$themeClass .OxButton.OxOverlay.OxDisabled {
+    background-image: -moz-linear-gradient(top, $buttonOverlayDisabledGradient);
+    background: -ms-linear-gradient(top, $buttonOverlayDisabledGradient);
+    background-image: -o-linear-gradient(top, $buttonOverlayDisabledGradient);
+    background-image: -webkit-linear-gradient(top, $buttonOverlayDisabledGradient);
+    background-image: linear-gradient(top, $buttonOverlayDisabledGradient);
+    color: $buttonOverlayDisabledColor;
+}
+.$themeClass .OxButton.OxOverlay.OxSelected {
+    background-image: -moz-linear-gradient(top, $buttonOverlaySelectedGradient);
+    background: -ms-linear-gradient(top, $buttonOverlaySelectedGradient);
+    background-image: -o-linear-gradient(top, $buttonOverlaySelectedGradient);
+    background-image: -webkit-linear-gradient(top, $buttonOverlaySelectedGradient);
+    background-image: linear-gradient(top, $buttonOverlaySelectedGradient);
+    color: $buttonOverlaySelectedColor;
+}
+.$themeClass .OxButtonGroup.OxOverlay {
+    height: 16px;
+    border-radius: 8px;
+    -moz-box-shadow: 0 0 2px $formelementOverlayShadow;
+    -ms-box-shadow: 0 0 2px $formelementOverlayShadow;
+    -o-box-shadow: 0 0 2px $formelementOverlayShadow;
+    -webkit-box-shadow: 0 0 2px $formelementOverlayShadow;
+    box-shadow: 0 0 2px $formelementOverlayShadow;
+}
+.$themeClass .OxButtonGroup.OxOverlay .OxButton {
+    -moz-box-shadow: 0 0 0 transparent;
+    -ms-box-shadow: 0 0 0 transparent;
+    -0-box-shadow: 0 0 0 transparent;
+    -webkit-box-shadow: 0 0 0 transparent;
+    box-shadow: 0 0 0 transparent;
+}
+
+
+.$themeClass .OxFileInput.OxDisabled > .OxBar {
+    background-image: -moz-linear-gradient(top, $buttonDisabledGradient);
+    background: -ms-linear-gradient(top, $buttonDisabledGradient);
+    background-image: -o-linear-gradient(top, $buttonDisabledGradient);
+    background-image: -webkit-linear-gradient(top, $buttonDisabledGradient);
+    background-image: linear-gradient(top, $buttonDisabledGradient);
+}
+.$themeClass .OxFileInput.OxDisabled > .OxBar > div {
+    color: $buttonDisabledColor
+}
+
+.$themeClass .OxFormMessage {
+    color: $inputErrorColor;
+}
+
+.$themeClass input.OxCheckbox,
+.$themeClass input.OxInput,
+.$themeClass textarea,
+.$themeClass .OxTrack {
+    background-image: -moz-linear-gradient(top, $inputGradient);
+    background: -ms-linear-gradient(top, $inputGradient);
+    background-image: -o-linear-gradient(top, $inputGradient);
+    background-image: -webkit-linear-gradient(top, $inputGradient);
+    background-image: linear-gradient(top, $inputGradient);
+}
+.$themeClass div.OxInput.OxError input {
+    color: $inputErrorColor;
+}
+.$themeClass .OxInput:focus {
+    border-color: $inputFocusBorder;
+    -moz-box-shadow: inset 0 0 2px $inputFocusShadow;
+    -ms-box-shadow: inset 0 0 2px $inputFocusShadow;
+    -o-box-shadow: inset 0 0 2px $inputFocusShadow;
+    -webkit-box-shadow: inset 0 0 2px $inputFocusShadow;
+    box-shadow: inset 0 0 2px $inputFocusShadow;
+}
+.$themeClass div.OxInput.OxFocus,
+.$themeClass .OxSelect.OxFocus {
+    -moz-box-shadow: 0 0 2px $formelementFocusShadow;
+    -ms-box-shadow: 0 0 2px $formelementFocusShadow;
+    -o-box-shadow: 0 0 2px $formelementFocusShadow;
+    -webkit-box-shadow: 0 0 2px $formelementFocusShadow;
+    box-shadow: 0 0 2px $formelementFocusShadow;
+}
+
+/* FIXME: modern only? */
+.$themeClass div.OxInput.OxFocus > .OxInputLabel {
+    border-color: rgb(80, 80, 80);
+}
+
+.$themeClass .OxInput.OxPlaceholder {
+    color: $inputPlaceholderColor;
+}
+
+.$themeClass .OxLabel {
+    background-color: $labelBackground;
+}
+.$themeClass .OxLabel.OxDisabled {
+    color: $labelDisabledColor;
+}
+.$themeClass .OxLabel.OxOverlay {
+    background-color: $labelOverlayBackground;
+}
+.$themeClass .OxLabel.OxOverlay.OxDisabled {
+    color: $labelOverlayDisabledColor;
+}
+.$themeClass .OxDocPage .OxLabel.OxSquare,
+.$themeClass .OxExamplePage .OxLabel.OxSquare {
+    background-color: $documentLabelBackground;
+}
+
+.$themeClass input.OxCheckbox.OxDisabled,
+.$themeClass input.OxInput:disabled,
+.$themeClass input.OxInput[readonly=readonly],
+.$themeClass textarea.OxInput[readonly=readonly] {
+    background-image: -moz-linear-gradient(top, $inputDisabledGradient);
+    background: -ms-linear-gradient(top, $inputDisabledGradient);
+    background-image: -o-linear-gradient(top, $inputDisabledGradient);
+    background-image: -webkit-linear-gradient(top, $inputDisabledGradient);
+    background-image: linear-gradient(top, $inputDisabledGradient);
+    color: $inputDisabledColor;
+}
+
+.$themeClass .OxLabelSelect > .OxTitle {
+    border-color: $formelementBorder;
+    background-image: -moz-linear-gradient(top, $buttonGradient);
+    background: -ms-linear-gradient(top, $buttonGradient);
+    background-image: -o-linear-gradient(top, $buttonGradient);
+    background-image: -webkit-linear-gradient(top, $buttonGradient);
+    background-image: linear-gradient(top, $buttonGradient);
+}
+.$themeClass .OxLabelSelect.OxSelected > .OxTitle {
+    background-image: -moz-linear-gradient(top, $buttonSelectedGradient);
+    background: -ms-linear-gradient(top, $buttonSelectedGradient);
+    background-image: -o-linear-gradient(top, $buttonSelectedGradient);
+    background-image: -webkit-linear-gradient(top, $buttonSelectedGradient);
+    background-image: linear-gradient(top, $buttonSelectedGradient);
+}
+
+.$themeClass .OxFileInput > .OxBar,
+.$themeClass .OxFileInput > .OxFiles {
+    border-color: $formelementBorder;
+}
+
+.$themeClass .OxArrayEditable.OxArrayEditableTextarea .OxEditableElement {
+    border-top-color: $bodyBorder;
+}
+
+.$themeClass .OxEditableContent.OxEditing {
+    background-image: -moz-linear-gradient(top, $inputGradient);
+    background: -ms-linear-gradient(top, $inputGradient);
+    background-image: -o-linear-gradient(top, $inputGradient);
+    background-image: -webkit-linear-gradient(top, $inputGradient);
+    background-image: linear-gradient(top, $inputGradient);
+    -moz-box-shadow: 0 0 2px $formelementFocusShadow;
+    -ms-box-shadow: 0 0 2px $formelementFocusShadow;
+    -o-box-shadow: 0 0 2px $formelementFocusShadow;
+    -webkit-box-shadow: 0 0 2px $formelementFocusShadow;
+    box-shadow: 0 0 2px $formelementFocusShadow;
+}
+
+.$themeClass .OxEditableContent .OxHighlight
+.$themeClass .OxEditableElement .OxHighlight, {
+    border-radius: 2px;
+}
+.$themeClass .OxEditableContent.OxPlaceholder,
+.$themeClass .OxEditableElement.OxPlaceholder .OxValue {
+    color: $inputPlaceholderColor;
+}
+
+/*
+================================================================================
+ImageViewer
+================================================================================
+*/
+
+.$themeClass .OxImageViewer .OxImageOverview {
+    border-color: $formelementOverlayBorder;
+    -moz-box-shadow: 0 0 2px $formelementOverlayShadow;
+    -ms-box-shadow: 0 0 2px $formelementOverlayShadow;
+    -o-box-shadow: 0 0 2px $formelementOverlayShadow;
+    -webkit-box-shadow: 0 0 2px $formelementOverlayShadow;
+    box-shadow: 0 0 2px $formelementOverlayShadow;
+}
+.$themeClass .OxImageViewer .OxImageOverlayArea {
+    background-color: $labelOverlayBackground;
+    background-image: none;
+}
+.$themeClass .OxImageViewer #OxImageOverlayCenter {
+    border-color: $formelementOverlayBorder;
+    background: transparent;
+    background-image: none;
+    -moz-box-shadow: 0 0 2px $formelementOverlayShadow;
+    -ms-box-shadow: 0 0 2px $formelementOverlayShadow;
+    -o-box-shadow: 0 0 2px $formelementOverlayShadow;
+    -webkit-box-shadow: 0 0 2px $formelementOverlayShadow;
+    box-shadow: 0 0 2px $formelementOverlayShadow;
+}
+
+/*
+================================================================================
+Lists
+================================================================================
+*/
+
+.$themeClass .OxIconList .OxItem > .OxIcon > img.OxLoading,
+.$themeClass .OxInfoList .OxItem .OxIcon > img.OxLoading {
+    border-color: $listIconLoadingBorder;
+    background-image: -moz-linear-gradient(top, $listIconLoadingGradient);
+    background: -ms-linear-gradient(top, $listIconLoadingGradient);
+    background-image: -o-linear-gradient(top, $listIconLoadingGradient);
+    background-image: -webkit-linear-gradient(top, $listIconLoadingGradient);
+    background-image: linear-gradient(top, $listIconLoadingGradient);
+}
+.$themeClass .OxIconList .OxItem.OxSelected > .OxIcon > img,
+.$themeClass .OxIconList .OxItem.OxSelected > .OxIcon > .OxVideoPlayer,
+.$themeClass .OxInfoList .OxItem.OxSelected .OxIcon > img,
+.$themeClass .OxInfoList .OxItem.OxSelected .OxIcon > .OxVideoPlayer {
+    border-color: $listIconSelectedBorder;
+    -moz-box-shadow: 0 0 4px $listIconSelectedShadow;
+    -ms-box-shadow: 0 0 4px $listIconSelectedShadow;
+    -o-box-shadow: 0 0 4px $listIconSelectedShadow;
+    -webkit-box-shadow: 0 0 4px $listIconSelectedShadow;
+    box-shadow: 0 0 4px $listIconSelectedShadow;
+}
+.$themeClass .OxIconList.OxFocus .OxItem.OxSelected > .OxIcon > img,
+.$themeClass .OxIconList.OxFocus .OxItem.OxSelected > .OxIcon > .OxVideoPlayer,
+.$themeClass .OxInfoList.OxFocus .OxItem.OxSelected .OxIcon > img,
+.$themeClass .OxInfoList.OxFocus .OxItem.OxSelected .OxIcon > .OxVideoPlayer {
+    border-color: $listIconFocusSelectedBorder;
+    -moz-box-shadow: 0 0 4px $listIconFocusSelectedShadow;
+    -ms-box-shadow: 0 0 4px $listIconFocusSelectedShadow;
+    -o-box-shadow: 0 0 4px $listIconFocusSelectedShadow;
+    -webkit-box-shadow: 0 0 4px $listIconFocusSelectedShadow;
+    box-shadow: 0 0 4px $listIconFocusSelectedShadow;
+}
+.$themeClass .OxIconList .OxItem > .OxText > div,
+.$themeClass .OxInfoList .OxItem .OxText > div {
+    text-shadow: $listIconTextShadow -1px -1px 0,
+        $listIconTextShadow -1px 1px 0,
+        $listIconTextShadow 1px -1px 0,
+        $listIconTextShadow 1px 1px 0;
+}
+.$themeClass .OxIconList .OxItem > .OxText > div .OxHighlight,
+.$themeClass .OxInfoList .OxItem .OxText > div .OxHighlight {
+    color: $listIconTextHighlightColor;
+    background-image: -moz-linear-gradient(top, $listIconTextHighlightGradient);
+    background: -ms-linear-gradient(top, $listIconTextHighlightGradient);
+    background-image: -o-linear-gradient(top, $listIconTextHighlightGradient);
+    background-image: -webkit-linear-gradient(top, $listIconTextHighlightGradient);
+    background-image: linear-gradient(top, $listIconTextHighlightGradient);
+}
+.$themeClass .OxIconList .OxItem.OxSelected > .OxText > div,
+.$themeClass .OxInfoList .OxItem.OxSelected .OxText > div:not(.OxSpecialTarget) {
+    border-color: $listIconLabelSelectedBorder;
+    background-image: -moz-linear-gradient(top, $listIconLabelSelectedGradient);
+    background: -ms-linear-gradient(top, $listIconLabelSelectedGradient);
+    background-image: -o-linear-gradient(top, $listIconLabelSelectedGradient);
+    background-image: -webkit-linear-gradient(top, $listIconLabelSelectedGradient);
+    background-image: linear-gradient(top, $listIconLabelSelectedGradient);
+    color: $listItemSelectedColor;
+    text-shadow: $listIconTextSelectedShadow -1px -1px 0,
+        $listIconTextSelectedShadow -1px 1px 0,
+        $listIconTextSelectedShadow 1px -1px 0,
+        $listIconTextSelectedShadow 1px 1px 0;
+    -moz-box-shadow: 0 0 4px $listIconLabelSelectedShadow;
+    -ms-box-shadow: 0 0 4px $listIconLabelSelectedShadow;
+    -o-box-shadow: 0 0 4px $listIconLabelSelectedShadow;
+    -webkit-box-shadow: 0 0 4px $listIconLabelSelectedShadow;
+    box-shadow: 0 0 4px $listIconLabelSelectedShadow;
+}
+.$themeClass .OxIconList.OxFocus .OxItem.OxSelected > .OxText > div,
+.$themeClass .OxInfoList.OxFocus .OxItem.OxSelected .OxText > div:not(.OxSpecialTarget) {
+    border-color: $listIconLabelFocusSelectedBorder;
+    background-image: -moz-linear-gradient(top, $listIconLabelFocusSelectedGradient);
+    background: -ms-linear-gradient(top, $listIconLabelFocusSelectedGradient);
+    background-image: -o-linear-gradient(top, $listIconLabelFocusSelectedGradient);
+    background-image: -webkit-linear-gradient(top, $listIconLabelFocusSelectedGradient);
+    background-image: linear-gradient(top, $listIconLabelFocusSelectedGradient);
+    color: $listItemFocusSelectedColor;
+    text-shadow: $listIconTextFocusSelectedShadow -1px -1px 0,
+        $listIconTextFocusSelectedShadow -1px 1px 0,
+        $listIconTextFocusSelectedShadow 1px -1px 0,
+        $listIconTextFocusSelectedShadow 1px 1px 0;
+    -moz-box-shadow: 0 0 4px $listIconLabelFocusSelectedShadow;
+    -ms-box-shadow: 0 0 4px $listIconLabelFocusSelectedShadow;
+    -o-box-shadow: 0 0 4px $listIconLabelFocusSelectedShadow;
+    -webkit-box-shadow: 0 0 4px $listIconLabelFocusSelectedShadow;
+    box-shadow: 0 0 4px $listIconLabelFocusSelectedShadow;
+}
+.$themeClass .OxIconList .OxItem > .OxText > div > .OxInfo,
+.$themeClass .OxInfoList .OxItem .OxText > div > .OxInfo {
+    color: $bodyLightColor;
+}
+.$themeClass .OxIconList .OxItem.OxSelected > .OxText > div > .OxInfo,
+.$themeClass .OxInfoList .OxItem.OxSelected .OxText > div:not(.OxSpecialTarget) > .OxInfo {
+    color: $bodySelectedLightColor;
+}
+.$themeClass .OxIconList.OxFocus .OxItem.OxSelected > .OxText > div > .OxInfo,
+.$themeClass .OxInfoList.OxFocus .OxItem.OxSelected .OxText > div:not(.OxSpecialTarget) > .OxInfo {
+    color: $bodyFocusSelectedLightColor;
+}
+.$themeClass .OxInfoList .OxItem.OxSelected .OxInfoElement .OxIcon > img,
+.$themeClass .OxInfoList .OxItem.OxSelected .OxInfoElement .OxIcon .OxVideoPlayer,
+.$themeClass .OxInfoList .OxItem.OxSelected .OxInfoElement .OxText > div {
+    border-color: transparent;
+    background-image: none;
+    -moz-box-shadow: 0 0 0 transparent;
+    -ms-box-shadow: 0 0 0 transparent;
+    -o-box-shadow: 0 0 0 transparent;
+    -webkit-box-shadow: 0 0 0 transparent;
+    box-shadow: 0 0 0 transparent;
+}
+.$themeClass .OxInfoList .OxItem.OxSelected .OxInfoElement .OxIcon > img,
+.$themeClass .OxInfoList .OxItem.OxSelected .OxInfoElement .OxIcon .OxVideoPlayer,
+.$themeClass .OxInfoList .OxItem.OxSelected .OxInfoElement .OxText > div,
+.$themeClass .OxInfoList.OxFocus .OxItem.OxSelected .OxInfoElement .OxIcon > img,
+.$themeClass .OxInfoList.OxFocus .OxItem.OxSelected .OxInfoElement .OxIcon .OxVideoPlayer,
+.$themeClass .OxInfoList.OxFocus .OxItem.OxSelected .OxInfoElement .OxText > div {
+    border-color: transparent;
+    background-image: none;
+    -moz-box-shadow: 0 0 0 transparent;
+    -ms-box-shadow: 0 0 0 transparent;
+    -o-box-shadow: 0 0 0 transparent;
+    -webkit-box-shadow: 0 0 0 transparent;
+    box-shadow: 0 0 0 transparent;
+}
+.$themeClass .OxInfoList .OxItem.OxSelected .OxInfoElement .OxIcon > img.OxLoading,
+.$themeClass .OxInfoList.OxFocus .OxItem.OxSelected .OxInfoElement .OxIcon > img.OxLoading {
+    border-color: $listIconLoadingBorder;
+    background-image: -moz-linear-gradient(top, $listIconLoadingGradient);
+    background: -ms-linear-gradient(top, $listIconLoadingGradient);
+    background-image: -o-linear-gradient(top, $listIconLoadingGradient);
+    background-image: -webkit-linear-gradient(top, $listIconLoadingGradient);
+    background-image: linear-gradient(top, $listIconLoadingGradient);
+}
+
+
+.$themeClass .OxTableList .OxContent {
+    background-color: $bodyBackground;
+}
+.$themeClass .OxCustomList .OxItem:nth-child(odd),
+.$themeClass .OxTableList .OxItem:nth-child(odd) {
+    background-image: -moz-linear-gradient(top, $listItemOddGradient);
+    background: -ms-linear-gradient(top, $listItemOddGradient);
+    background-image: -o-linear-gradient(top, $listItemOddGradient);
+    background-image: -webkit-linear-gradient(top, $listItemOddGradient);
+    background-image: linear-gradient(top, $listItemOddGradient);
+}
+.$themeClass .OxCustomList .OxItem:nth-child(even),
+.$themeClass .OxTableList .OxItem:nth-child(even) {
+    background-image: -moz-linear-gradient(top, $listItemEvenGradient);
+    background: -ms-linear-gradient(top, $listItemEvenGradient);
+    background-image: -o-linear-gradient(top, $listItemEvenGradient);
+    background-image: -webkit-linear-gradient(top, $listItemEvenGradient);
+    background-image: linear-gradient(top, $listItemEvenGradient);
+}
+.$themeClass .OxCustomList .OxItem.OxSelected:nth-child(odd),
+.$themeClass .OxTableList .OxItem.OxSelected:nth-child(odd) {
+    background-image: -moz-linear-gradient(top, $listItemSelectedOddGradient);
+    background: -ms-linear-gradient(top, $listItemSelectedOddGradient);
+    background-image: -o-linear-gradient(top, $listItemSelectedOddGradient);
+    background-image: -webkit-linear-gradient(top, $listItemSelectedOddGradient);
+    background-image: linear-gradient(top, $listItemSelectedOddGradient);
+}
+.$themeClass .OxCustomList .OxItem.OxSelected:nth-child(even),
+.$themeClass .OxTableList .OxItem.OxSelected:nth-child(even) {
+    background-image: -moz-linear-gradient(top, $listItemSelectedEvenGradient);
+    background: -ms-linear-gradient(top, $listItemSelectedEvenGradient);
+    background-image: -o-linear-gradient(top, $listItemSelectedEvenGradient);
+    background-image: -webkit-linear-gradient(top, $listItemSelectedEvenGradient);
+    background-image: linear-gradient(top, $listItemSelectedEvenGradient);
+}
+.$themeClass .OxCustomList .OxFocus .OxItem.OxSelected:nth-child(odd),
+.$themeClass .OxTableList.OxFocus .OxItem.OxSelected:nth-child(odd),
+.$themeClass .OxTableList .OxFocus .OxItem.OxSelected:nth-child(odd) {
+    background-image: -moz-linear-gradient(top, $listItemFocusSelectedOddGradient);
+    background: -ms-linear-gradient(top, $listItemFocusSelectedOddGradient);
+    background-image: -o-linear-gradient(top, $listItemFocusSelectedOddGradient);
+    background-image: -webkit-linear-gradient(top, $listItemFocusSelectedOddGradient);
+    background-image: linear-gradient(top, $listItemFocusSelectedOddGradient);
+}
+.$themeClass .OxCustomList .OxFocus .OxItem.OxSelected:nth-child(even),
+.$themeClass .OxTableList.OxFocus .OxItem.OxSelected:nth-child(even),
+.$themeClass .OxTableList .OxFocus .OxItem.OxSelected:nth-child(even) {
+    background-image: -moz-linear-gradient(top, $listItemFocusSelectedEvenGradient);
+    background: -ms-linear-gradient(top, $listItemFocusSelectedEvenGradient);
+    background-image: -o-linear-gradient(top, $listItemFocusSelectedEvenGradient);
+    background-image: -webkit-linear-gradient(top, $listItemFocusSelectedEvenGradient);
+    background-image: linear-gradient(top, $listItemFocusSelectedEvenGradient);
+}
+.$themeClass .OxTableList .OxItem.OxDroppable.OxDrop:nth-child(odd) .OxCell {
+    background-image: -moz-linear-gradient(top, $listItemDropOddGradient);
+    background: -ms-linear-gradient(top, $listItemDropOddGradient);
+    background-image: -o-linear-gradient(top, $listItemDropOddGradient);
+    background-image: -webkit-linear-gradient(top, $listItemDropOddGradient);
+    background-image: linear-gradient(top, $listItemDropOddGradient);
+}
+.$themeClass .OxTableList .OxItem.OxDroppable.OxDrop:nth-child(even) .OxCell {
+    background-image: -moz-linear-gradient(top, $listItemDropEvenGradient);
+    background: -ms-linear-gradient(top, $listItemDropEvenGradient);
+    background-image: -o-linear-gradient(top, $listItemDropEvenGradient);
+    background-image: -webkit-linear-gradient(top, $listItemDropEvenGradient);
+    background-image: linear-gradient(top, $listItemDropEvenGradient);
+}
+
+.$themeClass .OxTableList .OxHead .OxSelected {
+    background-image: -moz-linear-gradient(top, $listHeadSelectedGradient);
+    background: -ms-linear-gradient(top, $listHeadSelectedGradient);
+    background-image: -o-linear-gradient(top, $listHeadSelectedGradient);
+    background-image: -webkit-linear-gradient(top, $listHeadSelectedGradient);
+    background-image: linear-gradient(top, $listHeadSelectedGradient);
+}
+.$themeClass .OxTableList .OxHead .OxSelected .OxTitle {
+    color: $listHeadSelectedColor;
+}
+.$themeClass .OxTableList .OxHead .OxResize .OxCenter {
+    background-color: $listHeadBorder;
+}
+.$themeClass .OxTableList .OxHead .OxSelect,
+.$themeClass .OxTableList .OxBar .OxClear {
+    border-color: $listHeadBorder;
+}
+.$themeClass .OxTableList .OxBody .OxItem .OxCell {
+    border-color: $listItemBorder;
+}
+.$themeClass .OxTableList .OxItem.OxSelected .OxCell {
+    border-color: $listItemSelectedBorder;
+    color: $listItemSelectedColor;
+}
+.$themeClass .OxTableList.OxFocus .OxItem.OxSelected .OxCell,
+.$themeClass .OxTableList .OxFocus .OxItem.OxSelected .OxCell {
+    border-color: $listItemFocusSelectedBorder;
+    color: $listItemFocusSelectedColor;
+}
+.$themeClass .OxTableList .OxItem.OxDroppable.OxDrop .OxCell {
+    border-color: $listItemDropBorder;
+}
+.$themeClass .OxTableList .OxBody .OxItem .OxLine {
+    background-color: $listItemBorder;
+}
+
+
+/*
+================================================================================
+Maps
+================================================================================
+*/
+
+.$themeClass .OxMap .OxMapControl,
+.$themeClass .OxMap .OxPlaceControl {
+    border-color: $mapControlBorder;
+    background-image: -moz-linear-gradient(top, $mapControlGradient);
+    background: -ms-linear-gradient(top, $mapControlGradient);
+    background-image: -o-linear-gradient(top, $mapControlGradient);
+    background-image: -webkit-linear-gradient(top, $mapControlGradient);
+    background-image: linear-gradient(top, $mapControlGradient);
+    color: $mapControlColor;
+}
+
+.$themeClass .OxTypeIcon {
+    border-color: rgb(0, 0, 0);
+}
+.$themeClass .OxMapEditor .OxWarning {
+    border-bottom: 2px dotted $bodyWarningBorder;
+}
+
+/*
+================================================================================
+Media
+================================================================================
+*/
+
+.$themeClass .OxMedia {
+    background-color: $mediaBackground;
+}
+.$themeClass .OxMedia .OxReflection > div {
+    background-image: -moz-linear-gradient(top, $mediaReflectionGradient);
+    background: -ms-linear-gradient(top, $mediaReflectionGradient);
+    background-image: -o-linear-gradient(top, $mediaReflectionGradient);
+    background-image: -webkit-linear-gradient(top, $mediaReflectionGradient);
+    background-image: linear-gradient(top, $mediaReflectionGradient);
+}
+
+.$themeClass .OxIconList.OxMedia .OxItem > .OxIcon > img.OxLoading,
+.$themeClass .OxInfoList.OxMedia .OxItem .OxIcon > img.OxLoading {
+    border-color: $mediaListIconLoadingBorder;
+    background-image: -moz-linear-gradient(top, $mediaListIconLoadingGradient);
+    background: -ms-linear-gradient(top, $mediaListIconLoadingGradient);
+    background-image: -o-linear-gradient(top, $mediaListIconLoadingGradient);
+    background-image: -webkit-linear-gradient(top, $mediaListIconLoadingGradient);
+    background-image: linear-gradient(top, $mediaListIconLoadingGradient);
+}
+.$themeClass .OxIconList.OxMedia .OxItem.OxSelected > .OxIcon > img,
+.$themeClass .OxIconList.OxMedia .OxItem.OxSelected > .OxIcon > .OxVideoPlayer,
+.$themeClass .OxInfoList.OxMedia .OxItem.OxSelected .OxIcon > img,
+.$themeClass .OxInfoList.OxMedia .OxItem.OxSelected .OxIcon > .OxVideoPlayer {
+    border-color: $mediaListIconSelectedBorder;
+    -moz-box-shadow: 0 0 4px $mediaListIconSelectedShadow;
+    -ms-box-shadow: 0 0 4px $mediaListIconSelectedShadow;
+    -o-box-shadow: 0 0 4px $mediaListIconSelectedShadow;
+    -webkit-box-shadow: 0 0 4px $mediaListIconSelectedShadow;
+    box-shadow: 0 0 4px $mediaListIconSelectedShadow;
+}
+.$themeClass .OxIconList.OxMedia.OxFocus .OxItem.OxSelected > .OxIcon > img,
+.$themeClass .OxIconList.OxMedia.OxFocus .OxItem.OxSelected > .OxIcon > .OxVideoPlayer,
+.$themeClass .OxInfoList.OxMedia.OxFocus .OxItem.OxSelected .OxIcon > img,
+.$themeClass .OxInfoList.OxMedia.OxFocus .OxItem.OxSelected .OxIcon > .OxVideoPlayer {
+    border-color: $mediaListIconFocusSelectedBorder;
+    -moz-box-shadow: 0 0 4px $mediaListIconFocusSelectedShadow;
+    -ms-box-shadow: 0 0 4px $mediaListIconFocusSelectedShadow;
+    -o-box-shadow: 0 0 4px $mediaListIconFocusSelectedShadow;
+    -webkit-box-shadow: 0 0 4px $mediaListIconFocusSelectedShadow;
+    box-shadow: 0 0 4px $mediaListIconFocusSelectedShadow;
+}
+.$themeClass .OxIconList.OxMedia .OxItem > .OxText div,
+.$themeClass .OxInfoList.OxMedia .OxItem .OxText > div {
+    color: $mediaListIconTextColor;
+    text-shadow: $mediaListIconTextShadow -1px -1px 0,
+        $mediaListIconTextShadow -1px 1px 0,
+        $mediaListIconTextShadow 1px -1px 0,
+        $mediaListIconTextShadow 1px 1px 0;
+}
+.$themeClass .OxIconList.OxMedia .OxItem.OxSelected > .OxText > div,
+.$themeClass .OxInfoList.OxMedia .OxItem.OxSelected .OxText > div:not(.OxSpecialTarget) {
+    border-color: $mediaListIconLabelSelectedBorder;
+    background-image: -moz-linear-gradient(top, $mediaListIconLabelSelectedGradient);
+    background: -ms-linear-gradient(top, $mediaListIconLabelSelectedGradient);
+    background-image: -o-linear-gradient(top, $mediaListIconLabelSelectedGradient);
+    background-image: -webkit-linear-gradient(top, $mediaListIconLabelSelectedGradient);
+    background-image: linear-gradient(top, $mediaListIconLabelSelectedGradient);
+    color: $mediaListIconTextSelectedColor;
+    text-shadow: $mediaListIconTextSelectedShadow -1px -1px 0,
+        $mediaListIconTextSelectedShadow -1px 1px 0,
+        $mediaListIconTextSelectedShadow 1px -1px 0,
+        $mediaListIconTextSelectedShadow 1px 1px 0;
+    -moz-box-shadow: 0 0 4px $mediaListIconLabelSelectedShadow;
+    -ms-box-shadow: 0 0 4px $mediaListIconLabelSelectedShadow;
+    -o-box-shadow: 0 0 4px $mediaListIconLabelSelectedShadow;
+    -webkit-box-shadow: 0 0 4px $mediaListIconLabelSelectedShadow;
+    box-shadow: 0 0 4px $mediaListIconLabelSelectedShadow;
+}
+.$themeClass .OxIconList.OxMedia.OxFocus .OxItem.OxSelected > .OxText > div,
+.$themeClass .OxInfoList.OxMedia.OxFocus .OxItem.OxSelected .OxText > div:not(.OxSpecialTarget) {
+    border-color: $mediaListIconLabelFocusSelectedBorder;
+    background-image: -moz-linear-gradient(top, $mediaListIconLabelFocusSelectedGradient);
+    background: -ms-linear-gradient(top, $mediaListIconLabelFocusSelectedGradient);
+    background-image: -o-linear-gradient(top, $mediaListIconLabelFocusSelectedGradient);
+    background-image: -webkit-linear-gradient(top, $mediaListIconLabelFocusSelectedGradient);
+    background-image: linear-gradient(top, $mediaListIconLabelFocusSelectedGradient);
+    color: $mediaListIconTextFocusSelectedColor;
+    text-shadow: $mediaListIconTextFocusSelectedShadow -1px -1px 0,
+        $mediaListIconTextFocusSelectedShadow -1px 1px 0,
+        $mediaListIconTextFocusSelectedShadow 1px -1px 0,
+        $mediaListIconTextFocusSelectedShadow 1px 1px 0;
+    -moz-box-shadow: 0 0 4px $mediaListIconLabelFocusSelectedShadow;
+    -ms-box-shadow: 0 0 4px $mediaListIconLabelFocusSelectedShadow;
+    -o-box-shadow: 0 0 4px $mediaListIconLabelFocusSelectedShadow;
+    -webkit-box-shadow: 0 0 4px $mediaListIconLabelFocusSelectedShadow;
+    box-shadow: 0 0 4px $mediaListIconLabelFocusSelectedShadow;
+}
+.$themeClass .OxIconList.OxMedia .OxItem > .OxText > div > .OxInfo,
+.$themeClass .OxInfoList.OxMedia .OxItem .OxText > div > .OxInfo {
+    color: $mediaListIconTextLightColor;
+}
+.$themeClass .OxIconList.OxMedia .OxItem.OxSelected > .OxText > div > .OxInfo,
+.$themeClass .OxInfoList.OxMedia .OxItem.OxSelected .OxText > div:not(.OxSpecialTarget) > .OxInfo {
+    color: $mediaListIconTextSelectedLightColor;
+}
+.$themeClass .OxIconList.OxMedia.OxFocus .OxItem.OxSelected > .OxText > div > .OxInfo,
+.$themeClass .OxInfoList.OxMedia.OxFocus .OxItem.OxSelected .OxText > div:not(.OxSpecialTarget) > .OxInfo {
+    color: $mediaListIconTextFocusSelectedLightColor;
+}
+.$themeClass .OxInfoList.OxMedia .OxItem.OxSelected .OxInfoElement .OxIcon > img,
+.$themeClass .OxInfoList.OxMedia .OxItem.OxSelected .OxInfoElement .OxIcon .OxVideoPlayer,
+.$themeClass .OxInfoList.OxMedia .OxItem.OxSelected .OxInfoElement .OxText > div,
+.$themeClass .OxInfoList.OxMedia.OxFocus .OxItem.OxSelected .OxInfoElement .OxIcon > img,
+.$themeClass .OxInfoList.OxMedia.OxFocus .OxItem.OxSelected .OxInfoElement .OxIcon .OxVideoPlayer,
+.$themeClass .OxInfoList.OxMedia.OxFocus .OxItem.OxSelected .OxInfoElement .OxText > div {
+    border-color: transparent;
+    background-image: none;
+    -moz-box-shadow: 0 0 0 transparent;
+    -ms-box-shadow: 0 0 0 transparent;
+    -o-box-shadow: 0 0 0 transparent;
+    -webkit-box-shadow: 0 0 0 transparent;
+    box-shadow: 0 0 0 transparent;
+}
+.$themeClass .OxInfoList.OxMedia .OxItem.OxSelected .OxInfoElement .OxIcon > img.OxLoading,
+.$themeClass .OxInfoList.OxMedia.OxFocus .OxItem.OxSelected .OxInfoElement .OxIcon > img.OxLoading {
+    border-color: $listIconLoadingBorder;
+    background-image: -moz-linear-gradient(top, $listIconLoadingGradient);
+    background: -ms-linear-gradient(top, $listIconLoadingGradient);
+    background-image: -o-linear-gradient(top, $listIconLoadingGradient);
+    background-image: -webkit-linear-gradient(top, $listIconLoadingGradient);
+    background-image: linear-gradient(top, $listIconLoadingGradient);
+}
+
+/*
+================================================================================
+Menus
+================================================================================
+*/
+
+.$themeClass .OxMainMenu > .OxTitle.OxSelected {
+    background-image: -moz-linear-gradient(top, $barSelectedGradient);
+    background: -ms-linear-gradient(top, $barSelectedGradient);
+    background-image: -o-linear-gradient(top, $barSelectedGradient);
+    background-image: -webkit-linear-gradient(top, $barSelectedGradient);
+    background-image: linear-gradient(top, $barSelectedGradient);
+    color: $barSelectedColor;
+}
+.$themeClass .OxMainMenu > .OxTitle.OxHighlight {
+    background-image: -moz-linear-gradient(top, $barHighlightGradient);
+    background: -ms-linear-gradient(top, $barHighlightGradient);
+    background-image: -o-linear-gradient(top, $barHighlightGradient);
+    background-image: -webkit-linear-gradient(top, $barHighlightGradient);
+    background-image: linear-gradient(top, $barHighlightGradient);
+    color: $barHighlightColor;
+}
+
+.$themeClass .OxMenu {
+    -moz-box-shadow: 0 2px 4px $menuShadow;
+    -ms-box-shadow: 0 2px 4px $menuShadow;
+    -o-box-shadow: 0 2px 4px $menuShadow;
+    -webkit-box-shadow: 0 2px 4px $menuShadow;
+    box-shadow: 0 2px 4px $menuShadow;
+}
+.$themeClass .OxMenu .OxBottom,
+.$themeClass .OxMenu .OxItem,
+.$themeClass .OxMenu .OxScrollbar,
+.$themeClass .OxMenu .OxSpace,
+.$themeClass .OxMenu .OxTop {
+    background-color: $menuBackground;
+}
+.$themeClass .OxMenu .OxLine {
+    background-color: $menuBorder;
+}
+.$themeClass .OxMenu .OxItem.OxSelected,
+.$themeClass .OxMenu .OxItem.OxSelected input,
+.$themeClass .OxMenu .OxScrollbar.OxSelected {
+    background-image: -moz-linear-gradient(top, $menuSelectedGradient);
+    background: -ms-linear-gradient(top, $menuSelectedGradient);
+    background-image: -o-linear-gradient(top, $menuSelectedGradient);
+    background-image: -webkit-linear-gradient(top, $menuSelectedGradient);
+    background-image: linear-gradient(top, $menuSelectedGradient);
+    color: $menuSelectedColor;
+}
+.$themeClass .OxMenu .OxItem.OxDisabled .OxCell,
+.$themeClass .OxMenu .OxItem.OxDisabled .OxCell input {
+    color: $menuDisabledColor;
+}
+
+/*
+================================================================================
+Scrollbars
+================================================================================
+*/
+
+.$themeClass ::-webkit-scrollbar:horizontal {
+    border-top: 1px solid $formelementBorder;
+    border-bottom: 1px solid $formelementBorder;
+    background: -webkit-linear-gradient(top, $buttonGradient);
+}
+.$themeClass ::-webkit-scrollbar:vertical {
+    border-left: 1px solid $formelementBorder;
+    border-right: 1px solid $formelementBorder;
+    background: -webkit-linear-gradient(left, $buttonGradient);
+}
+.$themeClass ::-webkit-scrollbar-button:horizontal:decrement {
+    background: url(../png/scrollbarHorizontalDecrement.png);
+}
+.$themeClass ::-webkit-scrollbar-button:horizontal:increment {
+    background: url(../png/scrollbarHorizontalIncrement.png);
+}
+.$themeClass ::-webkit-scrollbar-button:vertical:decrement {
+    background: url(../png/scrollbarVerticalDecrement.png);
+}
+.$themeClass ::-webkit-scrollbar-button:vertical:increment {
+    background: url(../png/scrollbarVerticalIncrement.png);
+}
+.$themeClass ::-webkit-scrollbar-corner {
+    border-right: 1px solid $formelementBorder;
+    border-bottom: 1px solid $formelementBorder;
+    background: -webkit-linear-gradient(top left, $scrollbarCornerGradient);
+}
+.$themeClass ::-webkit-scrollbar-thumb {
+    border: 1px solid $formelementBorder;
+}
+.$themeClass ::-webkit-scrollbar-thumb:horizontal {
+    background: -webkit-linear-gradient(top, $buttonGradient);
+}
+.$themeClass ::-webkit-scrollbar-thumb:vertical {
+    background: -webkit-linear-gradient(left, $buttonGradient);
+}
+.$themeClass ::-webkit-scrollbar-track {
+    border: 1px solid $formelementBorder;
+}
+.$themeClass ::-webkit-scrollbar-track:horizontal {
+    background: -webkit-linear-gradient(top, $inputGradient);
+}
+.$themeClass ::-webkit-scrollbar-track:vertical {
+    background: -webkit-linear-gradient(left, $inputGradient);
+}
+.$themeClass ::-webkit-scrollbar:horizontal:active,
+.$themeClass ::-webkit-scrollbar-thumb:horizontal:active {
+    background: -webkit-linear-gradient(top, $buttonActiveGradient);
+}
+.$themeClass ::-webkit-scrollbar:vertical:active,
+.$themeClass ::-webkit-scrollbar-thumb:vertical:active {
+    background: -webkit-linear-gradient(left, $buttonActiveGradient);
+}
+
+body.$themeClass {
+ scrollbar-color: $bodyBorder $bodyBackground;
+}
+
+/*
+================================================================================
+SourceViewer
+================================================================================
+*/
+
+.$themeClass .OxSourceViewer .OxComment {
+    border-color: $bodyBorder;
+}
+.$themeClass .OxSourceViewer .OxComment code {
+    background-color: $sourceviewerCodeBackground;
+    box-shadow: 0 0 1px $sourceviewerCodeShadow;
+}
+.$themeClass .OxSourceViewer .OxComment pre > code {
+    background-color: transparent;
+    box-shadow: none;
+}
+.$themeClass .OxSourceViewer .OxCode {
+    background-color: $sourcecodeBackground;
+}
+
+/*
+================================================================================
+SyntaxHighlighter
+================================================================================
+*/
+
+.$themeClass .OxSyntaxHighlighter {
+    background-color: $sourcecodeBackground;
+}
+.$themeClass .OxSyntaxHighlighter .OxLineNumbers {
+    background-color: $sourcecodeLinenumbersBackground;
+    color: sourcecodeLinenumbersColor;
+}
+.$themeClass .OxSourceCode .OxComment {
+    color: $sourcecodeCommentColor;
+    font-style: italic;
+}
+.$themeClass .OxSourceCode .OxConstant {
+    color: $sourcecodeConstantColor;
+    font-weight: bold;
+}
+.$themeClass .OxSourceCode .OxError {
+    color: $sourcecodeErrorColor;
+    background-color: $sourcecodeErrorBackground;
+    font-weight: bold;
+}
+.$themeClass .OxSourceCode .OxIdentifier {
+    color: $sourcecodeIdentifierColor;
+}
+.$themeClass .OxSourceCode .OxKeyword {
+    color: $sourcecodeKeywordColor;
+    font-weight: bold;
+}
+.$themeClass .OxSourceCode .OxLinebreak {
+    color: $sourcecodeSpecialColor;
+}
+.$themeClass .OxSourceCode .OxMethod {
+    color: $sourcecodeMethodColor;
+}
+.$themeClass .OxSourceCode .OxNumber {
+    color: $sourcecodeNumberColor;
+}
+.$themeClass .OxSourceCode .OxObject {
+    color: $sourcecodeObjectColor;
+    font-weight: bold;
+}
+.$themeClass .OxSourceCode .OxOperator {
+    color: $sourcecodeOperatorColor;
+}
+.$themeClass .OxSourceCode .OxProperty {
+    color: $sourcecodePropertyColor;
+    font-weight: bold;
+}
+.$themeClass .OxSourceCode .OxRegexp {
+    color: $sourcecodeRegexpColor;
+}
+.$themeClass .OxSourceCode .OxString {
+    color: $sourcecodeStringColor;
+}
+.$themeClass .OxSourceCode .OxTab {
+    color: $sourcecodeSpecialColor;
+}
+.$themeClass .OxSourceCode .OxWhitespace {
+    color: $sourcecodeSpecialColor;
+}
+.$themeClass .OxSourceCode .OxWhitespace.OxLeading,
+.$themeClass .OxSourceCode .OxWhitespace.OxTrailing {
+    background-color: $sourcecodeWhitespaceBackground;
+}
+
+/*
+================================================================================
+Video
+================================================================================
+*/
+
+.$themeClass .OxAnnotation {
+    border-color: $bodyBorder;
+}
+.$themeClass .OxAnnotation.OxSelected {
+    background-color: $videoAnnotationSelectedBackground;
+}
+
+.$themeClass .OxLargeVideoTimeline .OxOverlay {
+    background-color: $mediaBackground;
+}
+
+.$themeClass .OxSmallVideoTimeline .OxMarkerPlay {
+    border-color: $videoTimelineMarkerShadow;
+}
+.$themeClass .OxSmallVideoTimeline .OxMarkerPlay > div {
+    border-color: $videoTimelineMarkerPlayingBorder;
+}
+.$themeClass .OxSmallVideoTimeline .OxMarkerPlay.OxPaused > div {
+    border-color: $videoTimelineMarkerPausedBorder;
+}
+.$themeClass .OxSmallVideoTimeline .OxMarkerPlay > div > div {
+    border-color: $videoTimelineMarkerShadow;
+}
+
+.$themeClass .OxVideoPlayer .OxControls.OxOnScreen,
+.$themeClass .OxVideoPlayer .OxFind,
+.$themeClass .OxVideoPlayer .OxVolume {
+    background-image: -moz-linear-gradient(top, $videoBarGradient);
+    background: -ms-linear-gradient(top, $videoBarGradient);
+    background-image: -o-linear-gradient(top, $videoBarGradient);
+    background-image: -webkit-linear-gradient(top, $videoBarGradient);
+    background-image: linear-gradient(top, $videoBarGradient);
+}
+.$themeClass .OxVideoPlayer input.OxInput {
+    background-image: -moz-linear-gradient(top, $videoInputGradient);
+    background: -ms-linear-gradient(top, $videoInputGradient);
+    background-image: -o-linear-gradient(top, $videoInputGradient);
+    background-image: -webkit-linear-gradient(top, $videoInputGradient);
+    background-image: linear-gradient(top, $videoInputGradient);
+}
+.$themeClass .OxVideoPlayer .OxSettings {
+    background-image: none;
+}
+.$themeClass .OxVideoPlayer .OxSettings > div {
+    background-color: $videoMenuBackground;
+}
+.$themeClass .OxVideoPlayer .OxSettings > div.OxDisabled > div {
+    color: $videoMenuDisabledColor;
+}
+.$themeClass .OxVideoPlayer .OxSettings > div.OxSelected {
+    background-image: -moz-linear-gradient(top, $videoMenuSelectedGradient);
+    background: -ms-linear-gradient(top, $videoMenuSelectedGradient);
+    background-image: -o-linear-gradient(top, $videoMenuSelectedGradient);
+    background-image: -webkit-linear-gradient(top, $videoMenuSelectedGradient);
+    background-image: linear-gradient(top, $videoMenuSelectedGradient);
+}
+.$themeClass .OxVideoPlayer .OxSettings > div.OxLine {
+    background-color: $videoMenuBorder;
+}
+.$themeClass .OxVideoPlayer .OxVolume .OxRange .OxTrack {
+    background-image: -moz-linear-gradient(top, $videoInputGradient);
+    background: -ms-linear-gradient(top, $videoInputGradient);
+    background-image: -o-linear-gradient(top, $videoInputGradient);
+    background-image: -webkit-linear-gradient(top, $videoInputGradient);
+    background-image: linear-gradient(top, $videoInputGradient);
+}
+.$themeClass .OxVideoPlayer .OxVolume .OxRange .OxThumb {
+    background-image: -moz-linear-gradient(top, $videoButtonGradient);
+    background: -ms-linear-gradient(top, $videoButtonGradient);
+    background-image: -o-linear-gradient(top, $videoButtonGradient);
+    background-image: -webkit-linear-gradient(top, $videoButtonGradient);
+    background-image: linear-gradient(top, $videoButtonGradient);
+}
+.$themeClass .OxVideoPlayer .OxVolume .OxRange .OxThumb:active {
+    background-image: -moz-linear-gradient(top, $videoButtonActiveGradient);
+    background: -ms-linear-gradient(top, $videoButtonActiveGradient);
+    background-image: -o-linear-gradient(top, $videoButtonActiveGradient);
+    background-image: -webkit-linear-gradient(top, $videoButtonActiveGradient);
+    background-image: linear-gradient(top, $videoButtonActiveGradient);
+}
+
+.$themeClass .OxVideoTimelinePlayer .OxVideoBox {
+    border-color: $bodyColor;
+}
+
+.$themeClass .OxLargeVideoTimeline .OxSubtitle .OxHighlight,
+.$themeClass .OxVideoPlayer .OxSubtitle .OxHighlight {
+    background-image: none;
+    color: rgb(255, 255, 0);
+}
+
+
+.$themeClass .OxAnnotationFolder .OxArrayEditable .OxSeparator {
+    color: $videoAnnotationSeparatorColor;
+}
+.$themeClass .OxAnnotationFolder .OxEditableElement.OxSelected {
+    background-color: $videoAnnotationSelectedBackground;
+}
+.$themeClass .OxAnnotationFolder .OxEditableElement.OxWarning .OxValue {
+    border-bottom: 2px dotted $bodyWarningBorder;
+}
+.$themeClass .OxAnnotationFolder .OxArrayEditable .OxEditableElement.OxEditable.OxGroup {
+    background-color: $videoAnnotationSelectedBackground;
+}
+.$themeClass .OxAnnotationFolder .OxArrayEditable .OxEditableElement.OxEditable.OxSelected {
+    background-color: $videoAnnotationEditableSelectedBackground;
+}
+.$themeClass .OxAnnotationFolder .OxArrayEditable .OxEditableElement.OxSelected .OxHighlight {
+    background-color: transparent;
+    background-image: -moz-repeating-linear-gradient(
+        -45deg, transparent 0%, transparent 25%,
+        $bodyHighlightGradient[0] 25%, $bodyHighlightGradient[1] 50%,
+        transparent 50%, transparent 75%,
+        $bodyHighlightGradient[0] 75%, $bodyHighlightGradient[1] 100%
+    );
+    background-image: -ms-repeating-linear-gradient(
+        -45deg, transparent 0%, transparent 25%,
+        $bodyHighlightGradient[0] 25%, $bodyHighlightGradient[1] 50%,
+        transparent 50%, transparent 75%,
+        $bodyHighlightGradient[0] 75%, $bodyHighlightGradient[1] 100%
+    );
+    background-image: -o-repeating-linear-gradient(
+        -45deg, transparent 0%, transparent 25%,
+        $bodyHighlightGradient[0] 25%, $bodyHighlightGradient[1] 50%,
+        transparent 50%, transparent 75%,
+        $bodyHighlightGradient[0] 75%, $bodyHighlightGradient[1] 100%
+    );
+    background-image: -webkit-repeating-linear-gradient(
+        -45deg, transparent 0%, transparent 25%,
+        $bodyHighlightGradient[0] 25%, $bodyHighlightGradient[1] 50%,
+        transparent 50%, transparent 75%,
+        $bodyHighlightGradient[0] 75%, $bodyHighlightGradient[1] 100%
+    );
+    background-image: repeating-linear-gradient(
+        -45deg, transparent 0%, transparent 25%,
+        $bodyHighlightGradient[0] 25%, $bodyHighlightGradient[1] 50%,
+        transparent 50%, transparent 75%,
+        $bodyHighlightGradient[0] 75%, $bodyHighlightGradient[1] 100%
+    );
+    background-size: 4px 4px;
+}
+.$themeClass .OxAnnotationFolder .OxArrayEditableInput .OxEditableElement.OxSelected {
+    box-shadow: 0 0 2px $videoAnnotationEditableSelectedShadow;
+}
+.$themeClass .OxAnnotationFolder .OxArrayEditableTextarea .OxEditableElement.OxEditable.OxEditing {
+    background-color: $videoAnnotationEditableEditingBackground;
+}
+.$themeClass .OxAnnotationFolder .OxArrayEditable .OxInput.OxFocus {
+    box-shadow: none;
+}
+.$themeClass .OxAnnotationFolder .OxEditableElement input,
+.$themeClass .OxAnnotationFolder .OxEditableElement textarea {
+    background-color: $videoAnnotationEditableEditingBackground;
+    background-image: none;
+    color: $videoAnnotationEditableEditingColor;
+}
+.$themeClass .OxAnnotationFolder .OxEditableElement textarea:focus {
+    box-shadow: none;
+}
+
+/*
+================================================================================
+Miscellaneous
+================================================================================
+*/
+
+.$themeClass .OxImageElement > .OxLoadingScreen {
+    background-image: -moz-linear-gradient(top, $imageLoadingGradient);
+    background: -ms-linear-gradient(top, $imageLoadingGradient);
+    background-image: -o-linear-gradient(top, $imageLoadingGradient);
+    background-image: -webkit-linear-gradient(top, $imageLoadingGradient);
+    background-image: linear-gradient(top, $imageLoadingGradient);
+}
+.$themeClass .OxDialog .OxImageElement > .OxLoadingScreen {
+    background-image: -moz-linear-gradient(top, $dialogImageLoadingGradient);
+    background: -ms-linear-gradient(top, $dialogImageLoadingGradient);
+    background-image: -o-linear-gradient(top, $dialogImageLoadingGradient);
+    background-image: -webkit-linear-gradient(top, $dialogImageLoadingGradient);
+    background-image: linear-gradient(top, $dialogImageLoadingGradient);
+}
+
+.$themeClass .OxSelectableElement {
+    background-image: -moz-linear-gradient(top, $listItemGradient);
+    background: -ms-linear-gradient(top, $listItemGradient);
+    background-image: -o-linear-gradient(top, $listItemGradient);
+    background-image: -webkit-linear-gradient(top, $listItemGradient);
+    background-image: linear-gradient(top, $listItemGradient);
+}
+.$themeClass .OxSelectableElement.OxSelected {
+    background-image: -moz-linear-gradient(top, $listItemSelectedGradient);
+    background: -ms-linear-gradient(top, $listItemSelectedGradient);
+    background-image: -o-linear-gradient(top, $listItemSelectedGradient);
+    background-image: -webkit-linear-gradient(top, $listItemSelectedGradient);
+    background-image: linear-gradient(top, $listItemSelectedGradient);
+}
+.$themeClass .OxSelectableElement.OxSelected > div {
+    color: $listItemSelectedColor;
+}
+.$themeClass .OxSelectableElement.OxSelected.OxFocus {
+    background-image: -moz-linear-gradient(top, $listItemFocusSelectedGradient);
+    background: -ms-linear-gradient(top, $listItemFocusSelectedGradient);
+    background-image: -o-linear-gradient(top, $listItemFocusSelectedGradient);
+    background-image: -webkit-linear-gradient(top, $listItemFocusSelectedGradient);
+    background-image: linear-gradient(top, $listItemFocusSelectedGradient);
+}
+.$themeClass .OxSelectableElement.OxSelected.OxFocus > div {
+    color: $listItemFocusSelectedColor;
+}
+
+.$themeClass .OxScreen {
+    background-color: $screenBackground;
+    color: $screenColor;
+}
+.$themeClass .OxScreen .OxReflection {
+    background-image: -moz-linear-gradient(top, $screenReflectionGradient);
+    background: -ms-linear-gradient(top, $screenReflectionGradient);
+    background-image: -o-linear-gradient(top, $screenReflectionGradient);
+    background-image: -webkit-linear-gradient(top, $screenReflectionGradient);
+    background-image: linear-gradient(top, $screenReflectionGradient);
+}
+
+.$themeClass .OxTooltip {
+    border: 1px solid $tooltipBorder;
+    background-image: -moz-linear-gradient(top, $tooltipGradient);
+    background: -ms-linear-gradient(top, $tooltipGradient);
+    background-image: -o-linear-gradient(top, $tooltipGradient);
+    background-image: -webkit-linear-gradient(top, $tooltipGradient);
+    background-image: linear-gradient(top, $tooltipGradient);
+    color: $tooltipColor;
+    -moz-box-shadow: 2px 2px 4px $tooltipShadow;
+    -ms-box-shadow: 2px 2px 4px $tooltipShadow;
+    -o-box-shadow: 2px 2px 4px $tooltipShadow;
+    -webkit-box-shadow: 2px 2px 4px $tooltipShadow;
+    box-shadow: 2px 2px 4px $tooltipShadow;
+}
+
+.$themeClass ::selection {
+    background: $bodySelectionBackground;
+    color: $bodySelectionColor;
+}
+.$themeClass ::-moz-selection {
+    background: $bodySelectionBackground;
+    color: $bodySelectionColor;
+}
+.$themeClass ::-ms-selection {
+    background: $bodySelectionBackground;
+    color: $bodySelectionColor;
+}
+.$themeClass ::-o-selection {
+    background: $bodySelectionBackground;
+    color: $bodySelectionColor;
+}
+.$themeClass ::-webkit-selection {
+    background: $bodySelectionBackground;
+    color: $bodySelectionColor;
+}

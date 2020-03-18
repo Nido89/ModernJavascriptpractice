@@ -1,0 +1,23 @@
+.OxButtonGroup {
+    float: left;
+    margin: 4px 3px 2px 3px;
+}
+.symbol {
+    float: left;
+    width: 256px;
+    height: 256px;
+    margin: 8px;
+}
+.symbol img {
+    width: 256px;
+    height: 256px;
+}
+.OxThemeOxlight .symbol {
+    border: 1px solid rgb(208, 208, 208);
+}
+.OxThemeOxmedium .symbol {
+    border: 1px solid rgb(128, 128, 128);
+}
+.OxThemeOxdark .symbol {
+    border: 1px solid rgb(48, 48, 48);
+}

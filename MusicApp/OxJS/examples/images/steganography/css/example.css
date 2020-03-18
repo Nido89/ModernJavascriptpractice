@@ -1,0 +1,16 @@
+body {
+    margin: 0;
+}
+table {
+    border-spacing: 8px;
+}
+td {
+    padding: 0;
+    border-collapse: collapse;
+    font-family: Lucida Grande, Segoe UI, DejaVu Sans, Lucida Sans Unicode, Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    vertical-align: top;
+}
+td:first-child {
+    width: 320px;
+}

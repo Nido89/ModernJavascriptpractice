@@ -1,0 +1,50 @@
+[
+    {"id": "interesting", "title": "Interesting", "items": [
+        {"id": "122.152.72.0", "title": "Asia"},
+        {"id": "203.32.1.1", "title": "Australia"},
+        {"id": "91.221.91.221", "title": "Balkans"},
+        {"id": "242.170.138.80", "title": "Iceland"},
+        {"id": "202.224.1.1", "title": "Japan"},
+        {"id": "204.106.204.106", "title": "Midwest"},
+        {"id": "84.22.111.22", "title": "South Pole"},
+        {"id": "188.188.188.188", "title": "Vennbahn"}
+    ]},
+    {"id": "popular", "title": "Popular", "items": [
+        {"id": "adobe.com", "title": "Adobe"},
+        {"id": "amazon.com", "title": "Amazon"},
+        {"id": "apple.com", "title": "Apple"},
+        {"id": "ebay.com", "title": "eBay"},
+        {"id": "facebook.com", "title": "Facebook"},
+        {"id": "flickr.com", "title": "Flickr"},
+        {"id": "google.com", "title": "Google"},
+        {"id": "microsoft.com", "title": "Microsoft"},
+        {"id": "thepiratebay.se", "title": "The Pirate Bay"},
+        {"id": "reddit.com", "title": "Reddit"},
+        {"id": "sony.com", "title": "Sony"},
+        {"id": "tumblr.com", "title": "Tumblr"},
+        {"id": "twitter.com", "title": "Twitter"},
+        {"id": "wikipedia.org", "title": "Wikipedia"},
+        {"id": "yahoo.com", "title": "Yahoo"},
+        {"id": "youtube.com", "title": "Youtube"}
+    ]},
+    {"id": "news", "title": "News", "items": [
+        {"id": "cnn.com", "title": "CNN"},
+        {"id": "elpais.com", "title": "El Pais"},
+        {"id": "guardian.co.uk", "title": "Guardian"},
+        {"id": "lemonde.fr", "title": "Le Monde"},
+        {"id": "nytimes.com", "title": "NY Times"},
+        {"id": "rollingstone.com", "title": "Rolling Stone"},
+        {"id": "salon.com", "title": "Salon"},
+        {"id": "spiegel.de", "title": "Spiegel"}
+    ]},
+    {"id": "technology", "title": "Technology", "items": [
+        {"id": "arstechnica.com", "title": "Ars Technica"},
+        {"id": "eff.org", "title": "EFF"},
+        {"id": "github.com", "title": "GitHub"},
+        {"id": "mozilla.org", "title": "Mozilla"},
+        {"id": "news.ycombinator.com", "title": "Hacker News"},
+        {"id": "slashdot.org", "title": "Slashdot"},
+        {"id": "stackoverflow.com", "title": "Stack Overflow"},
+        {"id": "wired.com", "title": "Wired"}
+    ]}
+]

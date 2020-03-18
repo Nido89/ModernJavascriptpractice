@@ -1,0 +1,8 @@
+body {
+    margin: 16px;
+    background-color: rgb(240, 240, 240);
+}
+img {
+    display: block;
+    margin: 8px 0 0 2px;
+}

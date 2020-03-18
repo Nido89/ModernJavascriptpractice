@@ -1,0 +1,2967 @@
+$import
+
+/*
+================================================================================
+Base
+================================================================================
+*/
+
+a {
+    text-decoration: none;
+}
+a:hover, .OxLink:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+blockquote {
+    margin: 0 1.5em 0 1.5em;
+}
+body {
+    margin: 0;
+    cursor: default;
+    overflow: hidden;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+code, pre {
+    font-family: Menlo, Monaco, DejaVu Sans Mono, Lucida Console, Consolas, Bitstream Vera Sans Mono, monospace;
+}
+div, input, textarea {
+    font-family: Lucida Grande, Segoe UI, DejaVu Sans, Lucida Sans Unicode, Helvetica, Arial, sans-serif;
+    font-size: 11px;
+}
+figure {
+    text-align: center;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: normal;
+}
+h2, h3, h4, h5, h6 {
+    font-size: 14px;
+}
+img {
+    -moz-user-drag: none;
+    -ms-user-drag: none;
+    -o-user-drag: none;
+    -webkit-user-drag: none;
+    user-drag: none;
+}
+ol, ul {
+    padding-left: 1.5em;
+    margin: 0;
+}
+dt {
+    float: left;
+    clear: left;
+    width: 40px;
+    font-weight: bold;
+    text-overflow: hidden;
+}
+dd {
+    margin-left: 40px;
+}
+p {
+    text-align: justify;
+}
+p:first-child {
+    margin-top: 0;
+}
+p:last-child {
+    margin-bottom: 0; 
+}
+td {
+    padding: 0;
+    vertical-align: top;
+}
+
+.OxSerif {
+    font-family: Georgia, Palatino, DejaVu Serif, Book Antiqua, Palatino Linotype, Times New Roman, serif;
+}
+.OxSansSerif {
+    font-family: Lucida Grande, Segoe UI, DejaVu Sans, Lucida Sans Unicode, Helvetica, Arial, sans-serif;
+}
+.OxMonospace {
+    font-family: Menlo, Monaco, DejaVu Sans Mono, Lucida Console, Consolas, Bitstream Vera Sans Mono, monospace;
+}
+
+.OxSelectable {
+    cursor: text;
+    -moz-user-select: text;
+    -ms-user-select: text;
+    -o-user-select: text;
+    -webkit-user-select: text;
+    user-select: text;
+}
+.OxSelectable * {
+    cursor: text;
+}
+body.OxDragging .OxSelectable {
+    cursor: default;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+body.OxDragging .OxSelectable * {
+    cursor: default;
+}
+
+/*
+================================================================================
+Audio
+================================================================================
+*/
+
+.OxAudioPlayer {
+    position: absolute;
+    height: 31px;
+}
+.OxAudioPlayer > * {
+    position: absolute;
+}
+.OxAudioPlayer > .OxListButton {
+    right: 0;
+    border-bottom-right-radius: 0;
+}
+.OxAudioPlayer > .OxMuteButton {
+    right: 151px;
+    top: 15px;
+}
+.OxAudioPlayer > .OxPlayButtons {
+    top: 15px;
+}
+.OxAudioPlayer > .OxButtonGroup.OxPlayButtons > .OxButton:first-child {
+    border-top-left-radius: 0;
+}
+.OxAudioPlayer > .OxPositionLabel {
+    top: 15px;
+    height: 13px;
+    padding-top: 1px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    font-size: 10px;
+}
+.OxAudioPlayer > .OxPositionSlider {
+    left: 46px;
+    top: 15px;
+}
+.OxAudioPlayer > .OxRepeatButton {
+    right: 31px;
+    border-bottom-right-radius: 0;
+}
+.OxAudioPlayer > .OxShuffleButton {
+    right: 15px;
+    border-bottom-right-radius: 0;
+}
+.OxAudioPlayer > .OxTrackLabel {
+    //left: 15px;
+    top: 0;
+    height: 13px;
+    padding-top: 1px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    font-size: 10px;
+    text-overflow: ellipsis;
+}
+.OxAudioPlayer > .OxVolumeLabel {
+    top: 15px;
+    height: 13px;
+    padding-top: 1px;
+    border-top-right-radius: 0;
+    font-size: 10px;
+}
+.OxAudioPlayer > .OxVolumeSlider {
+    right: 35px;
+    top: 15px;
+}
+
+/*
+================================================================================
+Core
+================================================================================
+*/
+
+.OxContainer {
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    //overflow: hidden;
+    overflow: auto;
+}
+.OxContent {
+    //overflow: auto;
+}
+
+/*
+================================================================================
+Bars
+================================================================================
+*/
+
+.OxBar {
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.OxProgressbar {
+    height: 14px;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 8px;
+}
+.OxProgressbar .OxTrack {
+    float: left;
+    width: 14px;
+    height: 14px;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 8px;
+    margin: -1px;
+}
+.OxProgressbar .OxProgress {
+    width: 14px;
+    height: 14px;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 8px;
+    margin: -1px;
+}
+.OxProgressbar.OxSquared,
+.OxProgressbar.OxSquared .OxTrack,
+.OxProgressbar.OxSquared .OxProgress {
+    border-radius: 4px;
+}
+
+.OxProgressbar .OxProgress.OxAnimate {
+    -webkit-animation: progress 1s linear infinite;
+}
+@-webkit-keyframes progress {
+    0% {
+       background-position: 0 0;
+    }
+    100% {
+       background-position: -32px 0;
+    }
+}
+.OxProgressbar .OxText {
+    float: left;
+    height: 14px;
+    //padding-top: 2px;
+    //font-size: 8px;
+    text-align: center;
+}
+.OxProgressbar .OxText.OxSmall {
+    //padding-top: 1px;
+    //font-size: 9px;
+}
+.OxProgressbar .OxButton {
+    float: left;
+    margin: -1px;
+}
+
+
+.OxResizebar {
+    z-index: 2;
+}
+.OxResizebar:hover > .OxSpace {
+    //background: rgba(128, 128, 128, 0.25);
+}
+
+.OxResizebar.OxHorizontal {
+    width: 100%;
+    height: 5px;
+    margin: -2px 0 -2px 0;
+}
+.OxResizebar.OxHorizontal > .OxLine {
+    width: 100%;
+    height: 1px;
+}
+.OxResizebar.OxHorizontal > .OxSpace {
+    width: 100%;
+    height: 2px;
+}
+
+.OxResizebar.OxVertical {
+    width: 5px;
+    height: 100%;
+    margin: 0 -2px 0 -2px;
+}
+.OxResizebar.OxVertical > .OxLine {
+    float: left;
+    width: 1px;
+    height: 100%;
+}
+.OxResizebar.OxVertical > .OxSpace {
+    float: left;
+    width: 2px;
+    height: 100%;
+}
+
+.OxTabbar > .OxButtonGroup {
+    margin: 4px 0 0 4px;
+}
+
+/*
+================================================================================
+Calendar
+================================================================================
+*/
+
+.OxCalendar {
+    position: absolute;
+    overflow: hidden;
+}
+
+.OxCalendar > .OxCalendarContainer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+}
+.OxCalendar > .OxCalendarContent {
+    position: absolute;
+}
+
+.OxCalendar .OxBackground {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+}
+.OxCalendar .OxBackground > div {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+}
+
+.OxCalendar .OxLine {
+    position: absolute;
+}
+
+.OxCalendar .OxEvent {
+    position: absolute;
+    height: 15px;
+    padding-top: 1px;
+    text-overflow: ellipsis;
+    cursor: pointer;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.OxCalendar .OxEvent .OxEventText {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.OxCalendar .OxLine > .OxEvent {
+    //box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.5);
+    border-radius: 4px;
+}
+.OxCalendar .OxLine > .OxEvent.OxCurrent {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.OxCalendar .OxTimeline {
+    position: absolute;
+    height: 16px;
+    //overflow: hidden;
+}
+
+.OxCalendar .OxTimeline .OxEvent {
+    position: absolute;
+    border-radius: 0;
+    cursor: ew-resize;
+}
+.OxCalendar .OxOverlay {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 16px;
+}
+.OxCalendar .OxOverlay div {
+    position: absolute;
+    height: 16px;
+    cursor: ew-resize;
+}
+.OxCalendar .OxOverlay div:nth-child(even) {
+    border-radius: 4px;
+}
+
+.OxCalendar .OxCalendarControl,
+.OxCalendar .OxEventControl {
+    position: absolute;
+}
+.OxCalendar .OxCalendarControl.OxCalendarButtonCenter {
+    left: 24px;
+}
+.OxCalendar .OxCalendarControl.OxCalendarButtonDown {
+    left: 24px;
+}
+.OxCalendar .OxCalendarControl.OxCalendarButtonLeft {
+    left: 4px;
+}
+.OxCalendar .OxCalendarControl.OxCalendarButtonRight {
+    left: 44px;
+}
+.OxCalendar .OxCalendarControl.OxCalendarButtonUp {
+    left: 24px;
+}
+
+.OxCalendar .OxEventControl.OxEventName {
+    right: 24px;
+    width: 128px;
+    text-overflow: ellipsis;
+}
+.OxCalendar .OxEventControl.OxEventDeselectButton {
+    right: 4px;
+}
+
+.OxCalendar .OxRange .OxArrow {
+    border-radius: 0;
+}
+
+
+/*
+================================================================================
+Dialog
+================================================================================
+*/
+
+.OxDialog {
+    position: absolute;
+    border-radius: 8px;
+    z-index: 11;
+}
+
+.OxDialog > .OxTitlebar {
+    position: absolute;
+    height: 24px;
+    text-align: center;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.OxDialog > .OxTitlebar > .OxButton {
+    position: absolute;
+}
+
+.OxDialog > .OxTitlebar > .OxTitle {
+    margin-top: 4px;
+    font-size: 11px;
+    font-weight: bold;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.OxDialog > .OxContent {
+    position: absolute;
+    left: 0;
+    top: 24px;
+    right: 0;
+    overflow: auto;
+}
+
+.OxDialog > .OxButtonsbar {
+    position: absolute;
+    bottom: 0;
+    height: 24px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    cursor: move;
+}
+.OxDialog > .OxButtonsbar > .OxButtonsLeft {
+    margin-left: 4px;
+    float: left;
+}
+.OxDialog > .OxButtonsbar > .OxButtonsRight {
+    margin-right: 4px;
+    float: right;
+}
+.OxDialog > .OxButtonsbar .OxButton {
+    margin: 4px 2px 4px 2px;
+}
+
+.OxDialog > .OxResize {
+    position: absolute;
+    z-index: 12;
+}
+.OxDialog > .OxResizeTopLeft {
+    left: -2px;
+    top: -2px;
+    width: 10px;
+    height: 10px;
+    cursor: nwse-resize;
+}
+.OxDialog > .OxResizeTop {
+    left: 8px;
+    top: -2px;
+    right: 8px;
+    height: 5px;
+    cursor: ns-resize;
+}
+.OxDialog > .OxResizeTopRight {
+    right: -2px;
+    top: -2px;
+    width: 10px;
+    height: 10px;
+    cursor: nesw-resize;
+}
+.OxDialog > .OxResizeLeft {
+    left: -2px;
+    top: 8px;
+    width: 5px;
+    bottom: 8px;
+    cursor: ew-resize;
+}
+.OxDialog > .OxResizeRight {
+    right: -2px;
+    top: 8px;
+    width: 5px;
+    bottom: 8px;
+    cursor: ew-resize;
+}
+.OxDialog > .OxResizeBottomLeft {
+    left: -2px;
+    bottom: -2px;
+    width: 10px;
+    height: 10px;
+    cursor: nesw-resize;
+}
+.OxDialog > .OxResizeBottom {
+    left: 8px;
+    bottom: -2px;
+    right: 8px;
+    height: 5px;
+    cursor: ns-resize;
+}
+.OxDialog > .OxResizeBottomRight {
+    right: -2px;
+    bottom: -2px;
+    width: 10px;
+    height: 10px;
+    cursor: nwse-resize;
+}
+
+/*
+.OxDialogBox {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+}
+*/
+
+/*
+================================================================================
+Document
+================================================================================
+*/
+
+.OxDocument {
+    padding: 8px;
+}
+.OxDocument div {
+    border-width: 0;
+    border-style: solid;
+    //font-family: Georgia, Palatino, DejaVu Serif, Book Antiqua, Palatino Linotype, Times New Roman, serif;
+    font-size: 12px;
+    line-height: 18px;
+}
+.OxDocument h1 {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+}
+.OxDocument table {
+    border-spacing: 0;
+    //border: 1px solid red;
+}
+.OxDocument td {
+    padding: 0 4px 0 4px;
+    //border: 1px solid rgb(128, 128, 128);
+    vertical-align: top;
+}
+.OxDocument td:first-child {
+    padding-left: 0;
+}
+.OxDocument td:last-child {
+    padding-right: 0;
+}
+
+.OxDocument code {
+    font-size: 12px;
+}
+.OxDocument .OxSyntaxHighlighter div {
+    font-size: 11px;
+    line-height: 16px;
+}
+
+/*
+================================================================================
+Documentation
+================================================================================
+*/
+
+.OxDocPage code {
+    //border: 1px solid rgb(232, 232, 232);
+    //background: rgb(248, 248, 248);
+    white-space: nowrap;
+}
+.OxDocPage .OxSection {
+    font-family: Lucida Grande, Segoe UI, DejaVu Sans, Lucida Sans Unicode, Helvetica, Arial, sans-serif;    
+    font-weight: bold;
+    font-size: 12px;
+}
+
+/*
+================================================================================
+Drag & Drop
+================================================================================
+*/
+
+.OxDrag {
+    cursor: move;
+    opacity: 0.5;
+}
+
+/*
+================================================================================
+Forms
+================================================================================
+*/
+
+input {
+    border: 1px;
+}
+input,
+textarea {
+    padding: 0;
+    //border: 1px;
+    margin: 0;
+}
+input[type=button],
+input[type=reset],
+input[type=submit] {
+    -moz-box-sizing: content-box;
+    -ms-box-sizing: content-box;
+    -o-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+}
+input[type=image] {
+    cursor: default;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+input:focus,
+textarea:focus {
+    outline: none;
+}
+/*
+input.OxXlarge {
+    height: 26px;
+    font-size: 19px;
+    padding: 0 12px 0 12px;
+    -moz-border-radius: 14px;
+    -ms-border-radius: 14px;
+    -webkit-border-radius: 14px;
+    border-radius: 14px;
+}
+input.OxLarge {
+    height: 22px;
+    font-size: 16px;
+    padding: 0 10px 0 10px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -webkit-border-radius: 12px;
+    border-radius: 12px;
+}
+*/
+input.OxLarge {
+    height: 18px;
+    padding: 0 8px 0 8px;
+    font-size: 13px;
+    line-height: 18px;
+    border-radius: 10px;
+}
+input.OxMedium {
+    height: 14px;
+    padding: 0 6px 0 6px;
+    font-size: 11px;
+    line-height: 14px;
+    border-radius: 8px;
+}
+input.OxMedium.OxRounded {
+    padding: 0 6px 0 6px;
+    border-radius: 8px;
+}
+input.OxMedium.OxSquared {
+    border-radius: 4px;
+}
+input.OxMedium.OxSquare {
+    padding: 0 2px 0 2px;
+    border-radius: 0;
+}
+input.OxSmall {
+    height: 10px;
+    padding: 0 4px 0 4px;
+    font-size: 8px;
+    line-height: 10px;
+    border-radius: 6px;
+}
+
+input[type=image] {
+    height: 10px;
+    width: 10px;
+    padding: 2px;
+}
+input[type=image].OxOverlay {
+    padding: 1px;
+}
+
+input::-moz-focus-inner {
+    border: none;
+}
+textarea {
+    padding: 2px 6px;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 8px;
+    resize: none;
+}
+textarea.OxSquared {
+    border-radius: 4px;
+}
+textarea.OxSquare {
+    border-radius: 0;
+}
+
+/*
+--------------------------------------------------------------------------------
+OxArrayEditable
+--------------------------------------------------------------------------------
+*/
+
+.OxArrayEditable {
+    line-height: 14px;
+}
+.OxArrayEditable.OxArrayEditableInput {
+    padding: 4px;
+}
+.OxArrayEditable.OxArrayEditableTextarea .OxEditableElement {
+    padding: 4px;
+    border-top-width: 1px;
+    border-top-style: solid;
+}
+.OxArrayEditable.OxArrayEditableTextarea textarea {
+    padding: 4px;
+}
+.OxArrayEditable.OxArrayEditableTextarea .OxEditableElement:first-child {
+    border-top: 0px
+}
+
+/*
+--------------------------------------------------------------------------------
+OxButton
+--------------------------------------------------------------------------------
+*/
+.OxButton {
+    border-width: 1px;
+    border-style: solid;
+    text-align: center;
+}
+.OxButton.OxOverlay {
+    border-width: 2px;
+}
+.OxButton.OxSymbol,
+.OxButton.OxSymbol:active,
+.OxButton.OxSymbol:focus {
+    padding: 2px;
+    border: 1px solid rgba(0, 0, 0, 0);
+    background: rgba(0, 0, 0, 0);
+    -moz-box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+    -ms-box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+    -o-box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+    -webkit-box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+}
+/*
+--------------------------------------------------------------------------------
+OxButtonGroup
+--------------------------------------------------------------------------------
+*/
+.OxButtonGroup {
+    display: table-cell;
+}
+.OxButtonGroup > .OxButton {
+    border-right-width: 0;
+    border-radius: 0;
+}
+.OxButtonGroup > .OxButton:last-child {
+    border-right-width: 1px;
+}
+.OxButtonGroup > .OxButton.OxOverlay:last-child {
+    border-right-width: 2px;
+}
+.OxButtonGroup > .OxButton.OxLarge:first-child {
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+.OxButtonGroup > .OxButton.OxLarge:last-child {
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+.OxButtonGroup > .OxButton.OxMedium:first-child {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+.OxButtonGroup > .OxButton.OxMedium:last-child {
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+.OxButtonGroup > .OxButton.OxSmall:first-child {
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+}
+.OxButtonGroup > .OxButton.OxSmall:last-child {
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+.OxButtonGroup > .OxButton.OxTab {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.OxButtonGroup > .OxButton.OxTab:first-child {
+    border-bottom-left-radius: 0;
+}
+.OxButtonGroup > .OxButton.OxTab:last-child {
+    border-bottom-right-radius: 0;
+}
+.OxButtonGroup.OxSquared > .OxButton.OxMedium:first-child {
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+.OxButtonGroup.OxSquared > .OxButton.OxMedium:last-child {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+/*
+--------------------------------------------------------------------------------
+OxCheckbox
+--------------------------------------------------------------------------------
+*/
+div.OxCheckbox {
+    height: 16px;
+    border-radius: 8px;
+}
+input.OxCheckbox {
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 8px;
+}
+.OxCheckboxGroup {
+    display: table-cell;
+}
+.OxCheckboxGroup.OxGroup > div.OxCheckbox {
+    float: left;
+}
+.OxCheckboxGroup.OxGroup > div.OxCheckbox {
+    //padding-right: 16px;
+    margin-right: -16px;
+}
+.OxCheckboxGroup.OxGroup > div.OxCheckbox:last-child {
+    //padding-right: 0;
+    margin-right: 0;
+}
+.OxCheckboxGroup.OxList > div.OxCheckbox {
+    margin-bottom: 8px;
+}
+.OxCheckboxGroup.OxList > div.OxCheckbox:last-child {
+    margin-bottom: 0;
+}
+/*
+--------------------------------------------------------------------------------
+OxFileButton
+--------------------------------------------------------------------------------
+*/
+.OxMenu .OxFileButton > .OxButton {
+    height: 16px;
+    margin: -1px 0 0 -6px;
+    border-width: 0;
+    background: transparent;
+    text-align: left;
+}
+/*
+--------------------------------------------------------------------------------
+OxFileInput
+--------------------------------------------------------------------------------
+*/
+.OxFileInput > .OxBar {
+    float: left;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 8px;
+}
+.OxFileInput > .OxFiles {
+    position: absolute;
+    top: 15px;
+    border-width: 1px;
+    border-style: solid;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+.OxFileInput > .OxFiles .OxContent,
+.OxFileInput > .OxFiles .OxItem:last-child {
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+.OxFileInput > .OxLabel {
+    float: left;
+}
+/*
+--------------------------------------------------------------------------------
+OxForm
+--------------------------------------------------------------------------------
+*/
+.OxFormDescription {
+    margin-bottom: 8px;
+}
+.OxFormItem {
+    margin-top: 8px;
+}
+.OxFormItem:first-child {
+    margin-top: 0;
+}
+.OxFormMessage {
+    //width: 100%;
+    height: 10px;
+    margin: 2px 8px 0 0;
+    text-align: right;
+    display: none;
+}
+/*
+--------------------------------------------------------------------------------
+OxInput
+--------------------------------------------------------------------------------
+*/
+
+div.OxInput {
+    height: 16px;
+}
+div.OxInput.OxMedium {
+    height: 16px;
+}
+div.OxInput.OxRounded {
+    border-radius: 8px;
+}
+div.OxInput.OxSquared {
+    border-radius: 4px;
+}
+div.OxInput.OxSquare {
+    border-radius: 0;
+}
+div.OxInput > .OxInputLabel {
+    float: left;
+    padding: 0 6px 0 6px;
+}
+input.OxInput {
+    border-width: 1px;
+    border-style: solid;
+}
+div.OxInput > input.OxInput {
+    float: left;
+}
+
+/*
+--------------------------------------------------------------------------------
+OxEditableContent
+--------------------------------------------------------------------------------
+*/
+
+.OxEditableContent {
+    outline: none;
+    word-wrap: break-word;
+}
+.OxEditableContent.OxEditing {
+    white-space: pre-wrap;
+}
+
+/*
+--------------------------------------------------------------------------------
+OxEditableElement
+--------------------------------------------------------------------------------
+*/
+
+.OxEditableElement > .OxValue {
+    //cursor: pointer;
+    padding: 0 0 0 1px;
+    word-wrap: break-word;
+}
+.OxEditableElement div.OxInput {
+    padding: 0 1px 0 0;
+}
+.OxEditableElement input.OxInput {
+    padding: 0 1px 0 0;
+    //padding: 0;
+    border: 0;
+}
+.OxEditableElement textarea.OxInput {
+    padding: 0 0 0 1px;
+    border: 0;
+}
+.OxValue img, .OxEditableContent img {
+    max-width: 100%;
+    height: auto;
+}
+.OxValue iframe, .OxEditableContent iframe {
+    border: none;
+    overflow: hidden;
+    max-width: 100%;
+}
+.OxValue p, .OxEditableContent p {
+    clear: both;
+}
+.OxEditableContent *[lang=hi], .OxValue *[lang=hi] {
+    font-size: 14px;
+}
+
+/*
+--------------------------------------------------------------------------------
+OxInputGroup
+--------------------------------------------------------------------------------
+*/
+.OxInputGroup {
+    height: 16px;
+}
+.OxInputGroup > div {
+    float: left;
+}
+/*
+--------------------------------------------------------------------------------
+OxLabel
+--------------------------------------------------------------------------------
+*/
+.OxLabel {
+    height: 14px;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 8px;
+    padding: 0 6px 0 6px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.OxLabel.OxSquared {
+    border-radius: 4px;
+}
+.OxLabel.OxSquare {
+    padding: 0 3px 0 3px;
+    border-radius: 0;
+}
+
+/*
+--------------------------------------------------------------------------------
+OxObjectInput
+--------------------------------------------------------------------------------
+*/
+.OxObjectInput > div {
+    margin-top: 8px;
+}
+.OxObjectInput > div:first-child {
+    margin-top: 0;
+}
+.OxObjectArrayInput > div {
+    padding: 8px 0 8px 0;
+    border-top-width: 1px;
+    border-top-style: dashed;
+    border-top-color: rgb(128, 128, 128);
+}
+.OxObjectArrayInput > div.OxFirst {
+    padding-top: 0;
+    border-top-width: 0;
+}
+.OxObjectArrayInput > div.OxLast {
+    padding-bottom: 0;
+}
+
+/*
+--------------------------------------------------------------------------------
+OxPicker
+--------------------------------------------------------------------------------
+*/
+.OxPicker {
+    position: absolute;
+    z-index: 13;
+    border-radius: 0 8px 8px 8px;
+    -moz-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.75);
+    -ms-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.75);
+    -o-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.75);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.75);
+}
+.OxPicker > div:first-child {
+    background: rgb(240, 240, 240);
+    border-radius: 0 8px 0 0;
+}
+.OxPicker > .OxBar {
+    border-radius: 0 0 8px 8px;
+}
+.OxPicker > .OxBar > .OxLabel {
+    float: left;
+    margin: 4px 0 4px 4px;
+}
+.OxPicker > .OxBar > .OxButton {
+    float: right;
+    margin: 4px 4px 4px 0;
+}
+/*
+--------------------------------------------------------------------------------
+OxRange
+--------------------------------------------------------------------------------
+*/
+.OxRange {
+    height: 16px;
+}
+.OxRange > .OxArrow {
+    float: right;
+}
+.OxRange > .OxArrow:first-child {
+    float: left;
+}
+.OxRange > .OxTrack {
+    float: right;
+    border-width: 1px;
+    border-style: solid;
+    height: 14px;
+    border-radius: 8px;
+}
+.OxRange > .OxTrack > div {
+    float: left;
+    height: 16px;
+    padding: 1px;
+    margin: -1px;
+}
+.OxRange > .OxTrack > div > img {
+    float: left;
+    height: 14px;
+    cursor: default;
+    -webkit-user-select: none;
+    -o-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.OxRange > .OxTrack > div > img.OxFirstChild {
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+}
+.OxRange > .OxTrack > div > img.OxLastChild {
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+.OxRange > .OxTrack > div > img.OxFirstChild.OxLastChild {
+    margin-left: 7px;
+    border-radius: 0;
+}
+.OxRange > .OxTrack > .OxThumb {
+    float: left;
+    margin: -1px;
+    text-align: center;
+}
+.OxRange > .OxTrack > .OxThumb.OxTransparent {
+    border: 1px solid white;
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 0 1px white inset;
+}
+/*
+--------------------------------------------------------------------------------
+OxSelect
+--------------------------------------------------------------------------------
+*/
+.OxSelect {
+    height: 14px;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 8px;
+}
+.OxSelect.OxRounded.OxSelected {
+    border-radius: 8px 8px 0 0;
+}
+.OxSelect.OxSquared {
+    border-radius: 4px;
+}
+.OxSelect.OxSquared.OxSelected {
+    border-radius: 4px 4px 0 0;
+}
+.OxSelect.OxSquare {
+    border-radius: 0;
+}
+.OxSelect > .OxTitle {
+    float: left;
+    height: 14px;
+    padding-left: 6px;
+    border-width: 1px;
+    text-align: left;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.OxSelect > .OxButton {
+    float: right;
+    margin: -1px;
+}
+.OxLabelSelect > .OxLabel {
+    float: left;
+    margin: -1px;
+}
+.OxLabelSelect > .OxTitle {
+    border-left-width: 1px;
+    border-left-style: solid;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+.OxLabelSelect.OxSquared > .OxTitle {
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+.OxLabelSelect.OxRounded.OxSelected {
+    border-bottom-left-radius: 8px;
+}
+.OxLabelSelect.Squared.OxSelected {
+    border-bottom-left-radius: 4px;
+}
+.OxLabelSelect.OxSelected > .OxTitle {
+    border-bottom-left-radius: 0;
+}
+
+/*
+
+*/
+.OxButton.OxOverlapLeft,
+.OxxxCheckbox.OxOverlapLeft,
+.OxLabel.OxOverlapLeft,
+.OxxxSelect.OxOverlapLeft {
+    padding-left: 20px;
+    padding-right: 8px;
+    margin-left: -16px;
+}
+.OxButton.OxOverlapRight,
+.OxxxCheckbox.OxOverlapRight,
+.OxLabel.OxOverlapRight,
+.OxxxSelect.OxOverlapRight {
+    padding-left: 8px;
+    padding-right: 20px;
+    margin-right: -16px;
+}
+.OxButton[type=image].OxOverlapLeft {
+    padding-left: 17px;
+    padding-right: 3px;
+}
+.OxButton[type=image].OxOverlapRight {
+    padding-left: 3px;
+    padding-right: 17px;
+}
+.OxButtonGroup.OxOverlapLeft {
+    padding-left: 16px;
+    margin-left: -16px;
+}
+.OxButtonGroup.OxOverlapRight {
+    padding-right: 16px;
+    margin-right: -16px;
+}
+.OxButtonGroup.OxOverlapLeft > .OxButton[type=image].OxOverlapLeft {
+    padding-left: 18px;
+    padding-right: 2px;
+}
+.OxButtonGroup.OxOverlapRight > .OxButton[type=image].OxOverlapRight {
+    padding-left: 2px;
+    padding-right: 18px;
+}
+.OxCheckbox.OxOverlapLeft > .OxInput {
+    padding-left: 20px;
+    margin-left: -16px;
+}
+.OxCheckbox.OxOverlapRight > .OxLabel {
+    //padding-left: 8px;
+    padding-right: 20px;
+    margin-right: -16px;
+}
+.OxSelect.OxOverlapLeft {
+    //padding-left: 8px;
+    padding-left: 16px;
+    margin-left: -18px;
+}
+.OxSelect.OxOverlapRight {
+    //padding-left: 8px;
+    padding-right: 16px;
+    margin-right: -18px;
+}
+
+/*
+--------------------------------------------------------------------------------
+OxSpreadsheet
+--------------------------------------------------------------------------------
+*/
+
+.OxSpreadsheet {
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(192, 192, 192);
+}
+.OxSpreadsheet > * {
+    float: left;
+}
+
+/*
+================================================================================
+Grids
+================================================================================
+*/
+
+.OxGrid {
+    background-size: 32px 32px;
+    background-position: 0 0, 16px 16px;
+}
+
+/*
+================================================================================
+Images
+================================================================================
+*/
+
+.OxReflection > img {
+    -moz-transform: scaleY(-1);
+    -ms-transform: scaleY(-1);
+    -o-transform: scaleY(-1);
+    -webkit-transform: scaleY(-1);
+    transform: scaleY(-1);
+}
+
+/*
+================================================================================
+ImageViewer
+================================================================================
+*/
+
+.OxImageViewer {
+    overflow: hidden;
+}
+
+.OxImageViewer .OxInterface {
+    position: absolute;
+}
+
+.OxImageViewer .OxScaleButton {
+    right: 52px;
+    top: 4px;
+}
+.OxImageViewer .OxZoomButton {
+    right: 4px;
+    top: 4px;
+}
+
+.OxImageViewer .OxImage {
+    position: absolute;
+    cursor: move;
+}
+
+
+.OxImageViewer .OxImageOverview {
+    border-width: 2px;
+    border-style: solid;
+    right: 4px;
+    bottom: 4px;
+    overflow: hidden;
+}
+.OxImageViewer .OxImageOverlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.OxImageViewer .OxImageOverlayArea {
+    position: absolute;
+}
+.OxImageViewer #OxImageOverlayCenter {
+    border-width: 2px;
+    border-style: solid;
+    cursor: move;
+}
+.OxImageViewer #OxImageOverlayBottom {
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+.OxImageViewer #OxImageOverlayLeft {
+    left: 0;
+}
+.OxImageViewer #OxImageOverlayRight {
+    right: 0;
+}
+.OxImageViewer #OxImageOverlayTop {
+    left: 0;
+    top: 0;
+    right: 0;
+}
+
+/*
+================================================================================
+Layers
+================================================================================
+*/
+
+.OxLayer {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    overflow: hidden;
+    z-index: 10;
+}
+.OxLayer.OxDialogLayer {
+    z-index: 10;
+}
+.OxLayer.OxMenuLayer {
+    z-index: 11;
+}
+
+/*
+================================================================================
+Lists
+================================================================================
+*/
+
+.OxCustomList > .OxContainer {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+}
+.OxCustomList .OxPage {
+    position: absolute;
+}
+
+
+.OxIconList.OxBoth {
+    overflow-x: hidden;
+}
+
+.OxIconList .OxPage {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+.OxInfoList .OxPage {
+    position: absolute;
+}
+
+.OxIconList .OxItem {
+    float: left;
+    margin: 2px;
+    //opacity: 0.9;
+}
+.OxIconList .OxItem.OxHover,
+.OxIconList .OxItem.OxSelected {
+    //opacity: 1;
+}
+
+.OxIconList .OxItem > div,
+.OxInfoList .OxInfoIcon > div {
+    position: relative;
+}
+
+.OxIconList .OxItem > .OxIcon {
+    overflow: hidden;
+}
+
+.OxIconList .OxItem > .OxIcon > img,
+.OxIconList .OxItem > .OxIcon > .OxVideoPlayer,
+.OxInfoList .OxInfoIcon > .OxIcon > img,
+.OxInfoList .OxInfoIcon > .OxIcon > .OxVideoPlayer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    border: 2px solid rgba(0, 0, 0, 0);
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.OxIconList .OxItem > .OxReflection,
+.OxIconList .OxInfoIcon > .OxReflection {
+    overflow: hidden;
+}
+
+.OxIconList .OxItem > .OxReflection > div,
+.OxInfoList .OxInfoIcon > .OxReflection > div {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    margin: auto;
+}
+
+.OxIconList .OxItem > .OxReflection > img,
+.OxInfoList .OxInfoIcon > .OxReflection > img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    margin: auto;
+}
+
+.OxIconList .OxItem > .OxText,
+.OxInfoList .OxInfoIcon > .OxText {
+    text-align: center;
+}
+.OxIconList .OxItem > .OxText > div,
+.OxInfoList .OxInfoIcon > .OxText > div {
+    display: inline-block;
+    //font-size: 9px;
+    font-weight: bold;
+    text-align: center;
+    padding: 1px 2px;
+    border: 2px solid rgba(0, 0, 0, 0);
+    max-width: 124px;
+    word-wrap: break-word;
+    cursor: pointer;
+    border-radius: 4px;
+    //-moz-user-select: text;
+    //-ms-user-select: text;
+    //-o-user-select: text;
+    //-webkit-user-select: text;
+}
+.OxIconList .OxItem > .OxText > div > div,
+.OxIconList .OxInfoIcon > .OxText > div > div > div {
+    //font-size: 9px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.OxInfoList .OxInfoIcon {
+    text-align: center;
+    //overflow: hidden;
+}
+.OxInfoList .OxInfoIcon .OxReflection {
+    overflow: hidden;
+}
+
+
+.OxTableList {
+    top: 0;
+    bottom: 0;
+}
+
+.OxTableList .OxBar {
+    //z-index: 10;
+    //-moz-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.75);
+    //-ms-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.75);
+    //-webkit-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.75);
+}
+.OxTableList .OxHead {
+    position: absolute;
+    left: 0;
+    height: 16px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.OxTableList .OxHead .OxHeadCell {
+    float: left;
+    height: 16px;
+    overflow: hidden;
+}
+.OxTableList .OxHead .OxHeadCell:first-child {
+    padding-left: 2px;
+}
+.OxTableList .OxHead .OxTitle {
+    float: left;
+    height: 14px;
+    padding: 2px 2px 0 2px;
+    font-weight: bold;
+    font-size: 10px;
+    text-overflow: ellipsis;
+    //cursor: pointer;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.OxTableList .OxHead .OxTitle img {
+    display: block;
+    width: 10px;
+    height: 10px;
+    margin: 1px 0 0 -1px;
+}
+.OxTableList .OxHead .OxHeadCell .OxColumnStatus {
+    position: absolute;
+    right: 49px;
+    top: 2px;
+    font-size: 9px;
+    font-weight: normal;
+}
+.OxTableList .OxHead .OxHeadCell.OxSelected .OxTitle .OxColumnStatus {
+    right: 64px;
+}
+.OxTableList .OxHead .OxOrder {
+    float: left;
+    width: 10px;
+    height: 10px;
+    margin: 3px;
+    display: none;
+}
+.OxTableList .OxHead .OxHeadCell.OxSelected .OxOrder {
+    //cursor: pointer;
+    display: block;
+}
+.OxTableList .OxHead .OxResize {
+    float: left;
+    width: 5px;
+    height: 16px;
+}
+.OxTableList .OxHead .OxResize.OxResizable {
+    cursor: ew-resize;
+}
+.OxTableList .OxHead .OxResize div {
+    float: left;
+    width: 2px;
+    height: 16px;
+}
+.OxTableList .OxHead .OxResize div.OxCenter {
+    width: 1px;
+}
+.OxTableList .OxBar .OxSelect {
+    position: absolute;
+    height: 16px;
+    border-width: 0 1px 0 0;
+    border-style: solid;
+    font-size: 11px;
+    text-align: center;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 0;
+}
+.OxTableList .OxBar .OxClear {
+    position: absolute;
+    right: 0;
+    height: 8px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    border-width: 0 1px 0 0;
+    border-style: solid;
+    cursor: pointer;
+}
+
+.OxTableList .OxBody {
+    float: left;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+.OxTableList .OxContent {
+    //width: 100%;
+}
+.OxTableList .OxItem {
+    height: 16px;
+}
+.OxTableList .OxItem .OxCell {
+    float: left;
+    height: 14px;
+    padding: 1px 4px 1px 4px;
+    border-right-width: 1px;
+    border-right-style: solid;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.OxTableList .OxItem .OxCell.OxEdit {
+    height: 16px;
+    padding: 0;
+}
+.OxTableList .OxItem .OxCell > img {
+    display: block;
+    width: 16px;
+    height: 16px;
+    margin: -1px 0 0 -4px;
+}
+.OxTableList .OxItem .OxSpace {
+    float: left;
+    width: 4px;
+    height: 16px;
+}
+.OxTableList .OxItem .OxLine {
+    float: left;
+    width: 1px;
+    height: 16px;
+}
+.OxTableList .OxItem.OxSelected .OxCell.OxClickable {
+    cursor: pointer;
+}
+.OxTableList .OxItem.OxSelected .OxCell.OxEditable {
+    cursor: text;
+}
+.OxTableList .OxItem.OxSelected.OxDrag .OxCell {
+    cursor: ns-resize;
+}
+.OxTableList .OxPage {
+    position: absolute;
+}
+
+.OxTreeList .OxItem .OxCell {
+    height: 13px;
+    padding-top: 2px;
+    border-right-width: 0;
+    font-family: Menlo, Monaco, DejaVu Sans Mono, Bitstream Vera Sans Mono, Consolas, Lucida Console, monospace;
+}
+.OxTreeList .OxItem .OxCell img {
+    width: 10px;
+    height: 10px;
+    padding: 2px;
+}
+
+/*
+================================================================================
+Maps
+================================================================================
+*/
+
+.OxMap {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+}
+.OxMap > * {
+    position: absolute;
+}
+
+.OxMap .OxRange .OxArrow {
+    border-radius: 0;
+}
+
+.OxMap .OxMapControl,
+.OxMap .OxPlaceControl {
+    position: absolute;
+    border-width: 2px;
+    z-index: 1;
+}
+.OxMap .OxMapControl.OxButton,
+.OxMap .OxPlaceControl.OxButton {
+    width: 10px;
+    height: 10px;
+    padding: 1px;
+}
+.OxMap .OxMapControl.OxLabel,
+.OxMap .OxPlaceControl.OxLabel {
+    height: 12px;
+    font-size: 10px;
+}
+.OxMap .OxMapControl.OxMapButtonCenter {
+    left: 24px;
+    top: 24px;
+}
+.OxMap .OxMapControl.OxMapButtonEast {
+    left: 44px;
+    top: 24px;
+}
+.OxMap .OxMapControl.OxMapButtonNorth {
+    left: 24px;
+    top: 4px;
+}
+.OxMap .OxMapControl.OxMapButtonSouth {
+    left: 24px;
+    top: 44px;
+}
+.OxMap .OxMapControl.OxMapButtonWest {
+    left: 4px;
+    top: 24px;
+}
+.OxMap .OxLabel.OxMapControl.OxMapScale {
+    right: 4px;
+    bottom: 19px;
+}
+
+.OxMap .OxPlaceControl.OxPlaceFlag {
+    right: 180px;
+    top: 4px;
+    width: 12px;
+    height: 12px;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 8px;
+}
+.OxMap .OxPlaceControl.OxPlaceFlag > img {
+    width: 12px;
+    height: 12px;
+    border-radius: 6px;
+}
+.OxMap .OxPlaceControl.OxPlaceName {
+    right: 24px;
+    top: 4px;
+    width: 136px;
+    text-overflow: ellipsis;
+}
+.OxMap .OxPlaceControl.OxPlaceDeselectButton {
+    right: 4px;
+    top: 4px;
+}
+
+.OxFlag {
+    width: 16px;
+    height: 16px;
+    border-radius: 8px;
+}
+.OxTypeIcon {
+    border-width: 2px;
+    border-style: solid;
+}
+
+/*
+================================================================================
+Menus
+================================================================================
+*/
+
+.OxMainMenu {
+    z-index: 9;
+    -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+    -ms-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+    -o-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+.OxMainMenu.OxLarge {
+    height: 24px;
+    padding-left: 8px;
+}
+.OxMainMenu.OxMedium {
+    height: 20px;
+    padding-left: 6px;
+}
+.OxMainMenu.OxSmall {
+    height: 16px;
+    padding-left: 4px;
+}
+.OxMainMenu > .OxTitle {
+    float: left;
+}
+.OxMainMenu.OxLarge > .OxTitle {
+    height: 21px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 3px;
+    font-size: 14px;
+}
+.OxMainMenu.OxMedium > .OxTitle {
+    height: 17px;
+    padding-left: 6px;
+    padding-right: 6px;
+    padding-top: 3px;
+    font-size: 11px;
+}
+.OxMainMenu.OxSmall > .OxTitle {
+    height: 14px;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-top: 2px;
+    font-size: 9px;
+}
+.OxMainMenu > .OxTitle:first-child {
+    font-weight: bold;
+}
+.OxMainMenu.OxLarge > .OxExtras {
+    float: right;
+    padding: 4px 12px 0 0;
+}
+.OxMainMenu.OxMedium > .OxExtras {
+    float: right;
+    padding: 2px 10px 0 0;
+}
+.OxMainMenu.OxSmall > .OxExtras {
+    float: right;
+    padding: 2px 8px 0 0;
+}
+.OxMainMenu > .OxExtras > * {
+    float: left;
+}
+
+.OxMenu {
+    position: absolute;
+    display: none;
+    z-index: 12;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+.OxMenu.OxLeft {
+    border-top-left-radius: 4px;
+}
+.OxMenu.OxRight {
+    border-top-right-radius: 4px;
+}
+.OxMenu .OxTop {
+    height: 4px;
+}
+.OxMenu.OxLeft .OxTop {
+    border-top-left-radius: 4px;
+}
+.OxMenu.OxRight .OxTop {
+    border-top-right-radius: 4px;
+}
+.OxMenu .OxBottom {
+    height: 4px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+.OxMenu .OxContainer {
+    background: transparent;
+    overflow: hidden;
+}
+.OxMenu .OxContent {
+    position: relative;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+.OxMenu.OxLarge .OxItem {
+    height: 20px;
+}
+.OxMenu.OxMedium .OxItem {
+    height: 16px;
+}
+.OxMenu.OxSmall .OxItem {
+    height: 12px;
+}
+.OxMenu.OxLarge .OxItem .OxCell {
+    height: 20px;
+    font-size: 14px;
+}
+.OxMenu.OxMedium .OxItem .OxCell {
+    height: 16px;
+    font-size: 11px;
+}
+.OxMenu.OxSmall .OxItem .OxCell {
+    height: 12px;
+    font-size: 9px;
+}
+.OxMenu .OxItem .OxCell.OxStatus {
+    padding-left: 4px;
+    text-align: right;
+}
+.OxMenu .OxItem .OxCell.OxIcon {
+    padding-left: 4px;
+}
+.OxMenu .OxItem .OxCell.OxIcon img {
+    position: relative;
+    top: 2px;
+}
+.OxMenu.OxLarge .OxItem .OxCell.OxIcon img {
+    width: 16px;
+    height: 16px;
+    border-radius: 2px;
+}
+.OxMenu.OxMedium .OxItem .OxCell.OxIcon img {
+    width: 12px;
+    height: 12px;
+    border-radius: 2px;
+}
+.OxMenu.OxSmall .OxItem .OxCell.OxIcon img {
+    width: 8px;
+    height: 8px;
+    border-radius: 1px;
+}
+.OxMenu .OxItem .OxCell.OxTitle {
+    padding-left: 4px;
+    white-space: nowrap;
+}
+.OxMenu .OxItem .OxCell.OxModifiers {
+    padding-left: 4px;
+    text-align: right;
+}
+.OxMenu .OxItem .OxCell.OxKey {
+    padding-right: 8px;
+}
+.OxMenu .OxItem .OxCell.OxSubmenu {
+    height: 13px;
+    padding-top: 3px;
+    padding-right: 8px;
+    text-align: right;
+}
+.OxMenu.OxLarge .OxItem .OxCell.OxSubmenu {
+    font-size: 10px;
+}
+.OxMenu.OxMedium .OxItem .OxCell.OxSubmenu {
+    font-size: 8px;
+}
+.OxMenu.OxSmall .OxItem .OxCell.OxSubmenu {
+    font-size: 6px;
+}
+.OxMenu.OxLarge .OxItem .OxCell.OxStatus,
+.OxMenu.OxLarge .OxItem .OxCell.OxKey,
+.OxMenu.OxLarge .OxItem .OxCell.OxSubmenu {
+    width: 12px;
+}
+.OxMenu.OxMedium .OxItem .OxCell.OxStatus,
+.OxMenu.OxMedium .OxItem .OxCell.OxKey,
+.OxMenu.OxMedium .OxItem .OxCell.OxSubmenu {
+    width: 10px;
+}
+.OxMenu.OxSmall .OxItem .OxCell.OxStatus,
+.OxMenu.OxSmall .OxItem .OxCell.OxKey,
+.OxMenu.OxSmall .OxItem .OxCell.OxSubmenu {
+    width: 8px;
+}
+.OxMenu .OxSpace {
+    height: 4px;
+}
+.OxMenu .OxLine {
+    height: 1px;
+}
+.OxMenu .OxScrollbar {
+    text-align: center;
+    display: none;
+}
+.OxMenu.OxLarge .OxScrollbar {
+    height: 16px;
+    padding-top: 4px;
+    font-size: 10px;
+}
+.OxMenu.OxMedium .OxScrollbar {
+    height: 13px;
+    padding-top: 3px;
+    font-size: 8px;
+}
+.OxMenu.OxSmall .OxScrollbar {
+    height: 10px;
+    padding-top: 2px;
+    font-size: 6px;
+}
+
+/*
+================================================================================
+Panels
+================================================================================
+*/
+
+.OxCollapsePanel > .OxBar {
+    position: relative;
+    z-index: 1;
+}
+.OxCollapsePanel > .OxBar > .OxButton {
+    float: left;
+    margin: 0 0 0 0;
+}
+.OxCollapsePanel > .OxBar > .OxTitle {
+    position: absolute;
+    margin: 1px 2px 0 2px;
+    font-weight: bold;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.OxCollapsePanel > .OxBar > .OxExtras {
+    float: left;
+}
+.OxCollapsePanel > .OxBar > .OxExtras:last-child {
+    float: right;
+}
+.OxCollapsePanel > .OxBar > .OxExtras > * {
+    float: left;
+}
+.OxCollapsePanel > .OxBar > .OxExtras > .OxButton,
+.OxCollapsePanel > .OxBar > .OxExtras > .OxButton:active,
+.OxCollapsePanel > .OxBar > .OxExtras > .OxButton:focus {
+    padding: 3px;
+    border-width: 0;
+}
+.OxCollapsePanel > .OxBar > .OxExtras > input.OxMedium {
+    border-radius: 0;    
+}
+.OxCollapsePanel > .OxBar > .OxExtras > .OxSelect {
+    width: 14px;
+    height: 14px;
+    padding: 1px;
+    border-width: 0;
+    border-radius: 0;
+    background: rgba(0, 0, 0, 0);
+}
+.OxCollapsePanel > .OxBar > .OxExtras > .OxSelect.OxFocus {
+    -moz-box-shadow: 0 0 0;
+    -ms-box-shadow: 0 0 0;
+    -o-box-shadow: 0 0 0;
+    -webkit-box-shadow: 0 0 0;
+    box-shadow: 0 0 0;
+}
+
+
+.OxCollapsePanel > .OxContent {
+    position: relative;
+    left: 0;
+    right: 0;
+}
+
+.OxPanel {
+    overflow: auto;
+}
+
+.OxSlidePanel {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+}
+.OxSlidePanel > div,
+.OxSlidePanel > div > div {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+}
+
+.OxSplitPanel {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+}
+.OxSplitPanel > * {
+    position: absolute;
+}
+
+.OxSplitPanel_ {
+    display: -moz-box;
+    display: -ms-box;
+    display: -o-box;
+    display: -webkit-box;
+    display: box;
+    overflow: hidden;
+    -moz-box-flex: 0;
+    -ms-box-flex: 0;
+    -webkit-box-flex: 0;
+    box-flex: 0;
+}
+.OxSplitPanel_.OxHorizontal {
+    -moz-box-orient: horizontal;
+    -ms-box-orient: horizontal;
+    -o-box-orient: horizontal;
+    -webkit-box-orient: horizontal;
+    box-orient: horizontal;
+}
+.OxSplitPanel_.OxVertical {
+    -moz-box-orient: vertical;
+    -ms-box-orient: vertical;
+    -o-box-orient: vertical;
+    -webkit-box-orient: vertical;
+    box-orient: vertical;
+}
+.OxSplitPanel_ > * {
+    -moz-box-flex: 0;
+    -ms-box-flex: 0;
+    -webkit-box-flex: 0;    
+    box-flex: 0;
+}
+.OxSplitPanel_ > .OxSeparator {
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    position: relative;
+    z-index: 2;
+}
+.OxSplitPanel_ > .OxSeparator > * {
+    -webkit-box-flex: 0;    
+    box-flex: 0;    
+}
+.OxSplitPanel_ > .OxSeparator > .OxLine {
+    background-color: black;
+}
+.OxSplitPanel_.OxHorizontal > .OxSeparator {
+    width: 5px;
+    margin: 0 -2px 0 -2px;
+    cursor: ew-resize;
+}
+.OxSplitPanel_.OxHorizontal > .OxSeparator > .OxLine {
+    width: 1px;
+}
+.OxSplitPanel_.OxHorizontal > .OxSeparator > .OxSpace {
+    width: 2px;
+}
+.OxSplitPanel_.OxVertical > .OxSeparator {
+    height: 5px;
+    margin: -2px 0 -2px 0;
+    cursor: ns-resize;
+}
+.OxSplitPanel_.OxVertical > .OxSeparator > .OxLine {
+    height: 1px;
+}
+.OxSplitPanel_.OxVertical > .OxSeparator > .OxSpace {
+    height: 2px;
+}
+
+.OxTabPanel > .OxBar {
+    text-align: center;
+}
+.OxTabPanel > .OxBar > .OxButtonGroup {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+/*
+================================================================================
+Requests
+================================================================================
+*/
+
+.OxLoadingIcon {
+    opacity: 0;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.OxLoadingIcon.OxLarge {
+    width: 20px;
+    height: 20px;
+}
+.OxLoadingIcon.OxMedium {
+    width: 16px;
+    height: 16px;
+}
+.OxLoadingIcon.OxSmall {
+    width: 12px;
+    height: 12px;
+}
+
+/*
+================================================================================
+Scrollbars
+================================================================================
+*/
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+::-webkit-scrollbar-button {
+    width: 8px;
+    height: 8px;
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+}
+::-webkit-scrollbar-track {
+    border-radius: 8px;
+}
+
+body {
+ scrollbar-width: thin;
+ scrollbar-width: 8px;
+}
+
+/*
+================================================================================
+SourceViewer
+================================================================================
+*/
+
+.OxSourceViewer table {
+    border-collapse: collapse;
+}
+.OxSourceViewer td {
+    vertical-align: top;
+}
+.OxSourceViewer td.OxComment {
+    padding: 4px 8px 4px 8px;
+    border-right-width: 1px;
+    border-right-style: solid;
+    font-size: 14px;
+    line-height: 20px;
+}
+.OxSourceViewer td.OxComment > code {
+    padding: 1px 3px 1px 3px;
+    border-radius: 2px;
+    font-family: Menlo, Monaco, DejaVu Sans Mono, Bitstream Vera Sans Mono, Consolas, Lucida Console, monospace;
+    font-size: 11px;
+    line-height: 14px;
+}
+.OxSourceViewer td.OxComment > pre {
+    line-height: 16px;
+    margin: 4px 0 4px 0;
+    font-family: Menlo, Monaco, DejaVu Sans Mono, Bitstream Vera Sans Mono, Consolas, Lucida Console, monospace;
+    font-size: 11px;
+}
+.OxSourceViewer td.OxComment > pre > code {
+    padding: 0;
+}
+
+/*
+================================================================================
+SyntaxHightlighter
+================================================================================
+*/
+
+.OxSyntaxHighlighter > div {
+    display: table-cell;
+    padding: 4px;
+    font-family: Menlo, Monaco, DejaVu Sans Mono, Lucida Console, Consolas, Bitstream Vera Sans Mono, monospace;
+    line-height: 16px;
+}
+.OxSyntaxHighlighter > .OxLineNumbers {
+    text-align: right;
+    cursor: default;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+.OxSyntaxHighlighter > .OxSourceCode {
+    white-space: nowrap;
+}
+.OxSyntaxHighlighter > .OxSourceCode .OxLinebreak {
+    //-moz-user-select: none;
+    //-ms-user-select: none;
+    //-o-user-select: none;
+    //-webkit-user-select: none;
+    //user-select: none;
+}
+
+/*
+================================================================================
+Video
+================================================================================
+*/
+
+.OxAnnotation {
+    border-width: 0 0 1px 0;
+    border-style: solid;
+    //padding: 4px 4px 0 4px;
+}
+.OxAnnotation:last-child {
+    border-width: 0;
+}
+/*
+.OxAnnotation.OxEdit {
+    padding: 0;
+}
+.OxAnnotation textarea {
+    padding: 4px;
+    border: 0;
+}
+*/
+
+.OxPosterMarker {
+    position: absolute;
+    display: none;
+}
+.OxPosterMarkerCenter {
+    position: absolute;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: transparent;
+}
+.OxPosterMarkerLeft,
+.OxPosterMarkerRight {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.OxVideoAnnotationPanel {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.OxVideoAnnotationPanel .OxVideoPlayer {
+    position: absolute;
+    margin: 4px;
+}
+
+
+.OxLargeVideoTimeline {
+    position: absolute;
+    height: 72px;
+    margin: 0 4px 0 4px;
+    overflow: hidden;
+}
+.OxLargeVideoTimeline > div {
+    position: absolute;
+    height: 72px;
+}
+.OxLargeVideoTimeline > div > img {
+    position: absolute;
+    top: 4px;
+}
+.OxLargeVideoTimeline .OxChapter,
+.OxLargeVideoTimeline .OxCut {
+    position: absolute;
+    top: 62px;
+    width: 8px;
+    height: 8px;
+    margin-left: -4px;
+    z-index: 7;
+}
+.OxLargeVideoTimeline .OxMarkerPointIn {
+    position: absolute;
+    top: 63px;
+    width: 7px;
+    height: 7px;
+    margin-left: -6px;
+    z-index: 9;
+}
+.OxLargeVideoTimeline .OxMarkerPointOut {
+    position: absolute;
+    top: 63px;
+    width: 7px;
+    height: 7px;
+    z-index: 9;
+}
+.OxLargeVideoTimeline .OxMarkerPosition {
+    position: absolute;
+    top: 2px;
+    width: 11px;
+    height: 11px;
+    margin-left: -5px;
+    z-index: 9;
+}
+.OxLargeVideoTimeline .OxOverlay {
+    position: absolute;
+    height: 72px;
+    z-index: 8;
+}
+.OxLargeVideoTimeline .OxSubtitle {
+    position: absolute;
+    bottom: 9px;
+    max-height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 1px;
+    background: rgba(0, 0, 0, 0.25);
+    font-size: 8px;
+    line-height: 10px;
+    text-align: center;
+    text-overflow: ellipsis;
+    text-shadow: rgba(0, 0, 0, 1) 1px 1px 1px;
+    color: rgb(255, 255, 255);
+    overflow: hidden;
+    z-index: 7;
+    -moz-box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+    -ms-box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+    -o-box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+}
+.OxLargeVideoTimeline .OxSubtitle.OxHighlight {
+    border-color: rgb(255, 255, 0);
+}
+.OxTimelineSmall {
+    position: absolute;
+}
+.OxTimelineSmall > div {
+    position: absolute;
+    height: 18px;
+    margin: 3px 4px 3px 4px;
+    overflow: hidden;
+}
+.OxTimelineSmall > div > img {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.OxTimelineSmall > div > .OxTimelineSmallImage {
+    margin-top: 1px;
+}
+
+.OxSmallVideoTimeline .OxInterface,
+.OxBlockVideoTimeline .OxInterface {
+    position: absolute;
+    z-index: 9;
+}
+.OxSmallVideoTimeline .OxMarkerPlay {
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 8px;
+}
+.OxSmallVideoTimeline .OxMarkerPlay > div {
+    width: 10px;
+    height: 10px;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 7px;
+}
+.OxSmallVideoTimeline .OxMarkerPlay > div > div {
+    width: 8px;
+    height: 8px;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 5px;
+}
+.OxSmallVideoTimeline .OxMarkerPointIn,
+.OxBlockVideoTimeline .OxMarkerPointIn {
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    margin-left: -2px;
+    z-index: 8;
+}
+.OxSmallVideoTimeline .OxMarkerPointIn {
+    top: 15px;
+}
+.OxSmallVideoTimeline .OxMarkerPointOut,
+.OxBlockVideoTimeline .OxMarkerPointOut {
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    margin-left: 4px;
+    z-index: 8;
+}
+.OxSmallVideoTimeline .OxMarkerPointOut {
+    top: 15px;
+}
+.OxSmallVideoTimeline .OxMarkerPosition,
+.OxBlockVideoTimeline .OxMarkerPosition {
+    position: absolute;
+    width: 11px;
+    height: 11px;
+    z-index: 8;
+}
+.OxSmallVideoTimeline .OxMarkerPosition {
+    top: 2px;
+}
+
+
+.OxVideoPlayer {
+    position: absolute;
+}
+.OxVideoPlayer.OxFocus {
+    -moz-box-shadow: 0 0 2px rgb(128, 128, 128);
+    -ms-box-shadow: 0 0 2px rgb(128, 128, 128);
+    -o-box-shadow: 0 0 2px rgb(128, 128, 128);
+    -webkit-box-shadow: 0 0 2px rgb(128, 128, 128);
+    box-shadow: 0 0 2px rgb(128, 128, 128);
+}
+
+.OxVideoPlayer .OxBar.OxControls > * {
+    float: left;
+}
+.OxVideoPlayer .OxControls {
+    position: absolute;
+}
+
+.OxVideoPlayer .OxFind {
+    position: absolute;
+    right: 0;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    display: none;
+}
+.OxVideoPlayer .OxFind > * {
+    float: left;
+}
+.OxVideoPlayer .OxFind .OxResults {
+    width: 24px;
+    padding-top: 2px;
+    font-size: 9px;
+    text-align: center;
+}
+
+.OxVideoPlayer .OxInput {
+    background: transparent;
+    -moz-box-shadow: 0 0 0;
+    -ms-box-shadow: 0 0 0;
+    -o-box-shadow: 0 0 0;
+    -webkit-box-shadow: 0 0 0;
+    box-shadow: 0 0 0;
+}
+.OxVideoPlayer div.OxInput.OxFocus {
+    -moz-box-shadow: 0 0 0;
+    -ms-box-shadow: 0 0 0;
+    -o-box-shadow: 0 0 0;
+    -webkit-box-shadow: 0 0 0;
+    box-shadow: 0 0 0;
+}
+.OxVideoPlayer input.OxInput {
+    height: 16px;
+    //padding: 0 4px 0 4px;
+    border: 0;
+    border-radius: 8px;
+}
+.OxVideoPlayer .OxPositionInput > input.OxInput {
+    padding: 0 3px 0 3px;
+}
+
+.OxVideoPlayer .OxSelect {
+    width: 16px;
+    height: 16px;
+    border-width: 0;
+    border-radius: 0;
+    background: rgba(0, 0, 0, 0);
+}
+.OxVideoPlayer .OxSelect > .OxButton {
+    margin: 0;
+}
+
+
+.OxVideoPlayer .OxCensoredIcon {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.OxVideoPlayer .OxLoadingIcon {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    opacity: 1;
+}
+
+.OxVideoPlayer .OxLogo {
+    position: absolute;
+    opacity: 0.25;
+}
+
+.OxVideoPlayer .OxPlayIcon {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    border: 2px solid rgb(255, 255, 255);
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+}
+
+.OxVideoPlayer .OxPointMarker {
+    display: none;
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    opacity: 0.5;
+}
+.OxVideoPlayer .OxPointMarkerInTop {
+    left: 4px;
+    top: 4px;
+}
+.OxVideoPlayer .OxPointMarkerInBottom {
+    left: 4px;
+    bottom: 4px;
+}
+.OxVideoPlayer .OxPointMarkerOutTop {
+    right: 4px;
+    top: 4px;
+}
+.OxVideoPlayer .OxPointMarkerOutBottom {
+    right: 4px;
+    bottom: 4px;
+}
+
+.OxVideoPlayer .OxPosition {
+    height: 12px;
+    padding: 2px;
+    font-size: 9px;
+    text-align: center;
+}
+
+.OxVideoPlayer .OxPositionInput {
+    display: none;
+}
+
+.OxVideoPlayer .OxPoster {
+    position: absolute;
+}
+
+.OxVideoPlayer .OxSettings {
+    position: absolute;
+    right: 0;
+    bottom: 16px;
+    display: none;
+}
+.OxVideoPlayer .OxSettings > div {
+    //width: 72px;
+}
+.OxVideoPlayer .OxSettings > .OxItem {
+    height: 14px;
+}
+.OxVideoPlayer .OxSettings > .OxItem:first-child {
+    height: 16px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+.OxVideoPlayer .OxSettings > .OxItem > * {
+    float: left;
+}
+.OxVideoPlayer .OxSettings > .OxItem > div {
+    width: 56px;
+    height: 12px;
+    padding: 1px 0 1px 8px;
+    font-size: 9px;
+    text-align: right;
+}
+.OxVideoPlayer .OxSettings > .OxItem > img {
+    width: 9px;
+    height: 9px;
+    padding: 2px 2px 3px 3px;
+}
+.OxVideoPlayer .OxSettings > .OxItem:first-child > div {
+    padding-top: 3px;
+}
+.OxVideoPlayer .OxSettings > .OxItem:first-child > img {
+    padding-top: 4px;
+}
+.OxVideoPlayer .OxSettings > .OxLine {
+    height: 1px;
+}
+.OxVideoPlayer .OxSettings > .OxSpace {
+    height: 2px;
+}
+
+.OxVideoPlayer .OxSubtitle {
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+    text-shadow: rgba(0, 0, 0, 1) 0 0 4px;
+    color: rgb(255, 255, 255);
+}
+
+.OxVideoPlayer .OxTitle {
+    padding-top: 1px;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.OxVideoPlayer .OxVideoContainer {
+    position: absolute;
+    background: rgb(0, 0, 0);
+    overflow: hidden;
+}
+
+.OxVideoPlayer .OxVolume {
+    position: absolute;
+    left: 0;
+    height: 16px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    display: none;
+}
+.OxVideoPlayer .OxVolume > * {
+    float: left;
+}
+.OxVideoPlayer .OxVolume .OxRange .OxTrack {
+    padding: 1px;
+    border: 0;
+}
+.OxVideoPlayer .OxVolume .OxRange .OxThumb {
+    padding: 1px 7px 1px 7px;
+    border: 0;
+}
+.OxVideoPlayer .OxVolume .OxVolumeValue {
+    width: 24px;
+    padding-top: 2px;
+    font-size: 9px;
+    text-align: center;
+}
+
+
+
+.OxVideoPlayer .OxInput {
+    background-color: transparent;
+    background-image: none;
+    -moz-box-shadow: 0 0 0;
+    -ms-box-shadow: 0 0 0;
+    -o-box-shadow: 0 0 0;
+    -webkit-box-shadow: 0 0 0;
+    box-shadow: 0 0 0;
+}
+.OxVideoPlayer div.OxInput.OxFocus {
+    -moz-box-shadow: 0 0 0;
+    -ms-box-shadow: 0 0 0;
+    -o-box-shadow: 0 0 0;
+    -webkit-box-shadow: 0 0 0;
+    box-shadow: 0 0 0;
+}
+
+
+.OxVideoTimelinePlayer .OxPosition {
+    float: left;
+    height: 12px;
+    padding: 2px;
+    font-size: 9px;
+    text-align: center;
+}
+.OxVideoTimelinePlayer .OxPositionInput {
+    float: left;
+    display: none;
+}
+.OxVideoTimelinePlayer div.OxPositionInput {
+    background: transparent;
+    -moz-box-shadow: 0 0 0;
+    -ms-box-shadow: 0 0 0;
+    -o-box-shadow: 0 0 0;
+    -webkit-box-shadow: 0 0 0;
+    box-shadow: 0 0 0;
+}
+.OxVideoTimelinePlayer div.OxPositionInput.OxFocus {
+    -moz-box-shadow: 0 0 0;
+    -o-box-shadow: 0 0 0;
+    -ms-box-shadow: 0 0 0;
+    -webkit-box-shadow: 0 0 0;
+    box-shadow: 0 0 0;
+}
+.OxVideoTimelinePlayer .OxPositionInput > input.OxInput {
+    height: 16px;
+    padding: 0 3px 0 3px;
+    border: 0;
+    border-radius: 8px;
+}
+.OxVideoTimelinePlayer .OxSelect {
+    width: 16px;
+    height: 16px;
+    border-width: 0;
+    border-radius: 0;
+    background: rgba(0, 0, 0, 0);
+}
+.OxVideoTimelinePlayer .OxSelect > .OxButton {
+    margin: 0;
+}
+.OxVideoTimelinePlayer .OxVideoBox {
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    background: rgb(0, 0, 0);
+}
+
+
+
+.OxVideoPreview {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+.OxVideoPreview > .OxFrame {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 16px;
+    overflow: hidden;
+}
+.OxVideoPreview > OxFrame > img {
+    position: absolute;
+}
+.OxVideoPreview > .OxTimeline {
+    position: absolute;
+    bottom: 0;
+    height: 16px;
+}
+.OxVideoPreview > .OxInterface {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    cursor: pointer;
+}
+
+/*
+================================================================================
+Miscellaneous
+================================================================================
+*/
+
+.OxColor {
+    border-radius: 8px;
+    padding: 0 4px 1px 4px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.OxLabel.OxColor, .OxSelect.OxColor {
+    padding: 0;
+}
+
+.OxLoadingScreen {
+    position: absolute;
+}
+.OxLoadingScreen > div {
+    position: absolute;
+    text-align: center;
+}
+.OxLoadingScreen > div > div {
+    margin-top: 4px;
+    opacity: 0;
+}
+.OxLoadingScreen.OxAuto {
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+.OxLoadingScreen.OxAuto > div {
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.OxSpecialLink {
+    padding: 0 2px 0 2px;
+    border-radius: 2px;
+}
+.OxSpecialLink:hover {
+    text-decoration: none;
+}
+
+.OxTextPage {
+    line-height: 16px;
+}
+.OxTextPage .OxInput,
+.OxTextPage .OxLabel,
+.OxTextPage .OxSelect {
+    line-height: 14px;
+}
+
+.OxTooltip {
+    position: absolute;
+    padding: 1px 3px 1px 3px;
+    border-radius: 4px;
+    font-size: 9px;
+    //opacity: 0;
+    white-space: nowrap;
+    z-index: 1001;
+}
+.OxTooltip > div {
+    font-size: 9px;
+}

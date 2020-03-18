@@ -1,0 +1,32 @@
+.OxLabel {
+    position: absolute;
+    left: 16px;
+}
+.OxProgressbar, #status {
+    position: absolute;
+    left: 224px;
+}
+
+#label0, #progress0 {
+    top: 16px;
+}
+#label1, #progress1 {
+    top: 48px;
+}
+#label2, #status {
+    top: 80px;
+}
+#label3, #progress2 {
+    top: 112px;
+}
+
+#status > div:first-child {
+    float: left;
+    width: 64px;
+    font-weight: bold;
+}
+#status > div:last-child {
+    float: right;
+    width: 256px;
+    text-align: right;
+}

@@ -1,0 +1,11 @@
+#box {
+    width: 512px;
+    margin: 16px;
+}
+
+.label {
+    font-weight: bold;
+}
+div.label {
+    margin-top: 16px;
+}

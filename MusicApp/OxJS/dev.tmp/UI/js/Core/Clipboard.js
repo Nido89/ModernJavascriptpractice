@@ -1,0 +1,1 @@
+../../../../source/UI/js/Core/Clipboard.js

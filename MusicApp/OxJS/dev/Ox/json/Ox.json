@@ -1,0 +1,57 @@
+{
+    "files": [
+        [
+            "Ox/js/Core.js"
+        ],
+        [
+            "Ox/js/Function.js",
+            "Ox/js/Polyfill.js"
+        ],
+        [
+            "Ox/js/Array.js",
+            "Ox/js/String.js",
+            "Ox/js/Type.js"
+        ],
+        [
+            "Ox/js/Collection.js",
+            "Ox/js/Math.js"
+        ],
+        [
+            "Ox/js/Async.js",
+            "Ox/js/Color.js",
+            "Ox/js/Constants.js",
+            "Ox/js/DOM.js",
+            "Ox/js/Date.js",
+            "Ox/js/Encoding.js",
+            "Ox/js/Format.js",
+            "Ox/js/Geo.js",
+            "Ox/js/HTML.js",
+            "Ox/js/Hash.js",
+            "Ox/js/JavaScript.js",
+            "Ox/js/Locale.js",
+            "Ox/js/Object.js",
+            "Ox/js/RegExp.js",
+            "Ox/js/Request.js",
+            "Ox/js/Video.js"
+        ]
+    ],
+    "locales": {
+        "Geo": [
+            "ar",
+            "de"
+        ],
+        "Ox": [
+            "ar",
+            "de",
+            "el",
+            "hi"
+        ],
+        "UI": [
+            "ar",
+            "de",
+            "el",
+            "hi"
+        ]
+    },
+    "version": "0.1.3857"
+}

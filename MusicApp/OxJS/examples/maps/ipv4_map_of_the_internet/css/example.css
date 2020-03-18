@@ -1,0 +1,180 @@
+#map {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(64, 64, 64);
+}
+#tiles {
+    position: absolute;
+    background-color: rgb(224, 224, 224);
+    background-image:
+        -moz-linear-gradient(
+            45deg, rgb(160, 160, 160) 25%, transparent 25%,
+            transparent 75%, rgb(160, 160, 160) 75%, rgb(160, 160, 160)
+        ),
+        -moz-linear-gradient(
+            45deg, rgb(160, 160, 160) 25%, transparent 25%,
+            transparent 75%, rgb(160, 160, 160) 75%, rgb(160, 160, 160)
+        );
+    background-image:
+        -webkit-linear-gradient(
+            45deg, rgb(160, 160, 160) 25%, transparent 25%,
+            transparent 75%, rgb(160, 160, 160) 75%, rgb(160, 160, 160)
+        ),
+        -webkit-linear-gradient(
+            45deg, rgb(160, 160, 160) 25%, transparent 25%,
+            transparent 75%, rgb(160, 160, 160) 75%, rgb(160, 160, 160)
+        );
+    background-size: 32px 32px;
+    background-position: 0 0, 16px 16px;
+    box-shadow: 0 0 16px black;
+    cursor: move;
+}
+#overlay {
+    position: absolute;
+    opacity: 0;
+    z-index: 1;
+}
+
+.tile {
+    position: absolute;
+    width: 256px;
+    height: 256px;
+}
+
+.interface {
+    position: absolute;
+    box-shadow: 0 0 16px rgb(0, 0, 0);
+    z-index: 3;
+}
+.interface .interface {
+    z-index: 5;
+}
+
+#about {
+    left: 16px;
+    top: 16px;
+}
+#find {
+    right: 16px;
+    top: 16px;
+    border-radius: 8px;
+}
+#toggle {
+    right: 16px;
+    bottom: 16px;
+}
+#zoom {
+    left: 16px;
+    bottom: 16px;
+    border-radius: 8px;
+}
+#world {
+    right: 16px;
+    bottom: 48px;
+    width: 256px;
+    height: 256px;
+    box-shadow: 0 0 16px rgb(0, 0, 0);
+    opacity: 0;
+    overflow: hidden;
+}
+#world > img {
+    width: 256px;
+    height: 256px;
+}
+
+div.marker {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    padding: 8px;
+    border-radius: 16px;
+    margin: -16px 0 0 -16px;
+    background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.75), rgba(192, 192, 192, 0.75));
+    background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.75), rgba(192, 192, 192, 0.75));
+    box-shadow: 0 0 2px rgb(0, 0, 0), 0 0 2px rgb(0, 0, 0) inset;
+    cursor: pointer;
+    z-index: 2;
+}
+div.marker.selected {
+    padding: 7px;
+    border: 1px solid rgb(64, 64, 64);
+    box-shadow: 0 0 4px rgb(0, 0, 0), 0 0 4px rgb(0, 0, 0) inset;
+    background-image: -moz-linear-gradient(top, rgba(192, 192, 192, 0.75), rgba(192, 192, 192, 0.75));
+    background-image: -webkit-linear-gradient(top, rgba(192, 192, 192, 0.75), rgba(192, 192, 192, 0.75));
+}
+#world div.marker {
+    width: 16px;
+    height: 16px;
+    padding: 0;
+    border-radius: 16px;
+    margin: -8px 0 0 -8px;
+    z-index: 4;
+}
+img.marker {
+    width: 16px;
+    height: 16px;
+}
+
+.textTitle {
+    float: left;
+    width: 384px;
+    margin: 16px 0 8px 144px;
+    font-weight: bold;
+}
+.textTitle:first-child {
+    margin-top: 0;
+}
+.textKey {
+    float: left;
+    width: 128px;
+    margin-right: 16px;
+    text-align: right;
+}
+.textValue {
+    float: left;
+    width: 384px;
+}
+
+#regions {
+    position: absolute;
+}
+.region {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.region.ui {
+    box-shadow: 0 0 2px rgb(0, 0, 0), 0 0 2px rgb(0, 0, 0) inset;
+}
+.region#center {
+    left: 256px;
+    top: 256px;
+    box-shadow: 0 0 2px rgb(0, 0, 0), 0 0 2px rgb(0, 0, 0) inset;
+    background-color: transparent;
+}
+.region#left {
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 256px;
+}
+.region#right {
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 256px;
+}
+.region#top {
+    top: 0;
+    left: 256px;
+    height: 256px;
+}
+.region#bottom {
+    bottom: 0;
+    left: 256px;
+    height: 256px;
+}
+
+.OxTooltip {
+    box-shadow: 0 0 16px rgb(0, 0, 0);
+}

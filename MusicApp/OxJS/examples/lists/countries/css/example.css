@@ -1,0 +1,24 @@
+.bar > .OxElement {
+    float: left;
+    margin: 4px 2px;
+}
+.bar > .OxElement.right {
+    float: right;
+}
+.bar > .OxElement:first-child {
+    margin-left: 4px;
+}
+.bar > .OxElement:last-child {
+    margin-right: 4px;
+}
+.flag {
+    border-radius: 32px;
+}
+.item {
+    padding: 16px;
+}
+.status {
+    margin-top: 3px;
+    font-size: 9px;
+    text-align: center;
+}

@@ -1,0 +1,24 @@
+<h1>Getting Started with OxJS</h1>
+
+<p><pre>&lt;!DOCTYPE HTML>
+&lt;html>
+    &lt;head>
+        &lt;script type="text/javascript" src="OxJS/min/Ox.js">&lt;/script>
+        &lt;script>
+            Ox.load(function() {
+                // Document ready. Your code here.
+            });
+        &lt;/script>
+    &lt;/head>
+    &lt;body>&lt;/body>
+&lt;/html></pre><p>
+
+<p>To include <code>Ox.UI</code>, start with <code>Ox.load('UI', function() { ... })</code>.</p>
+
+<p>For the development version, use <code>OxJS/dev/Ox.js</code> instead.<p>
+
+<p>If you're making changes to <code>OxJS</code> (methods, widgets, modules, etc.), make them in <code>source/</code>, not in <code>dev/</code>. <code>dev/</code> contains symlinks to <code>source/</code> (plus some json files to tell <code>Ox.load</code> which resources to include), so your edits will be live.</p>
+
+<p>To add or remove files, or to rebuild the production version, run <code>/tools/build/build.py</code>. This will update both <code>build/</code> and <code>dev/</code> from <code>source/</code>.</p>
+
+<p>For more, see the <a href="#examples">examples</a> section.</p>

@@ -1,0 +1,1 @@
+../../../../source/UI/js/Code/DocPanel.js

@@ -1,0 +1,14 @@
+<?php
+
+// ipv4map.php - no copyright 2011 0x2620.org - public domain
+
+$data = array();
+$data['host'] = $_GET['host'] ? $_GET['host']
+    : gethostbyaddr($_GET['ip'] ? $_GET['ip'] : $_SERVER['REMOTE_ADDR']);
+$data['ip'] = $_GET['ip'] ? $_GET['ip']
+    : $_GET['host'] ? gethostbyname($data['host']) : $_SERVER['REMOTE_ADDR'];
+
+header('Content-Type: text/javascript');
+echo $_GET['callback'] . '(' . json_encode($data) . ')';
+
+?>

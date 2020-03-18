@@ -1,0 +1,105 @@
+# see http://en.wikipedia.org/wiki/List_of_sovereign_states_by_date_of_formation
+# a < b / c     a splits into b and c
+# a / b > c     a and b join as c
+# a + b         a joins b
+# a - b         b splits from a
+# a = b         a becomes b
+# a * b         b becomes independent from a
+1910-08-22 Korea + Japan
+1939-06-23 Siam = Thailand
+1970-01-75 Biafra + Nigeria
+1970-06-04 United Kingdom * Tonga
+1970-10-10 United Kingdom * Fiji
+1971-09-01 United Arab Republic = Egypt
+1971-09-03 United Kingdom * Qatar
+1971-12-01 Trucial States < Abu Dhabi / Ajman / Dubai / Fujairah / Ras al-Khaimah / Sharjah / Umm al-Quwain
+1971-12-02 Abu Dhabi / Ajman / Dubai / Fujairah / Sharjah / Umm al-Quwain > United Arab Emirates
+1971-12-16 United Kingdom * Bahrain
+1971-12-16 Pakistan - Bangladesh
+1972-02-11 Ras al-Khaimah + United Arab Emirates
+1972-05-22 Ceylon = Sri Lanka
+1973-06-01 British Honduras = Belize
+1973-07-10 United Kingdom * Bahamas
+1974-02-07 United Kingdom * Grenada
+1974-06-29 Tanna + New Hebrides
+1974-09-10 Portugal * Guinea-Bissau
+1975-04-17 Khmer Republic = Kampuchea
+1975-05-16 Sikkim + India
+1975-06-25 Portugal * Mozambique
+1975-07-05 Portugal * Cape Verde
+1975-07-06 France * Comoros
+1975-07-12 Portugal * São Tomé and Príncipe
+1975-09-16 Australia * Papua New Guinea
+1975-08-01 Portugal - Cabinda
+1975-11-11 Portugal * Angola
+1975-11-11 Cabinda + Angola
+1975-11-25 Netherlands * Suriname
+1975-11-30 Dahomey = Benin
+1976-01-01 Gilbert and Ellice Islands < Ellice Islands / Gilbert Islands
+1976-06-29 United Kingdom * Seychelles
+1976-07-02 North Vietnam / South Vietnam > Vietnam
+1977-06-27 French Afar and Issas = Djibouti
+1978       Pacific Islands - Northern Mariana Islands
+1978-07-07 United Kingdom * Solomon Islands
+1978-10-01 Ellice Islands = Tuvalu
+1978-11-03 United Kingdom * Dominica
+1979       French Southern and Antarctic Territories < Adélie Land / French Southern Territories
+1979-02-22 United Kingdom * Saint Lucia
+1979-06-01 Rhodesia = Zimbabwe Rhodesia
+1979-07-12 Canton and Enderbury Islands / Gilbert Islands > Kiribati
+1979-10-01 Panama Canal Zone + Panama
+1979-06-01 Zimbabwe Rhodesia = Southern Rhodesia
+1980-04-18 Southern Rhodesia = Zimbabwe
+1980-05-26 Tafea + New Hebrides
+1980-07-24 Vemerana + New Hebrides
+1980-07-30 New Hebrides = Vanuatu
+1982-08-13 Rwenzururu + Uganda
+1983-09-19 Saint Christopher-Nevis-Anguilla < Anguilla / Saint Kitts and Nevis
+1984-01-01 United Kingdom * Brunei
+1984-08-04 Upper Volta = Burkina Faso
+1986       Johnston Island / Midway Islands / United States Miscellaneous Pacific Islands / Wake Island > United States Minor Outlying Islands
+1986-01-01 Netherlands Antilles - Aruba
+1986-10-21 Pacific Islands - Marshall Islands
+1986-11-03 Pacific Islands - Micronesia
+1989-05-01 Kampuchea = Cambodia
+1989-06-18 Burma = Myanmar
+1990-03-11 Soviet Union - Lithuania
+1990-05-04 Soviet Union - Latvia
+1990-05-21 South Africa - Namibia
+1990-05-22 North Yemen / South Yemen > Yemen
+1990-10-03 East Germany / West Germany > Germany
+1991       Neutral Zone + Iraq / Saudi Arabia
+1991-04-08 Soviet Union - Georgia
+1991-06-25 Yugoslavia - Slovenia
+1991-08-20 Soviet Union - Estonia
+# The Byelorussian and Ukrainian SSRs had their own
+# ISO 3361-1 codes, being members of the United Nations
+1991-08-24 Ukrainian Soviet Socialist Republic = Ukraine
+1991-08-25 Byelorussian Soviet Socialist Republic = Belarus
+1991-08-27 Soviet Union - Moldova
+1991-08-30 Soviet Union - Azerbaijan
+1991-08-31 Soviet Union - Kyrgyzstan
+1991-09-01 Soviet Union - Uzbekistan
+1991-09-08 Yugoslavia - Macedonia
+1991-09-09 Soviet Union - Tajikistan
+1991-09-23 Soviet Union - Armenia
+1991-10-08 Yugoslavia - Croatia
+1991-10-27 Soviet Union - Turkmenistan
+1991-12-16 Soviet Union - Kazakhstan
+1991-12-25 Soviet Union = Russia
+1992-03-01 Yugoslavia - Bosnia and Herzegovina
+1993-01-01 Czechoslovakia < Czech Republic / Slovakia
+1994-04-27 Bophuthatswana / Ciskei / Transkei / Venda + South Africa
+1994-10-01 Pacific Islands = Palau
+1997       Metropolitan France + France
+1997-05-17 Zaire = Democratic Republic of the Congo
+1998-12-24 Bougainville + Papua New Guinea
+2000-02-06 Chechnia + Russia
+2002-03-10 Anjouan / Mohéli + Comoros
+2002-05-20 East Timor = Timor-Leste
+2003-02-04 Yugoslavia = Serbia and Montenegro
+2006-06-05 Serbia and Montenegro < Serbia / Montenegro
+2008-02-17 Serbia - Kosovo
+2010-10-10 Netherlands Antilles < Bonaire, Sint Eustatius and Saba / Curaçao / Sint Maarten
+2011-07-09 Sudan - South Sudan
+2012-04-06 Mali - Azawad

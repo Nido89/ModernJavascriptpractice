@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    background-repeat: repeat-x;
+}
+img {
+    position: fixed;
+    left: 16px;
+    top: 16px;
+    border: 2px solid white;
+    box-shadow: 0 0 4px black;
+}
+.marker {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 4px;
+    background: rgb(255, 255, 0);
+    cursor: pointer;
+}
+.post {
+    position: absolute;
+    width: 2px;
+    height: 32px;
+    background-color: white;
+    box-shadow: 0 0 4px black;
+    z-index: 1000;
+}
+.sign {
+    position: absolute;
+    padding: 2px 4px;
+    border: 2px solid white;
+    background-color: rgba(0, 128, 0, 0.75);
+    font-family: Lucida Grande, Segoe UI, DejaVu Sans, Lucida Sans Unicode, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    text-align: center;
+    color: white;
+    box-shadow: 0 0 4px black;
+    white-space: nowrap;
+    z-index: 1001;
+}
+.latlng {
+    padding: 2px 0 1px 0;
+    font-size: 10px;
+}

@@ -1,0 +1,9 @@
+.OxMyBox {
+    float: left;
+}
+.OxMyBox .OxMyText {
+    padding: 4px;
+}
+.OxMyInvertibleBox {
+    cursor: pointer;
+}

@@ -1,0 +1,1547 @@
+body.OxThemeOxmedium {
+    background-color: rgb(144, 144, 144);
+}
+body.OxThemeOxmedium:fullscreen {
+    background-color: rgb(144, 144, 144);
+}
+body.OxThemeOxmedium:-moz-full-screen {
+    background-color: rgb(144, 144, 144);
+}
+body.OxThemeOxmedium:-ms-full-screen {
+    background-color: rgb(144, 144, 144);
+}
+body.OxThemeOxmedium:-webkit-full-screen {
+    background-color: rgb(144, 144, 144);
+    width: 100%;
+    height: 100%;
+}
+.OxThemeOxmedium a,
+.OxThemeOxmedium .OxLink {
+    color: rgb(0, 0, 128);
+}
+.OxThemeOxmedium div {
+    color: rgb(0, 0, 0);
+}
+.OxThemeOxmedium .OxHighlight {
+    background-image: -moz-linear-gradient(top, rgb(255, 255, 0), rgb(255, 255, 0));
+    background: -ms-linear-gradient(top, rgb(255, 255, 0), rgb(255, 255, 0));
+    background-image: -o-linear-gradient(top, rgb(255, 255, 0), rgb(255, 255, 0));
+    background-image: -webkit-linear-gradient(top, rgb(255, 255, 0), rgb(255, 255, 0));
+    background-image: linear-gradient(top, rgb(255, 255, 0), rgb(255, 255, 0));
+    color: rgb(0, 0, 0);
+}
+.OxThemeOxmedium .OxSpecialLink {
+    background-image: -moz-linear-gradient(top, rgb(160, 160, 160), rgb(160, 160, 160));
+    background: -ms-linear-gradient(top, rgb(160, 160, 160), rgb(160, 160, 160));
+    background-image: -o-linear-gradient(top, rgb(160, 160, 160), rgb(160, 160, 160));
+    background-image: -webkit-linear-gradient(top, rgb(160, 160, 160), rgb(160, 160, 160));
+    background-image: linear-gradient(top, rgb(160, 160, 160), rgb(160, 160, 160));
+    color: rgb(0, 0, 128);
+}
+.OxThemeOxmedium .OxSpecialLink.OxActive {
+    background-image: -moz-linear-gradient(top, rgb(176, 176, 176), rgb(176, 176, 176));
+    background: -ms-linear-gradient(top, rgb(176, 176, 176), rgb(176, 176, 176));
+    background-image: -o-linear-gradient(top, rgb(176, 176, 176), rgb(176, 176, 176));
+    background-image: -webkit-linear-gradient(top, rgb(176, 176, 176), rgb(176, 176, 176));
+    background-image: linear-gradient(top, rgb(176, 176, 176), rgb(176, 176, 176));
+    color: rgb(0, 0, 64);
+}
+.OxThemeOxmedium .OxBright {
+    color: rgb(0, 0, 0);
+}
+.OxThemeOxmedium .OxLight {
+    color: rgb(64, 64, 64);
+}
+.OxThemeOxmedium .OxSelected .OxLight {
+    color: rgb(192, 192, 192);
+}
+.OxThemeOxmedium .OxFocus .OxSelected .OxLight {
+    color: rgb(192, 192, 192);
+}
+.OxThemeOxmedium .OxGrid {
+    background-color: rgb(152, 152, 152);
+    background-image:
+        -moz-linear-gradient(45deg, rgb(136, 136, 136) 25%, transparent 25%, transparent 75%, rgb(136, 136, 136) 75%, rgb(136, 136, 136)),
+	    -moz-linear-gradient(45deg, rgb(136, 136, 136) 25%, transparent 25%, transparent 75%, rgb(136, 136, 136) 75%, rgb(136, 136, 136));
+    background:
+        -ms-linear-gradient(45deg, rgb(136, 136, 136) 25%, transparent 25%, transparent 75%, rgb(136, 136, 136) 75%, rgb(136, 136, 136)),
+	    -ms-linear-gradient(45deg, rgb(136, 136, 136) 25%, transparent 25%, transparent 75%, rgb(136, 136, 136) 75%, rgb(136, 136, 136));
+    background-image:
+        -o-linear-gradient(45deg, rgb(136, 136, 136) 25%, transparent 25%, transparent 75%, rgb(136, 136, 136) 75%, rgb(136, 136, 136)),
+	    -o-linear-gradient(45deg, rgb(136, 136, 136) 25%, transparent 25%, transparent 75%, rgb(136, 136, 136) 75%, rgb(136, 136, 136));
+    background-image:
+        -webkit-linear-gradient(45deg, rgb(136, 136, 136) 25%, transparent 25%, transparent 75%, rgb(136, 136, 136) 75%, rgb(136, 136, 136)),
+    	-webkit-linear-gradient(45deg, rgb(136, 136, 136) 25%, transparent 25%, transparent 75%, rgb(136, 136, 136) 75%, rgb(136, 136, 136));
+    background-image:
+        linear-gradient(45deg, rgb(136, 136, 136) 25%, transparent 25%, transparent 75%, rgb(136, 136, 136) 75%, rgb(136, 136, 136)),
+	    linear-gradient(45deg, rgb(136, 136, 136) 25%, transparent 25%, transparent 75%, rgb(136, 136, 136) 75%, rgb(136, 136, 136));
+}
+.OxThemeOxmedium .OxReflection > div {
+    background-image: -moz-linear-gradient(top, rgba(144, 144, 144, 0.75), rgba(144, 144, 144, 1));
+    background: -ms-linear-gradient(top, rgba(144, 144, 144, 0.75), rgba(144, 144, 144, 1));
+    background-image: -o-linear-gradient(top, rgba(144, 144, 144, 0.75), rgba(144, 144, 144, 1));
+    background-image: -webkit-linear-gradient(top, rgba(144, 144, 144, 0.75), rgba(144, 144, 144, 1));
+    background-image: linear-gradient(top, rgba(144, 144, 144, 0.75), rgba(144, 144, 144, 1));
+}
+
+/*
+================================================================================
+Bars
+================================================================================
+*/
+
+.OxThemeOxmedium .OxBar.OxHorizontal {
+    background-image: -moz-linear-gradient(top, rgb(160, 160, 160), rgb(128, 128, 128));
+    background: -ms-linear-gradient(top, rgb(160, 160, 160), rgb(128, 128, 128));
+    background-image: -o-linear-gradient(top, rgb(160, 160, 160), rgb(128, 128, 128));
+    background-image: -webkit-linear-gradient(top, rgb(160, 160, 160), rgb(128, 128, 128));
+    background-image: linear-gradient(top, rgb(160, 160, 160), rgb(128, 128, 128));
+}
+
+.OxThemeOxmedium .OxProgressbar {
+    border-color: rgb(128, 128, 128);
+    background-image: -moz-linear-gradient(top, rgb(176, 176, 176), rgb(144, 144, 144));
+    background: -ms-linear-gradient(top, rgb(176, 176, 176), rgb(144, 144, 144));
+    background-image: -o-linear-gradient(top, rgb(176, 176, 176), rgb(144, 144, 144));
+    background-image: -webkit-linear-gradient(top, rgb(176, 176, 176), rgb(144, 144, 144));
+    background-image: linear-gradient(top, rgb(176, 176, 176), rgb(144, 144, 144));
+}
+.OxThemeOxmedium .OxProgressbar .OxTrack {
+    border-color: rgb(128, 128, 128);
+    background-image: -moz-linear-gradient(top, rgb(144, 144, 144), rgb(176, 176, 176));
+    background: -ms-linear-gradient(top, rgb(144, 144, 144), rgb(176, 176, 176));
+    background-image: -o-linear-gradient(top, rgb(144, 144, 144), rgb(176, 176, 176));
+    background-image: -webkit-linear-gradient(top, rgb(144, 144, 144), rgb(176, 176, 176));
+    background-image: linear-gradient(top, rgb(144, 144, 144), rgb(176, 176, 176));
+}
+.OxThemeOxmedium .OxProgressbar .OxProgress {
+    border-color: rgb(128, 128, 128);
+    background-image:
+        -moz-repeating-linear-gradient(
+            -45deg, transparent 0, transparent 25%,
+            rgba(0, 0, 0, 0.05) 25%, rgba(0, 0, 0, 0.05) 50%,
+            transparent 50%, transparent 75%,
+            rgba(0, 0, 0, 0.05) 75%, rgba(0, 0, 0, 0.05) 100%
+        ),
+        -moz-linear-gradient(top, rgb(176, 176, 176), rgb(144, 144, 144));
+    background:
+        -ms-repeating-linear-gradient(
+            -45deg, transparent 0, transparent 25%,
+            rgba(0, 0, 0, 0.05) 25%, rgba(0, 0, 0, 0.05) 50%,
+            transparent 50%, transparent 75%,
+            rgba(0, 0, 0, 0.05) 75%, rgba(0, 0, 0, 0.05) 100%
+        ),
+        -ms-linear-gradient(top, rgb(176, 176, 176), rgb(144, 144, 144));
+    background-image:
+        -o-repeating-linear-gradient(
+            -45deg, transparent 0, transparent 25%,
+            rgba(0, 0, 0, 0.05) 25%, rgba(0, 0, 0, 0.05) 50%,
+            transparent 50%, transparent 75%,
+            rgba(0, 0, 0, 0.05) 75%, rgba(0, 0, 0, 0.05) 100%
+        ),
+        -o-linear-gradient(top, rgb(176, 176, 176), rgb(144, 144, 144));
+    background-image:
+        -webkit-repeating-linear-gradient(
+            -45deg, transparent 0, transparent 25%,
+            rgba(0, 0, 0, 0.05) 25%, rgba(0, 0, 0, 0.05) 50%,
+            transparent 50%, transparent 75%,
+            rgba(0, 0, 0, 0.05) 75%, rgba(0, 0, 0, 0.05) 100%
+        ),
+        -webkit-linear-gradient(top, rgb(176, 176, 176), rgb(144, 144, 144));
+    background-image:
+        repeating-linear-gradient(
+            -45deg, transparent 0, transparent 25%,
+            rgba(0, 0, 0, 0.05) 25%, rgba(0, 0, 0, 0.05) 50%,
+            transparent 50%, transparent 75%,
+            rgba(0, 0, 0, 0.05) 75%, rgba(0, 0, 0, 0.05) 100%
+        ),
+        linear-gradient(top, rgb(176, 176, 176), rgb(144, 144, 144));
+    background-size: 32px 32px, 16px 16px;
+}
+.OxThemeOxmedium .OxProgressbar .OxProgress.OxAnimate {
+    background-image:
+        -moz-repeating-linear-gradient(
+            -45deg, transparent 0, transparent 25%,
+            rgba(0, 0, 0, 0.1) 25%, rgba(0, 0, 0, 0.1) 50%,
+            transparent 50%, transparent 75%,
+            rgba(0, 0, 0, 0.1) 75%, rgba(0, 0, 0, 0.1) 100%
+        ),
+        -moz-linear-gradient(top, rgb(176, 176, 176), rgb(144, 144, 144));
+    background:
+        -ms-repeating-linear-gradient(
+            -45deg, transparent 0, transparent 25%,
+            rgba(0, 0, 0, 0.1) 25%, rgba(0, 0, 0, 0.1) 50%,
+            transparent 50%, transparent 75%,
+            rgba(0, 0, 0, 0.1) 75%, rgba(0, 0, 0, 0.1) 100%
+        ),
+        -ms-linear-gradient(top, rgb(176, 176, 176), rgb(144, 144, 144));
+    background-image:
+        -o-repeating-linear-gradient(
+            -45deg, transparent 0, transparent 25%,
+            rgba(0, 0, 0, 0.1) 25%, rgba(0, 0, 0, 0.1) 50%,
+            transparent 50%, transparent 75%,
+            rgba(0, 0, 0, 0.1) 75%, rgba(0, 0, 0, 0.1) 100%
+        ),
+        -o-linear-gradient(top, rgb(176, 176, 176), rgb(144, 144, 144));
+    background-image:
+        -webkit-repeating-linear-gradient(
+            -45deg, transparent 0, transparent 25%,
+            rgba(0, 0, 0, 0.1) 25%, rgba(0, 0, 0, 0.1) 50%,
+            transparent 50%, transparent 75%,
+            rgba(0, 0, 0, 0.1) 75%, rgba(0, 0, 0, 0.1) 100%
+        ),
+        -webkit-linear-gradient(top, rgb(176, 176, 176), rgb(144, 144, 144));
+    background-image:
+        repeating-linear-gradient(
+            -45deg, transparent 0, transparent 25%,
+            rgba(0, 0, 0, 0.1) 25%, rgba(0, 0, 0, 0.1) 50%,
+            transparent 50%, transparent 75%,
+            rgba(0, 0, 0, 0.1) 75%, rgba(0, 0, 0, 0.1) 100%
+        ),
+        linear-gradient(top, rgb(176, 176, 176), rgb(144, 144, 144));
+}
+
+.OxThemeOxmedium .OxResizebar > .OxLine {
+    background-color: rgb(128, 128, 128);
+}
+
+/*
+================================================================================
+Calendar
+================================================================================
+*/
+
+.OxThemeOxmedium .OxCalendar .OxTimeline > div.odd {
+    background-image: -moz-linear-gradient(top, rgb(176, 176, 176), rgb(144, 144, 144));
+    background: -ms-linear-gradient(top, rgb(176, 176, 176), rgb(144, 144, 144));
+    background-image: -o-linear-gradient(top, rgb(176, 176, 176), rgb(144, 144, 144));
+    background-image: -webkit-linear-gradient(top, rgb(176, 176, 176), rgb(144, 144, 144));
+    background-image: linear-gradient(top, rgb(176, 176, 176), rgb(144, 144, 144));
+}
+
+.OxThemeOxmedium .OxCalendar .OxTimeline > div.even {
+    background-image: -moz-linear-gradient(top, rgb(160, 160, 160), rgb(128, 128, 128));
+    background: -ms-linear-gradient(top, rgb(160, 160, 160), rgb(128, 128, 128));
+    background-image: -o-linear-gradient(top, rgb(160, 160, 160), rgb(128, 128, 128));
+    background-image: -webkit-linear-gradient(top, rgb(160, 160, 160), rgb(128, 128, 128));
+    background-image: linear-gradient(top, rgb(160, 160, 160), rgb(128, 128, 128));
+}
+
+.OxThemeOxmedium .OxCalendar .OxBackground > div {
+    background-color: rgb(128, 128, 128);
+}
+.OxThemeOxmedium .OxCalendar .OxBackground > div.line {
+    background-color: rgb(112, 112, 112);
+}
+
+.OxThemeOxmedium .OxCalendar .OxLine > .OxEvent {
+    color: rgb(0, 0, 0);
+}
+.OxThemeOxmedium .OxCalendar .OxLine > .OxEvent.OxSelected {
+    box-shadow: inset 0 0 1px rgb(0, 0, 0),
+        inset 0 0 1px rgb(0, 0, 0),
+        inset 0 0 1px rgb(0, 0, 0),
+        inset 0 0 1px rgb(0, 0, 0);
+}
+.OxThemeOxmedium .OxEvent.OxDate {
+    background-image: -moz-linear-gradient(top, rgba(128, 128, 255, 0.9), rgba(96, 96, 224, 0.9));
+    background: -ms-linear-gradient(top, rgba(128, 128, 255, 0.9), rgba(96, 96, 224, 0.9));
+    background-image: -o-linear-gradient(top, rgba(128, 128, 255, 0.9), rgba(96, 96, 224, 0.9));
+    background-image: -webkit-linear-gradient(top, rgba(128, 128, 255, 0.9), rgba(96, 96, 224, 0.9));
+    background-image: linear-gradient(top, rgba(128, 128, 255, 0.9), rgba(96, 96, 224, 0.9));
+}
+.OxThemeOxmedium .OxEvent.OxOther {
+    background-image: -moz-linear-gradient(top, rgba(255, 128, 128, 0.9), rgba(224, 96, 96, 0.9));
+    background: -ms-linear-gradient(top, rgba(255, 128, 128, 0.9), rgba(224, 96, 96, 0.9));
+    background-image: -o-linear-gradient(top, rgba(255, 128, 128, 0.9), rgba(224, 96, 96, 0.9));
+    background-image: -webkit-linear-gradient(top, rgba(255, 128, 128, 0.9), rgba(224, 96, 96, 0.9));
+    background-image: linear-gradient(top, rgba(255, 128, 128, 0.9), rgba(224, 96, 96, 0.9));
+}
+.OxThemeOxmedium .OxEvent.OxPerson {
+    background-image: -moz-linear-gradient(top, rgba(255, 128, 0, 0.9), rgba(224, 96, 0, 0.9));
+    background: -ms-linear-gradient(top, rgba(255, 128, 0, 0.9), rgba(224, 96, 0, 0.9));
+    background-image: -o-linear-gradient(top, rgba(255, 128, 0, 0.9), rgba(224, 96, 0, 0.9));
+    background-image: -webkit-linear-gradient(top, rgba(255, 128, 0, 0.9), rgba(224, 96, 0, 0.9));
+    background-image: linear-gradient(top, rgba(255, 128, 0, 0.9), rgba(224, 96, 0, 0.9));
+}
+.OxThemeOxmedium .OxEvent.OxPlace {
+    background-image: -moz-linear-gradient(top, rgba(0, 192, 96, 0.9), rgba(0, 160, 64, 0.9));
+    background: -ms-linear-gradient(top, rgba(0, 192, 96, 0.9), rgba(0, 160, 64, 0.9));
+    background-image: -o-linear-gradient(top, rgba(0, 192, 96, 0.9), rgba(0, 160, 64, 0.9));
+    background-image: -webkit-linear-gradient(top, rgba(0, 192, 96, 0.9), rgba(0, 160, 64, 0.9));
+    background-image: linear-gradient(top, rgba(0, 192, 96, 0.9), rgba(0, 160, 64, 0.9));
+}
+
+.OxThemeOxmedium .OxCalendar .OxOverlay div:nth-child(odd) {
+    background-color: rgba(255, 255, 255, 0.25);
+}
+.OxThemeOxmedium .OxCalendar .OxOverlay div:nth-child(even) {
+    background-color: rgba(0, 0, 0, 0.25);
+    box-shadow: inset 0 0 2px rgb(0, 0, 0);
+}
+
+.OxThemeOxmedium .OxCalendar .OxCalendarControl,
+.OxThemeOxmedium .OxCalendar .OxEventControl {
+    border-color: calendarControlBorder;
+    background-image: -moz-linear-gradient(top, rgba(160, 160, 160, 0.75), rgba(160, 160, 160, 0.75));
+    background: -ms-linear-gradient(top, rgba(160, 160, 160, 0.75), rgba(160, 160, 160, 0.75));
+    background-image: -o-linear-gradient(top, rgba(160, 160, 160, 0.75), rgba(160, 160, 160, 0.75));
+    background-image: -webkit-linear-gradient(top, rgba(160, 160, 160, 0.75), rgba(160, 160, 160, 0.75));
+    background-image: linear-gradient(top, rgba(160, 160, 160, 0.75), rgba(160, 160, 160, 0.75));
+    color: rgb(0, 0, 0);
+}
+
+.OxThemeOxmedium .OxCalendarEditor .OxWarning {
+    border-bottom: 2px dotted rgb(255, 64, 64);
+}
+
+/*
+================================================================================
+Dialog
+================================================================================
+*/
+
+.OxThemeOxmedium .OxDialog {
+    -moz-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.75);
+    -ms-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.75);
+    -o-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.75);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.75);
+}
+
+.OxThemeOxmedium .OxDialog .OxBar {
+    background-image: -moz-linear-gradient(top, rgba(176, 176, 176, 0.95), rgba(144, 144, 144, 0.95));
+    background: -ms-linear-gradient(top, rgba(176, 176, 176, 0.95), rgba(144, 144, 144, 0.95));
+    background-image: -o-linear-gradient(top, rgba(176, 176, 176, 0.95), rgba(144, 144, 144, 0.95));
+    background-image: -webkit-linear-gradient(top, rgba(176, 176, 176, 0.95), rgba(144, 144, 144, 0.95));
+    background-image: linear-gradient(top, rgba(176, 176, 176, 0.95), rgba(144, 144, 144, 0.95));
+}
+
+.OxThemeOxmedium .OxDialog .OxContent {
+    background-color: rgba(160, 160, 160, 0.95);
+}
+.OxThemeOxmedium .OxDialog .OxIconList .OxContent {
+    background-color: transparent;
+}
+.OxThemeOxmedium .OxDialog .OxReflection > div {
+    background-image: -moz-linear-gradient(top, rgba(160, 160, 160, 0.75), rgba(160, 160, 160, 1));
+    background: -ms-linear-gradient(top, rgba(160, 160, 160, 0.75), rgba(160, 160, 160, 1));
+    background-image: -o-linear-gradient(top, rgba(160, 160, 160, 0.75), rgba(160, 160, 160, 1));
+    background-image: -webkit-linear-gradient(top, rgba(160, 160, 160, 0.75), rgba(160, 160, 160, 1));
+    background-image: linear-gradient(top, rgba(160, 160, 160, 0.75), rgba(160, 160, 160, 1));
+}
+
+.OxThemeOxmedium .OxLayer {
+    background-color: rgb(0, 0, 0);
+}
+
+/*
+================================================================================
+DocPage
+================================================================================
+*/
+
+.OxThemeOxmedium .OxFailed {
+    color: rgb(192, 0, 0);
+}
+
+/*
+================================================================================
+Document
+================================================================================
+*/
+
+.OxThemeOxmedium .OxDocument code {
+    color: rgb(0, 0, 64);
+}
+.OxThemeOxmedium .OxDocument div {
+    border-color: rgb(128, 128, 128);
+}
+
+/*
+================================================================================
+Forms
+================================================================================
+*/
+
+.OxThemeOxmedium .OxButton,
+.OxThemeOxmedium input.OxCheckbox,
+.OxThemeOxmedium input.OxInput,
+.OxThemeOxmedium textarea,
+.OxThemeOxmedium .OxLabel,
+.OxThemeOxmedium .OxTrack {
+    border-color: rgb(128, 128, 128);
+    color: rgb(0, 0, 0);
+}
+.OxThemeOxmedium .OxSelect {
+    border-color: rgb(128, 128, 128);
+}
+.OxThemeOxmedium .OxSelect > .OxTitle {
+    color: rgb(0, 0, 0);
+}
+.OxThemeOxmedium .OxInputLabel {
+    color: rgb(0, 0, 0);
+}
+.OxThemeOxmedium .OxButton,
+.OxThemeOxmedium div.OxInput,
+.OxThemeOxmedium .OxSelect {
+    background-image: -moz-linear-gradient(top, rgb(176, 176, 176), rgb(144, 144, 144));
+    background: -ms-linear-gradient(top, rgb(176, 176, 176), rgb(144, 144, 144));
+    background-image: -o-linear-gradient(top, rgb(176, 176, 176), rgb(144, 144, 144));
+    background-image: -webkit-linear-gradient(top, rgb(176, 176, 176), rgb(144, 144, 144));
+    background-image: linear-gradient(top, rgb(176, 176, 176), rgb(144, 144, 144));
+}
+.OxThemeOxmedium div.OxInput.OxTextarea {
+    background-color: transparent;
+}
+.OxThemeOxmedium .OxButton:active {
+    background-image: -moz-linear-gradient(top, rgb(160, 160, 160), rgb(160, 160, 160));
+    background: -ms-linear-gradient(top, rgb(160, 160, 160), rgb(160, 160, 160));
+    background-image: -o-linear-gradient(top, rgb(160, 160, 160), rgb(160, 160, 160));
+    background-image: -webkit-linear-gradient(top, rgb(160, 160, 160), rgb(160, 160, 160));
+    background-image: linear-gradient(top, rgb(160, 160, 160), rgb(160, 160, 160));
+    color: rgb(0, 0, 0);
+}
+.OxThemeOxmedium .OxCheckbox:active {
+    background-image: -moz-linear-gradient(top, rgb(160, 160, 160), rgb(192, 192, 192));
+    background: -ms-linear-gradient(top, rgb(160, 160, 160), rgb(192, 192, 192));
+    background-image: -o-linear-gradient(top, rgb(160, 160, 160), rgb(192, 192, 192));
+    background-image: -webkit-linear-gradient(top, rgb(160, 160, 160), rgb(192, 192, 192));
+    background-image: linear-gradient(top, rgb(160, 160, 160), rgb(192, 192, 192));
+}
+.OxThemeOxmedium .OxButton:focus {
+    -moz-box-shadow: 0 0 2px rgb(192, 192, 192);
+    -ms-box-shadow: 0 0 2px rgb(192, 192, 192);
+    -o-box-shadow: 0 0 2px rgb(192, 192, 192);
+    -webkit-box-shadow: 0 0 2px rgb(192, 192, 192);
+    box-shadow: 0 0 2px rgb(192, 192, 192);
+}
+.OxThemeOxmedium .OxButton.OxDisabled {
+    background-image: -moz-linear-gradient(top, rgb(176, 176, 176), rgb(144, 144, 144));
+    background: -ms-linear-gradient(top, rgb(176, 176, 176), rgb(144, 144, 144));
+    background-image: -o-linear-gradient(top, rgb(176, 176, 176), rgb(144, 144, 144));
+    background-image: -webkit-linear-gradient(top, rgb(176, 176, 176), rgb(144, 144, 144));
+    background-image: linear-gradient(top, rgb(176, 176, 176), rgb(144, 144, 144));
+    color: rgb(96, 96, 96);
+}
+
+.OxThemeOxmedium .OxButton.OxSymbol,
+.OxThemeOxmedium .OxButton.OxSymbol:active,
+.OxThemeOxmedium .OxButton.OxSymbol.OxDisabled,
+.OxThemeOxmedium .OxButton.OxVideo,
+.OxThemeOxmedium .OxButton.OxVideo:active,
+.OxThemeOxmedium .OxButton.OxVideo.OxDisabled {
+    border-color: transparent;
+    background-color: transparent;
+    background-image: none;
+}
+
+
+.OxThemeOxmedium .OxButton.OxSelected,
+.OxThemeOxmedium .OxSelect.OxSelected,
+.OxThemeOxmedium .OxCollapsePanel > .OxBar > .OxExtras > .OxSelect.OxSelected {
+    background-image: -moz-linear-gradient(top, rgb(96, 96, 96), rgb(128, 128, 128));
+    background: -ms-linear-gradient(top, rgb(96, 96, 96), rgb(128, 128, 128));
+    background-image: -o-linear-gradient(top, rgb(96, 96, 96), rgb(128, 128, 128));
+    background-image: -webkit-linear-gradient(top, rgb(96, 96, 96), rgb(128, 128, 128));
+    background-image: linear-gradient(top, rgb(96, 96, 96), rgb(128, 128, 128));
+}
+.OxThemeOxmedium .OxButton.OxSelected,
+.OxThemeOxmedium .OxSelect.OxSelected:not(.OxColor) > .OxTitle,
+.OxThemeOxmedium .OxCollapsePanel > .OxBar > .OxExtras > .OxSelect.OxSelected {
+    color: rgb(255, 255, 255);
+}
+.OxThemeOxmedium .OxSelect.OxSelected.OxColor > .OxButton.OxSelected {
+    background: transparent;
+}
+.OxThemeOxmedium .OxButton.OxTab.OxSelected {
+    border-bottom: 1px solid rgb(128, 128, 128);
+}
+
+
+.OxThemeOxmedium .OxButton.OxOverlay {
+    border-color: rgba(0, 0, 0, 0.75);
+    background-image: -moz-linear-gradient(top, rgba(176, 176, 176, 0.75), rgba(144, 144, 144, 0.75));
+    background: -ms-linear-gradient(top, rgba(176, 176, 176, 0.75), rgba(144, 144, 144, 0.75));
+    background-image: -o-linear-gradient(top, rgba(176, 176, 176, 0.75), rgba(144, 144, 144, 0.75));
+    background-image: -webkit-linear-gradient(top, rgba(176, 176, 176, 0.75), rgba(144, 144, 144, 0.75));
+    background-image: linear-gradient(top, rgba(176, 176, 176, 0.75), rgba(144, 144, 144, 0.75));
+    color: rgb(0, 0, 0);
+    -moz-box-shadow: 0 0 2px rgb(160, 160, 160);
+    -ms-box-shadow: 0 0 2px rgb(160, 160, 160);
+    -o-box-shadow: 0 0 2px rgb(160, 160, 160);
+    -webkit-box-shadow: 0 0 2px rgb(160, 160, 160);
+    box-shadow: 0 0 2px rgb(160, 160, 160);
+}
+.OxThemeOxmedium .OxButton.OxOverlay:active {
+    border-color: rgba(0, 0, 0, 0.75);
+    background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    background: -ms-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    background-image: linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    color: rgb(255, 255, 255);
+}
+.OxThemeOxmedium .OxButton.OxOverlay.OxDisabled {
+    background-image: -moz-linear-gradient(top, rgba(160, 160, 160, 0.75), rgba(160, 160, 160, 0.75));
+    background: -ms-linear-gradient(top, rgba(160, 160, 160, 0.75), rgba(160, 160, 160, 0.75));
+    background-image: -o-linear-gradient(top, rgba(160, 160, 160, 0.75), rgba(160, 160, 160, 0.75));
+    background-image: -webkit-linear-gradient(top, rgba(160, 160, 160, 0.75), rgba(160, 160, 160, 0.75));
+    background-image: linear-gradient(top, rgba(160, 160, 160, 0.75), rgba(160, 160, 160, 0.75));
+    color: rgb(96, 96, 96);
+}
+.OxThemeOxmedium .OxButton.OxOverlay.OxSelected {
+    background-image: -moz-linear-gradient(top, rgba(80, 80, 80, 0.5), rgba(80, 80, 80, 0.5));
+    background: -ms-linear-gradient(top, rgba(80, 80, 80, 0.5), rgba(80, 80, 80, 0.5));
+    background-image: -o-linear-gradient(top, rgba(80, 80, 80, 0.5), rgba(80, 80, 80, 0.5));
+    background-image: -webkit-linear-gradient(top, rgba(80, 80, 80, 0.5), rgba(80, 80, 80, 0.5));
+    background-image: linear-gradient(top, rgba(80, 80, 80, 0.5), rgba(80, 80, 80, 0.5));
+    color: rgb(255, 255, 255);
+}
+.OxThemeOxmedium .OxButtonGroup.OxOverlay {
+    height: 16px;
+    border-radius: 8px;
+    -moz-box-shadow: 0 0 2px rgb(160, 160, 160);
+    -ms-box-shadow: 0 0 2px rgb(160, 160, 160);
+    -o-box-shadow: 0 0 2px rgb(160, 160, 160);
+    -webkit-box-shadow: 0 0 2px rgb(160, 160, 160);
+    box-shadow: 0 0 2px rgb(160, 160, 160);
+}
+.OxThemeOxmedium .OxButtonGroup.OxOverlay .OxButton {
+    -moz-box-shadow: 0 0 0 transparent;
+    -ms-box-shadow: 0 0 0 transparent;
+    -0-box-shadow: 0 0 0 transparent;
+    -webkit-box-shadow: 0 0 0 transparent;
+    box-shadow: 0 0 0 transparent;
+}
+
+
+.OxThemeOxmedium .OxFileInput.OxDisabled > .OxBar {
+    background-image: -moz-linear-gradient(top, rgb(176, 176, 176), rgb(144, 144, 144));
+    background: -ms-linear-gradient(top, rgb(176, 176, 176), rgb(144, 144, 144));
+    background-image: -o-linear-gradient(top, rgb(176, 176, 176), rgb(144, 144, 144));
+    background-image: -webkit-linear-gradient(top, rgb(176, 176, 176), rgb(144, 144, 144));
+    background-image: linear-gradient(top, rgb(176, 176, 176), rgb(144, 144, 144));
+}
+.OxThemeOxmedium .OxFileInput.OxDisabled > .OxBar > div {
+    color: rgb(96, 96, 96)
+}
+
+.OxThemeOxmedium .OxFormMessage {
+    color: rgb(192, 64, 64);
+}
+
+.OxThemeOxmedium input.OxCheckbox,
+.OxThemeOxmedium input.OxInput,
+.OxThemeOxmedium textarea,
+.OxThemeOxmedium .OxTrack {
+    background-image: -moz-linear-gradient(top, rgb(144, 144, 144), rgb(176, 176, 176));
+    background: -ms-linear-gradient(top, rgb(144, 144, 144), rgb(176, 176, 176));
+    background-image: -o-linear-gradient(top, rgb(144, 144, 144), rgb(176, 176, 176));
+    background-image: -webkit-linear-gradient(top, rgb(144, 144, 144), rgb(176, 176, 176));
+    background-image: linear-gradient(top, rgb(144, 144, 144), rgb(176, 176, 176));
+}
+.OxThemeOxmedium div.OxInput.OxError input {
+    color: rgb(192, 64, 64);
+}
+.OxThemeOxmedium .OxInput:focus {
+    border-color: rgb(192, 192, 192);
+    -moz-box-shadow: inset 0 0 2px rgb(192, 192, 192);
+    -ms-box-shadow: inset 0 0 2px rgb(192, 192, 192);
+    -o-box-shadow: inset 0 0 2px rgb(192, 192, 192);
+    -webkit-box-shadow: inset 0 0 2px rgb(192, 192, 192);
+    box-shadow: inset 0 0 2px rgb(192, 192, 192);
+}
+.OxThemeOxmedium div.OxInput.OxFocus,
+.OxThemeOxmedium .OxSelect.OxFocus {
+    -moz-box-shadow: 0 0 2px rgb(192, 192, 192);
+    -ms-box-shadow: 0 0 2px rgb(192, 192, 192);
+    -o-box-shadow: 0 0 2px rgb(192, 192, 192);
+    -webkit-box-shadow: 0 0 2px rgb(192, 192, 192);
+    box-shadow: 0 0 2px rgb(192, 192, 192);
+}
+
+/* FIXME: modern only? */
+.OxThemeOxmedium div.OxInput.OxFocus > .OxInputLabel {
+    border-color: rgb(80, 80, 80);
+}
+
+.OxThemeOxmedium .OxInput.OxPlaceholder {
+    color: rgb(96, 96, 96);
+}
+
+.OxThemeOxmedium .OxLabel {
+    background-color: rgb(160, 160, 160);
+}
+.OxThemeOxmedium .OxLabel.OxDisabled {
+    color: rgb(128, 128, 128);
+}
+.OxThemeOxmedium .OxLabel.OxOverlay {
+    background-color: rgba(160, 160, 160, 0.75);
+}
+.OxThemeOxmedium .OxLabel.OxOverlay.OxDisabled {
+    color: rgb(128, 128, 128);
+}
+.OxThemeOxmedium .OxDocPage .OxLabel.OxSquare,
+.OxThemeOxmedium .OxExamplePage .OxLabel.OxSquare {
+    background-color: rgb(144, 144, 144);
+}
+
+.OxThemeOxmedium input.OxCheckbox.OxDisabled,
+.OxThemeOxmedium input.OxInput:disabled,
+.OxThemeOxmedium input.OxInput[readonly=readonly],
+.OxThemeOxmedium textarea.OxInput[readonly=readonly] {
+    background-image: -moz-linear-gradient(top, rgb(144, 144, 144), rgb(144, 144, 144));
+    background: -ms-linear-gradient(top, rgb(144, 144, 144), rgb(144, 144, 144));
+    background-image: -o-linear-gradient(top, rgb(144, 144, 144), rgb(144, 144, 144));
+    background-image: -webkit-linear-gradient(top, rgb(144, 144, 144), rgb(144, 144, 144));
+    background-image: linear-gradient(top, rgb(144, 144, 144), rgb(144, 144, 144));
+    color: rgb(96, 96, 96);
+}
+
+.OxThemeOxmedium .OxLabelSelect > .OxTitle {
+    border-color: rgb(128, 128, 128);
+    background-image: -moz-linear-gradient(top, rgb(176, 176, 176), rgb(144, 144, 144));
+    background: -ms-linear-gradient(top, rgb(176, 176, 176), rgb(144, 144, 144));
+    background-image: -o-linear-gradient(top, rgb(176, 176, 176), rgb(144, 144, 144));
+    background-image: -webkit-linear-gradient(top, rgb(176, 176, 176), rgb(144, 144, 144));
+    background-image: linear-gradient(top, rgb(176, 176, 176), rgb(144, 144, 144));
+}
+.OxThemeOxmedium .OxLabelSelect.OxSelected > .OxTitle {
+    background-image: -moz-linear-gradient(top, rgb(96, 96, 96), rgb(128, 128, 128));
+    background: -ms-linear-gradient(top, rgb(96, 96, 96), rgb(128, 128, 128));
+    background-image: -o-linear-gradient(top, rgb(96, 96, 96), rgb(128, 128, 128));
+    background-image: -webkit-linear-gradient(top, rgb(96, 96, 96), rgb(128, 128, 128));
+    background-image: linear-gradient(top, rgb(96, 96, 96), rgb(128, 128, 128));
+}
+
+.OxThemeOxmedium .OxFileInput > .OxBar,
+.OxThemeOxmedium .OxFileInput > .OxFiles {
+    border-color: rgb(128, 128, 128);
+}
+
+.OxThemeOxmedium .OxArrayEditable.OxArrayEditableTextarea .OxEditableElement {
+    border-top-color: rgb(128, 128, 128);
+}
+
+.OxThemeOxmedium .OxEditableContent.OxEditing {
+    background-image: -moz-linear-gradient(top, rgb(144, 144, 144), rgb(176, 176, 176));
+    background: -ms-linear-gradient(top, rgb(144, 144, 144), rgb(176, 176, 176));
+    background-image: -o-linear-gradient(top, rgb(144, 144, 144), rgb(176, 176, 176));
+    background-image: -webkit-linear-gradient(top, rgb(144, 144, 144), rgb(176, 176, 176));
+    background-image: linear-gradient(top, rgb(144, 144, 144), rgb(176, 176, 176));
+    -moz-box-shadow: 0 0 2px rgb(192, 192, 192);
+    -ms-box-shadow: 0 0 2px rgb(192, 192, 192);
+    -o-box-shadow: 0 0 2px rgb(192, 192, 192);
+    -webkit-box-shadow: 0 0 2px rgb(192, 192, 192);
+    box-shadow: 0 0 2px rgb(192, 192, 192);
+}
+
+.OxThemeOxmedium .OxEditableContent .OxHighlight
+.OxThemeOxmedium .OxEditableElement .OxHighlight, {
+    border-radius: 2px;
+}
+.OxThemeOxmedium .OxEditableContent.OxPlaceholder,
+.OxThemeOxmedium .OxEditableElement.OxPlaceholder .OxValue {
+    color: rgb(96, 96, 96);
+}
+
+/*
+================================================================================
+ImageViewer
+================================================================================
+*/
+
+.OxThemeOxmedium .OxImageViewer .OxImageOverview {
+    border-color: rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0 0 2px rgb(160, 160, 160);
+    -ms-box-shadow: 0 0 2px rgb(160, 160, 160);
+    -o-box-shadow: 0 0 2px rgb(160, 160, 160);
+    -webkit-box-shadow: 0 0 2px rgb(160, 160, 160);
+    box-shadow: 0 0 2px rgb(160, 160, 160);
+}
+.OxThemeOxmedium .OxImageViewer .OxImageOverlayArea {
+    background-color: rgba(160, 160, 160, 0.75);
+    background-image: none;
+}
+.OxThemeOxmedium .OxImageViewer #OxImageOverlayCenter {
+    border-color: rgba(0, 0, 0, 0.75);
+    background: transparent;
+    background-image: none;
+    -moz-box-shadow: 0 0 2px rgb(160, 160, 160);
+    -ms-box-shadow: 0 0 2px rgb(160, 160, 160);
+    -o-box-shadow: 0 0 2px rgb(160, 160, 160);
+    -webkit-box-shadow: 0 0 2px rgb(160, 160, 160);
+    box-shadow: 0 0 2px rgb(160, 160, 160);
+}
+
+/*
+================================================================================
+Lists
+================================================================================
+*/
+
+.OxThemeOxmedium .OxIconList .OxItem > .OxIcon > img.OxLoading,
+.OxThemeOxmedium .OxInfoList .OxItem .OxIcon > img.OxLoading {
+    border-color: rgb(112, 112, 112);
+    background-image: -moz-linear-gradient(top, rgb(160, 160, 160), rgb(128, 128, 128));
+    background: -ms-linear-gradient(top, rgb(160, 160, 160), rgb(128, 128, 128));
+    background-image: -o-linear-gradient(top, rgb(160, 160, 160), rgb(128, 128, 128));
+    background-image: -webkit-linear-gradient(top, rgb(160, 160, 160), rgb(128, 128, 128));
+    background-image: linear-gradient(top, rgb(160, 160, 160), rgb(128, 128, 128));
+}
+.OxThemeOxmedium .OxIconList .OxItem.OxSelected > .OxIcon > img,
+.OxThemeOxmedium .OxIconList .OxItem.OxSelected > .OxIcon > .OxVideoPlayer,
+.OxThemeOxmedium .OxInfoList .OxItem.OxSelected .OxIcon > img,
+.OxThemeOxmedium .OxInfoList .OxItem.OxSelected .OxIcon > .OxVideoPlayer {
+    border-color: rgb(112, 112, 112);
+    -moz-box-shadow: 0 0 4px rgb(112, 112, 112);
+    -ms-box-shadow: 0 0 4px rgb(112, 112, 112);
+    -o-box-shadow: 0 0 4px rgb(112, 112, 112);
+    -webkit-box-shadow: 0 0 4px rgb(112, 112, 112);
+    box-shadow: 0 0 4px rgb(112, 112, 112);
+}
+.OxThemeOxmedium .OxIconList.OxFocus .OxItem.OxSelected > .OxIcon > img,
+.OxThemeOxmedium .OxIconList.OxFocus .OxItem.OxSelected > .OxIcon > .OxVideoPlayer,
+.OxThemeOxmedium .OxInfoList.OxFocus .OxItem.OxSelected .OxIcon > img,
+.OxThemeOxmedium .OxInfoList.OxFocus .OxItem.OxSelected .OxIcon > .OxVideoPlayer {
+    border-color: rgb(96, 96, 96);
+    -moz-box-shadow: 0 0 4px rgb(96, 96, 96);
+    -ms-box-shadow: 0 0 4px rgb(96, 96, 96);
+    -o-box-shadow: 0 0 4px rgb(96, 96, 96);
+    -webkit-box-shadow: 0 0 4px rgb(96, 96, 96);
+    box-shadow: 0 0 4px rgb(96, 96, 96);
+}
+.OxThemeOxmedium .OxIconList .OxItem > .OxText > div,
+.OxThemeOxmedium .OxInfoList .OxItem .OxText > div {
+    text-shadow: rgb(144, 144, 144) -1px -1px 0,
+        rgb(144, 144, 144) -1px 1px 0,
+        rgb(144, 144, 144) 1px -1px 0,
+        rgb(144, 144, 144) 1px 1px 0;
+}
+.OxThemeOxmedium .OxIconList .OxItem > .OxText > div .OxHighlight,
+.OxThemeOxmedium .OxInfoList .OxItem .OxText > div .OxHighlight {
+    color: rgb(255, 255, 0);
+    background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
+    background: -ms-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
+    background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
+    background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
+    background-image: linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
+}
+.OxThemeOxmedium .OxIconList .OxItem.OxSelected > .OxText > div,
+.OxThemeOxmedium .OxInfoList .OxItem.OxSelected .OxText > div:not(.OxSpecialTarget) {
+    border-color: rgb(112, 112, 112);
+    background-image: -moz-linear-gradient(top, rgb(128, 128, 128), rgb(128, 128, 128));
+    background: -ms-linear-gradient(top, rgb(128, 128, 128), rgb(128, 128, 128));
+    background-image: -o-linear-gradient(top, rgb(128, 128, 128), rgb(128, 128, 128));
+    background-image: -webkit-linear-gradient(top, rgb(128, 128, 128), rgb(128, 128, 128));
+    background-image: linear-gradient(top, rgb(128, 128, 128), rgb(128, 128, 128));
+    color: rgb(255, 255, 255);
+    text-shadow: rgb(64, 64, 64) -1px -1px 0,
+        rgb(64, 64, 64) -1px 1px 0,
+        rgb(64, 64, 64) 1px -1px 0,
+        rgb(64, 64, 64) 1px 1px 0;
+    -moz-box-shadow: 0 0 4px rgb(112, 112, 112);
+    -ms-box-shadow: 0 0 4px rgb(112, 112, 112);
+    -o-box-shadow: 0 0 4px rgb(112, 112, 112);
+    -webkit-box-shadow: 0 0 4px rgb(112, 112, 112);
+    box-shadow: 0 0 4px rgb(112, 112, 112);
+}
+.OxThemeOxmedium .OxIconList.OxFocus .OxItem.OxSelected > .OxText > div,
+.OxThemeOxmedium .OxInfoList.OxFocus .OxItem.OxSelected .OxText > div:not(.OxSpecialTarget) {
+    border-color: rgb(96, 96, 96);
+    background-image: -moz-linear-gradient(top, rgb(112, 112, 112), rgb(112, 112, 112));
+    background: -ms-linear-gradient(top, rgb(112, 112, 112), rgb(112, 112, 112));
+    background-image: -o-linear-gradient(top, rgb(112, 112, 112), rgb(112, 112, 112));
+    background-image: -webkit-linear-gradient(top, rgb(112, 112, 112), rgb(112, 112, 112));
+    background-image: linear-gradient(top, rgb(112, 112, 112), rgb(112, 112, 112));
+    color: rgb(255, 255, 255);
+    text-shadow: rgb(64, 64, 64) -1px -1px 0,
+        rgb(64, 64, 64) -1px 1px 0,
+        rgb(64, 64, 64) 1px -1px 0,
+        rgb(64, 64, 64) 1px 1px 0;
+    -moz-box-shadow: 0 0 4px rgb(96, 96, 96);
+    -ms-box-shadow: 0 0 4px rgb(96, 96, 96);
+    -o-box-shadow: 0 0 4px rgb(96, 96, 96);
+    -webkit-box-shadow: 0 0 4px rgb(96, 96, 96);
+    box-shadow: 0 0 4px rgb(96, 96, 96);
+}
+.OxThemeOxmedium .OxIconList .OxItem > .OxText > div > .OxInfo,
+.OxThemeOxmedium .OxInfoList .OxItem .OxText > div > .OxInfo {
+    color: rgb(64, 64, 64);
+}
+.OxThemeOxmedium .OxIconList .OxItem.OxSelected > .OxText > div > .OxInfo,
+.OxThemeOxmedium .OxInfoList .OxItem.OxSelected .OxText > div:not(.OxSpecialTarget) > .OxInfo {
+    color: rgb(192, 192, 192);
+}
+.OxThemeOxmedium .OxIconList.OxFocus .OxItem.OxSelected > .OxText > div > .OxInfo,
+.OxThemeOxmedium .OxInfoList.OxFocus .OxItem.OxSelected .OxText > div:not(.OxSpecialTarget) > .OxInfo {
+    color: rgb(192, 192, 192);
+}
+.OxThemeOxmedium .OxInfoList .OxItem.OxSelected .OxInfoElement .OxIcon > img,
+.OxThemeOxmedium .OxInfoList .OxItem.OxSelected .OxInfoElement .OxIcon .OxVideoPlayer,
+.OxThemeOxmedium .OxInfoList .OxItem.OxSelected .OxInfoElement .OxText > div {
+    border-color: transparent;
+    background-image: none;
+    -moz-box-shadow: 0 0 0 transparent;
+    -ms-box-shadow: 0 0 0 transparent;
+    -o-box-shadow: 0 0 0 transparent;
+    -webkit-box-shadow: 0 0 0 transparent;
+    box-shadow: 0 0 0 transparent;
+}
+.OxThemeOxmedium .OxInfoList .OxItem.OxSelected .OxInfoElement .OxIcon > img,
+.OxThemeOxmedium .OxInfoList .OxItem.OxSelected .OxInfoElement .OxIcon .OxVideoPlayer,
+.OxThemeOxmedium .OxInfoList .OxItem.OxSelected .OxInfoElement .OxText > div,
+.OxThemeOxmedium .OxInfoList.OxFocus .OxItem.OxSelected .OxInfoElement .OxIcon > img,
+.OxThemeOxmedium .OxInfoList.OxFocus .OxItem.OxSelected .OxInfoElement .OxIcon .OxVideoPlayer,
+.OxThemeOxmedium .OxInfoList.OxFocus .OxItem.OxSelected .OxInfoElement .OxText > div {
+    border-color: transparent;
+    background-image: none;
+    -moz-box-shadow: 0 0 0 transparent;
+    -ms-box-shadow: 0 0 0 transparent;
+    -o-box-shadow: 0 0 0 transparent;
+    -webkit-box-shadow: 0 0 0 transparent;
+    box-shadow: 0 0 0 transparent;
+}
+.OxThemeOxmedium .OxInfoList .OxItem.OxSelected .OxInfoElement .OxIcon > img.OxLoading,
+.OxThemeOxmedium .OxInfoList.OxFocus .OxItem.OxSelected .OxInfoElement .OxIcon > img.OxLoading {
+    border-color: rgb(112, 112, 112);
+    background-image: -moz-linear-gradient(top, rgb(160, 160, 160), rgb(128, 128, 128));
+    background: -ms-linear-gradient(top, rgb(160, 160, 160), rgb(128, 128, 128));
+    background-image: -o-linear-gradient(top, rgb(160, 160, 160), rgb(128, 128, 128));
+    background-image: -webkit-linear-gradient(top, rgb(160, 160, 160), rgb(128, 128, 128));
+    background-image: linear-gradient(top, rgb(160, 160, 160), rgb(128, 128, 128));
+}
+
+
+.OxThemeOxmedium .OxTableList .OxContent {
+    background-color: rgb(144, 144, 144);
+}
+.OxThemeOxmedium .OxCustomList .OxItem:nth-child(odd),
+.OxThemeOxmedium .OxTableList .OxItem:nth-child(odd) {
+    background-image: -moz-linear-gradient(top, rgb(146, 146, 146), rgb(146, 146, 146));
+    background: -ms-linear-gradient(top, rgb(146, 146, 146), rgb(146, 146, 146));
+    background-image: -o-linear-gradient(top, rgb(146, 146, 146), rgb(146, 146, 146));
+    background-image: -webkit-linear-gradient(top, rgb(146, 146, 146), rgb(146, 146, 146));
+    background-image: linear-gradient(top, rgb(146, 146, 146), rgb(146, 146, 146));
+}
+.OxThemeOxmedium .OxCustomList .OxItem:nth-child(even),
+.OxThemeOxmedium .OxTableList .OxItem:nth-child(even) {
+    background-image: -moz-linear-gradient(top, rgb(142, 142, 142), rgb(142, 142, 142));
+    background: -ms-linear-gradient(top, rgb(142, 142, 142), rgb(142, 142, 142));
+    background-image: -o-linear-gradient(top, rgb(142, 142, 142), rgb(142, 142, 142));
+    background-image: -webkit-linear-gradient(top, rgb(142, 142, 142), rgb(142, 142, 142));
+    background-image: linear-gradient(top, rgb(142, 142, 142), rgb(142, 142, 142));
+}
+.OxThemeOxmedium .OxCustomList .OxItem.OxSelected:nth-child(odd),
+.OxThemeOxmedium .OxTableList .OxItem.OxSelected:nth-child(odd) {
+    background-image: -moz-linear-gradient(top, rgb(130, 130, 130), rgb(130, 130, 130));
+    background: -ms-linear-gradient(top, rgb(130, 130, 130), rgb(130, 130, 130));
+    background-image: -o-linear-gradient(top, rgb(130, 130, 130), rgb(130, 130, 130));
+    background-image: -webkit-linear-gradient(top, rgb(130, 130, 130), rgb(130, 130, 130));
+    background-image: linear-gradient(top, rgb(130, 130, 130), rgb(130, 130, 130));
+}
+.OxThemeOxmedium .OxCustomList .OxItem.OxSelected:nth-child(even),
+.OxThemeOxmedium .OxTableList .OxItem.OxSelected:nth-child(even) {
+    background-image: -moz-linear-gradient(top, rgb(126, 126, 126), rgb(126, 126, 126));
+    background: -ms-linear-gradient(top, rgb(126, 126, 126), rgb(126, 126, 126));
+    background-image: -o-linear-gradient(top, rgb(126, 126, 126), rgb(126, 126, 126));
+    background-image: -webkit-linear-gradient(top, rgb(126, 126, 126), rgb(126, 126, 126));
+    background-image: linear-gradient(top, rgb(126, 126, 126), rgb(126, 126, 126));
+}
+.OxThemeOxmedium .OxCustomList .OxFocus .OxItem.OxSelected:nth-child(odd),
+.OxThemeOxmedium .OxTableList.OxFocus .OxItem.OxSelected:nth-child(odd),
+.OxThemeOxmedium .OxTableList .OxFocus .OxItem.OxSelected:nth-child(odd) {
+    background-image: -moz-linear-gradient(top, rgb(114, 114, 114), rgb(114, 114, 114));
+    background: -ms-linear-gradient(top, rgb(114, 114, 114), rgb(114, 114, 114));
+    background-image: -o-linear-gradient(top, rgb(114, 114, 114), rgb(114, 114, 114));
+    background-image: -webkit-linear-gradient(top, rgb(114, 114, 114), rgb(114, 114, 114));
+    background-image: linear-gradient(top, rgb(114, 114, 114), rgb(114, 114, 114));
+}
+.OxThemeOxmedium .OxCustomList .OxFocus .OxItem.OxSelected:nth-child(even),
+.OxThemeOxmedium .OxTableList.OxFocus .OxItem.OxSelected:nth-child(even),
+.OxThemeOxmedium .OxTableList .OxFocus .OxItem.OxSelected:nth-child(even) {
+    background-image: -moz-linear-gradient(top, rgb(110, 110, 110), rgb(110, 110, 110));
+    background: -ms-linear-gradient(top, rgb(110, 110, 110), rgb(110, 110, 110));
+    background-image: -o-linear-gradient(top, rgb(110, 110, 110), rgb(110, 110, 110));
+    background-image: -webkit-linear-gradient(top, rgb(110, 110, 110), rgb(110, 110, 110));
+    background-image: linear-gradient(top, rgb(110, 110, 110), rgb(110, 110, 110));
+}
+.OxThemeOxmedium .OxTableList .OxItem.OxDroppable.OxDrop:nth-child(odd) .OxCell {
+    background-image: -moz-linear-gradient(top, rgb(194, 194, 194), rgb(194, 194, 194));
+    background: -ms-linear-gradient(top, rgb(194, 194, 194), rgb(194, 194, 194));
+    background-image: -o-linear-gradient(top, rgb(194, 194, 194), rgb(194, 194, 194));
+    background-image: -webkit-linear-gradient(top, rgb(194, 194, 194), rgb(194, 194, 194));
+    background-image: linear-gradient(top, rgb(194, 194, 194), rgb(194, 194, 194));
+}
+.OxThemeOxmedium .OxTableList .OxItem.OxDroppable.OxDrop:nth-child(even) .OxCell {
+    background-image: -moz-linear-gradient(top, rgb(190, 190, 190), rgb(190, 190, 190));
+    background: -ms-linear-gradient(top, rgb(190, 190, 190), rgb(190, 190, 190));
+    background-image: -o-linear-gradient(top, rgb(190, 190, 190), rgb(190, 190, 190));
+    background-image: -webkit-linear-gradient(top, rgb(190, 190, 190), rgb(190, 190, 190));
+    background-image: linear-gradient(top, rgb(190, 190, 190), rgb(190, 190, 190));
+}
+
+.OxThemeOxmedium .OxTableList .OxHead .OxSelected {
+    background-image: -moz-linear-gradient(top, rgb(128, 128, 128), rgb(96, 96, 96));
+    background: -ms-linear-gradient(top, rgb(128, 128, 128), rgb(96, 96, 96));
+    background-image: -o-linear-gradient(top, rgb(128, 128, 128), rgb(96, 96, 96));
+    background-image: -webkit-linear-gradient(top, rgb(128, 128, 128), rgb(96, 96, 96));
+    background-image: linear-gradient(top, rgb(128, 128, 128), rgb(96, 96, 96));
+}
+.OxThemeOxmedium .OxTableList .OxHead .OxSelected .OxTitle {
+    color: rgb(255, 255, 255);
+}
+.OxThemeOxmedium .OxTableList .OxHead .OxResize .OxCenter {
+    background-color: rgb(128, 128, 128);
+}
+.OxThemeOxmedium .OxTableList .OxHead .OxSelect,
+.OxThemeOxmedium .OxTableList .OxBar .OxClear {
+    border-color: rgb(128, 128, 128);
+}
+.OxThemeOxmedium .OxTableList .OxBody .OxItem .OxCell {
+    border-color: rgb(128, 128, 128);
+}
+.OxThemeOxmedium .OxTableList .OxItem.OxSelected .OxCell {
+    border-color: rgb(112, 112, 112);
+    color: rgb(255, 255, 255);
+}
+.OxThemeOxmedium .OxTableList.OxFocus .OxItem.OxSelected .OxCell,
+.OxThemeOxmedium .OxTableList .OxFocus .OxItem.OxSelected .OxCell {
+    border-color: rgb(96, 96, 96);
+    color: rgb(255, 255, 255);
+}
+.OxThemeOxmedium .OxTableList .OxItem.OxDroppable.OxDrop .OxCell {
+    border-color: rgb(176, 176, 176);
+}
+.OxThemeOxmedium .OxTableList .OxBody .OxItem .OxLine {
+    background-color: rgb(128, 128, 128);
+}
+
+
+/*
+================================================================================
+Maps
+================================================================================
+*/
+
+.OxThemeOxmedium .OxMap .OxMapControl,
+.OxThemeOxmedium .OxMap .OxPlaceControl {
+    border-color: rgb(0, 0, 0);
+    background-image: -moz-linear-gradient(top, rgba(160, 160, 160, 0.75), rgba(160, 160, 160, 0.75));
+    background: -ms-linear-gradient(top, rgba(160, 160, 160, 0.75), rgba(160, 160, 160, 0.75));
+    background-image: -o-linear-gradient(top, rgba(160, 160, 160, 0.75), rgba(160, 160, 160, 0.75));
+    background-image: -webkit-linear-gradient(top, rgba(160, 160, 160, 0.75), rgba(160, 160, 160, 0.75));
+    background-image: linear-gradient(top, rgba(160, 160, 160, 0.75), rgba(160, 160, 160, 0.75));
+    color: rgb(0, 0, 0);
+}
+
+.OxThemeOxmedium .OxTypeIcon {
+    border-color: rgb(0, 0, 0);
+}
+.OxThemeOxmedium .OxMapEditor .OxWarning {
+    border-bottom: 2px dotted rgb(255, 64, 64);
+}
+
+/*
+================================================================================
+Media
+================================================================================
+*/
+
+.OxThemeOxmedium .OxMedia {
+    background-color: rgb(144, 144, 144);
+}
+.OxThemeOxmedium .OxMedia .OxReflection > div {
+    background-image: -moz-linear-gradient(top, rgba(144, 144, 144, 0.75), rgba(144, 144, 144, 1));
+    background: -ms-linear-gradient(top, rgba(144, 144, 144, 0.75), rgba(144, 144, 144, 1));
+    background-image: -o-linear-gradient(top, rgba(144, 144, 144, 0.75), rgba(144, 144, 144, 1));
+    background-image: -webkit-linear-gradient(top, rgba(144, 144, 144, 0.75), rgba(144, 144, 144, 1));
+    background-image: linear-gradient(top, rgba(144, 144, 144, 0.75), rgba(144, 144, 144, 1));
+}
+
+.OxThemeOxmedium .OxIconList.OxMedia .OxItem > .OxIcon > img.OxLoading,
+.OxThemeOxmedium .OxInfoList.OxMedia .OxItem .OxIcon > img.OxLoading {
+    border-color: rgb(112, 112, 112);
+    background-image: -moz-linear-gradient(top, rgb(160, 160, 160), rgb(128, 128, 128));
+    background: -ms-linear-gradient(top, rgb(160, 160, 160), rgb(128, 128, 128));
+    background-image: -o-linear-gradient(top, rgb(160, 160, 160), rgb(128, 128, 128));
+    background-image: -webkit-linear-gradient(top, rgb(160, 160, 160), rgb(128, 128, 128));
+    background-image: linear-gradient(top, rgb(160, 160, 160), rgb(128, 128, 128));
+}
+.OxThemeOxmedium .OxIconList.OxMedia .OxItem.OxSelected > .OxIcon > img,
+.OxThemeOxmedium .OxIconList.OxMedia .OxItem.OxSelected > .OxIcon > .OxVideoPlayer,
+.OxThemeOxmedium .OxInfoList.OxMedia .OxItem.OxSelected .OxIcon > img,
+.OxThemeOxmedium .OxInfoList.OxMedia .OxItem.OxSelected .OxIcon > .OxVideoPlayer {
+    border-color: rgb(112, 112, 112);
+    -moz-box-shadow: 0 0 4px rgb(112, 112, 112);
+    -ms-box-shadow: 0 0 4px rgb(112, 112, 112);
+    -o-box-shadow: 0 0 4px rgb(112, 112, 112);
+    -webkit-box-shadow: 0 0 4px rgb(112, 112, 112);
+    box-shadow: 0 0 4px rgb(112, 112, 112);
+}
+.OxThemeOxmedium .OxIconList.OxMedia.OxFocus .OxItem.OxSelected > .OxIcon > img,
+.OxThemeOxmedium .OxIconList.OxMedia.OxFocus .OxItem.OxSelected > .OxIcon > .OxVideoPlayer,
+.OxThemeOxmedium .OxInfoList.OxMedia.OxFocus .OxItem.OxSelected .OxIcon > img,
+.OxThemeOxmedium .OxInfoList.OxMedia.OxFocus .OxItem.OxSelected .OxIcon > .OxVideoPlayer {
+    border-color: rgb(96, 96, 96);
+    -moz-box-shadow: 0 0 4px rgb(96, 96, 96);
+    -ms-box-shadow: 0 0 4px rgb(96, 96, 96);
+    -o-box-shadow: 0 0 4px rgb(96, 96, 96);
+    -webkit-box-shadow: 0 0 4px rgb(96, 96, 96);
+    box-shadow: 0 0 4px rgb(96, 96, 96);
+}
+.OxThemeOxmedium .OxIconList.OxMedia .OxItem > .OxText div,
+.OxThemeOxmedium .OxInfoList.OxMedia .OxItem .OxText > div {
+    color: rgb(0, 0, 0);
+    text-shadow: rgb(144, 144, 144) -1px -1px 0,
+        rgb(144, 144, 144) -1px 1px 0,
+        rgb(144, 144, 144) 1px -1px 0,
+        rgb(144, 144, 144) 1px 1px 0;
+}
+.OxThemeOxmedium .OxIconList.OxMedia .OxItem.OxSelected > .OxText > div,
+.OxThemeOxmedium .OxInfoList.OxMedia .OxItem.OxSelected .OxText > div:not(.OxSpecialTarget) {
+    border-color: rgb(112, 112, 112);
+    background-image: -moz-linear-gradient(top, rgb(128, 128, 128), rgb(128, 128, 128));
+    background: -ms-linear-gradient(top, rgb(128, 128, 128), rgb(128, 128, 128));
+    background-image: -o-linear-gradient(top, rgb(128, 128, 128), rgb(128, 128, 128));
+    background-image: -webkit-linear-gradient(top, rgb(128, 128, 128), rgb(128, 128, 128));
+    background-image: linear-gradient(top, rgb(128, 128, 128), rgb(128, 128, 128));
+    color: rgb(255, 255, 255);
+    text-shadow: rgb(64, 64, 64) -1px -1px 0,
+        rgb(64, 64, 64) -1px 1px 0,
+        rgb(64, 64, 64) 1px -1px 0,
+        rgb(64, 64, 64) 1px 1px 0;
+    -moz-box-shadow: 0 0 4px rgb(112, 112, 112);
+    -ms-box-shadow: 0 0 4px rgb(112, 112, 112);
+    -o-box-shadow: 0 0 4px rgb(112, 112, 112);
+    -webkit-box-shadow: 0 0 4px rgb(112, 112, 112);
+    box-shadow: 0 0 4px rgb(112, 112, 112);
+}
+.OxThemeOxmedium .OxIconList.OxMedia.OxFocus .OxItem.OxSelected > .OxText > div,
+.OxThemeOxmedium .OxInfoList.OxMedia.OxFocus .OxItem.OxSelected .OxText > div:not(.OxSpecialTarget) {
+    border-color: rgb(96, 96, 96);
+    background-image: -moz-linear-gradient(top, rgb(112, 112, 112), rgb(112, 112, 112));
+    background: -ms-linear-gradient(top, rgb(112, 112, 112), rgb(112, 112, 112));
+    background-image: -o-linear-gradient(top, rgb(112, 112, 112), rgb(112, 112, 112));
+    background-image: -webkit-linear-gradient(top, rgb(112, 112, 112), rgb(112, 112, 112));
+    background-image: linear-gradient(top, rgb(112, 112, 112), rgb(112, 112, 112));
+    color: rgb(255, 255, 255);
+    text-shadow: rgb(64, 64, 64) -1px -1px 0,
+        rgb(64, 64, 64) -1px 1px 0,
+        rgb(64, 64, 64) 1px -1px 0,
+        rgb(64, 64, 64) 1px 1px 0;
+    -moz-box-shadow: 0 0 4px rgb(96, 96, 96);
+    -ms-box-shadow: 0 0 4px rgb(96, 96, 96);
+    -o-box-shadow: 0 0 4px rgb(96, 96, 96);
+    -webkit-box-shadow: 0 0 4px rgb(96, 96, 96);
+    box-shadow: 0 0 4px rgb(96, 96, 96);
+}
+.OxThemeOxmedium .OxIconList.OxMedia .OxItem > .OxText > div > .OxInfo,
+.OxThemeOxmedium .OxInfoList.OxMedia .OxItem .OxText > div > .OxInfo {
+    color: rgb(64, 64, 64);
+}
+.OxThemeOxmedium .OxIconList.OxMedia .OxItem.OxSelected > .OxText > div > .OxInfo,
+.OxThemeOxmedium .OxInfoList.OxMedia .OxItem.OxSelected .OxText > div:not(.OxSpecialTarget) > .OxInfo {
+    color: rgb(192, 192, 192);
+}
+.OxThemeOxmedium .OxIconList.OxMedia.OxFocus .OxItem.OxSelected > .OxText > div > .OxInfo,
+.OxThemeOxmedium .OxInfoList.OxMedia.OxFocus .OxItem.OxSelected .OxText > div:not(.OxSpecialTarget) > .OxInfo {
+    color: rgb(192, 192, 192);
+}
+.OxThemeOxmedium .OxInfoList.OxMedia .OxItem.OxSelected .OxInfoElement .OxIcon > img,
+.OxThemeOxmedium .OxInfoList.OxMedia .OxItem.OxSelected .OxInfoElement .OxIcon .OxVideoPlayer,
+.OxThemeOxmedium .OxInfoList.OxMedia .OxItem.OxSelected .OxInfoElement .OxText > div,
+.OxThemeOxmedium .OxInfoList.OxMedia.OxFocus .OxItem.OxSelected .OxInfoElement .OxIcon > img,
+.OxThemeOxmedium .OxInfoList.OxMedia.OxFocus .OxItem.OxSelected .OxInfoElement .OxIcon .OxVideoPlayer,
+.OxThemeOxmedium .OxInfoList.OxMedia.OxFocus .OxItem.OxSelected .OxInfoElement .OxText > div {
+    border-color: transparent;
+    background-image: none;
+    -moz-box-shadow: 0 0 0 transparent;
+    -ms-box-shadow: 0 0 0 transparent;
+    -o-box-shadow: 0 0 0 transparent;
+    -webkit-box-shadow: 0 0 0 transparent;
+    box-shadow: 0 0 0 transparent;
+}
+.OxThemeOxmedium .OxInfoList.OxMedia .OxItem.OxSelected .OxInfoElement .OxIcon > img.OxLoading,
+.OxThemeOxmedium .OxInfoList.OxMedia.OxFocus .OxItem.OxSelected .OxInfoElement .OxIcon > img.OxLoading {
+    border-color: rgb(112, 112, 112);
+    background-image: -moz-linear-gradient(top, rgb(160, 160, 160), rgb(128, 128, 128));
+    background: -ms-linear-gradient(top, rgb(160, 160, 160), rgb(128, 128, 128));
+    background-image: -o-linear-gradient(top, rgb(160, 160, 160), rgb(128, 128, 128));
+    background-image: -webkit-linear-gradient(top, rgb(160, 160, 160), rgb(128, 128, 128));
+    background-image: linear-gradient(top, rgb(160, 160, 160), rgb(128, 128, 128));
+}
+
+/*
+================================================================================
+Menus
+================================================================================
+*/
+
+.OxThemeOxmedium .OxMainMenu > .OxTitle.OxSelected {
+    background-image: -moz-linear-gradient(top, rgb(128, 128, 128), rgb(96, 96, 96));
+    background: -ms-linear-gradient(top, rgb(128, 128, 128), rgb(96, 96, 96));
+    background-image: -o-linear-gradient(top, rgb(128, 128, 128), rgb(96, 96, 96));
+    background-image: -webkit-linear-gradient(top, rgb(128, 128, 128), rgb(96, 96, 96));
+    background-image: linear-gradient(top, rgb(128, 128, 128), rgb(96, 96, 96));
+    color: rgb(255, 255, 255);
+}
+.OxThemeOxmedium .OxMainMenu > .OxTitle.OxHighlight {
+    background-image: -moz-linear-gradient(top, rgb(255, 255, 0), rgb(192, 192, 0));
+    background: -ms-linear-gradient(top, rgb(255, 255, 0), rgb(192, 192, 0));
+    background-image: -o-linear-gradient(top, rgb(255, 255, 0), rgb(192, 192, 0));
+    background-image: -webkit-linear-gradient(top, rgb(255, 255, 0), rgb(192, 192, 0));
+    background-image: linear-gradient(top, rgb(255, 255, 0), rgb(192, 192, 0));
+    color: rgb(0, 0, 0);
+}
+
+.OxThemeOxmedium .OxMenu {
+    -moz-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.75);
+    -ms-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.75);
+    -o-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.75);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.75);
+}
+.OxThemeOxmedium .OxMenu .OxBottom,
+.OxThemeOxmedium .OxMenu .OxItem,
+.OxThemeOxmedium .OxMenu .OxScrollbar,
+.OxThemeOxmedium .OxMenu .OxSpace,
+.OxThemeOxmedium .OxMenu .OxTop {
+    background-color: rgba(160, 160, 160, 0.96);
+}
+.OxThemeOxmedium .OxMenu .OxLine {
+    background-color: rgba(144, 144, 144, 0.96);
+}
+.OxThemeOxmedium .OxMenu .OxItem.OxSelected,
+.OxThemeOxmedium .OxMenu .OxItem.OxSelected input,
+.OxThemeOxmedium .OxMenu .OxScrollbar.OxSelected {
+    background-image: -moz-linear-gradient(top, rgba(128, 128, 128, 0.96), rgba(128, 128, 128, 0.96));
+    background: -ms-linear-gradient(top, rgba(128, 128, 128, 0.96), rgba(128, 128, 128, 0.96));
+    background-image: -o-linear-gradient(top, rgba(128, 128, 128, 0.96), rgba(128, 128, 128, 0.96));
+    background-image: -webkit-linear-gradient(top, rgba(128, 128, 128, 0.96), rgba(128, 128, 128, 0.96));
+    background-image: linear-gradient(top, rgba(128, 128, 128, 0.96), rgba(128, 128, 128, 0.96));
+    color: rgb(255, 255, 255);
+}
+.OxThemeOxmedium .OxMenu .OxItem.OxDisabled .OxCell,
+.OxThemeOxmedium .OxMenu .OxItem.OxDisabled .OxCell input {
+    color: rgb(96, 96, 96);
+}
+
+/*
+================================================================================
+Scrollbars
+================================================================================
+*/
+
+.OxThemeOxmedium ::-webkit-scrollbar:horizontal {
+    border-top: 1px solid rgb(128, 128, 128);
+    border-bottom: 1px solid rgb(128, 128, 128);
+    background: -webkit-linear-gradient(top, rgb(176, 176, 176), rgb(144, 144, 144));
+}
+.OxThemeOxmedium ::-webkit-scrollbar:vertical {
+    border-left: 1px solid rgb(128, 128, 128);
+    border-right: 1px solid rgb(128, 128, 128);
+    background: -webkit-linear-gradient(left, rgb(176, 176, 176), rgb(144, 144, 144));
+}
+.OxThemeOxmedium ::-webkit-scrollbar-button:horizontal:decrement {
+    background: url(../png/scrollbarHorizontalDecrement.png?0.1.3858);
+}
+.OxThemeOxmedium ::-webkit-scrollbar-button:horizontal:increment {
+    background: url(../png/scrollbarHorizontalIncrement.png?0.1.3858);
+}
+.OxThemeOxmedium ::-webkit-scrollbar-button:vertical:decrement {
+    background: url(../png/scrollbarVerticalDecrement.png?0.1.3858);
+}
+.OxThemeOxmedium ::-webkit-scrollbar-button:vertical:increment {
+    background: url(../png/scrollbarVerticalIncrement.png?0.1.3858);
+}
+.OxThemeOxmedium ::-webkit-scrollbar-corner {
+    border-right: 1px solid rgb(128, 128, 128);
+    border-bottom: 1px solid rgb(128, 128, 128);
+    background: -webkit-linear-gradient(top left, rgb(176, 176, 176), rgb(112, 112, 112));
+}
+.OxThemeOxmedium ::-webkit-scrollbar-thumb {
+    border: 1px solid rgb(128, 128, 128);
+}
+.OxThemeOxmedium ::-webkit-scrollbar-thumb:horizontal {
+    background: -webkit-linear-gradient(top, rgb(176, 176, 176), rgb(144, 144, 144));
+}
+.OxThemeOxmedium ::-webkit-scrollbar-thumb:vertical {
+    background: -webkit-linear-gradient(left, rgb(176, 176, 176), rgb(144, 144, 144));
+}
+.OxThemeOxmedium ::-webkit-scrollbar-track {
+    border: 1px solid rgb(128, 128, 128);
+}
+.OxThemeOxmedium ::-webkit-scrollbar-track:horizontal {
+    background: -webkit-linear-gradient(top, rgb(144, 144, 144), rgb(176, 176, 176));
+}
+.OxThemeOxmedium ::-webkit-scrollbar-track:vertical {
+    background: -webkit-linear-gradient(left, rgb(144, 144, 144), rgb(176, 176, 176));
+}
+.OxThemeOxmedium ::-webkit-scrollbar:horizontal:active,
+.OxThemeOxmedium ::-webkit-scrollbar-thumb:horizontal:active {
+    background: -webkit-linear-gradient(top, rgb(160, 160, 160), rgb(160, 160, 160));
+}
+.OxThemeOxmedium ::-webkit-scrollbar:vertical:active,
+.OxThemeOxmedium ::-webkit-scrollbar-thumb:vertical:active {
+    background: -webkit-linear-gradient(left, rgb(160, 160, 160), rgb(160, 160, 160));
+}
+
+body.OxThemeOxmedium {
+ scrollbar-color: rgb(128, 128, 128) rgb(144, 144, 144);
+}
+
+/*
+================================================================================
+SourceViewer
+================================================================================
+*/
+
+.OxThemeOxmedium .OxSourceViewer .OxComment {
+    border-color: rgb(128, 128, 128);
+}
+.OxThemeOxmedium .OxSourceViewer .OxComment code {
+    background-color: rgb(160, 160, 160);
+    box-shadow: 0 0 1px rgb(144, 144, 144);
+}
+.OxThemeOxmedium .OxSourceViewer .OxComment pre > code {
+    background-color: transparent;
+    box-shadow: none;
+}
+.OxThemeOxmedium .OxSourceViewer .OxCode {
+    background-color: rgb(160, 160, 160);
+}
+
+/*
+================================================================================
+SyntaxHighlighter
+================================================================================
+*/
+
+.OxThemeOxmedium .OxSyntaxHighlighter {
+    background-color: rgb(160, 160, 160);
+}
+.OxThemeOxmedium .OxSyntaxHighlighter .OxLineNumbers {
+    background-color: rgb(176, 176, 176);
+    color: sourcecodeLinenumbersColor;
+}
+.OxThemeOxmedium .OxSourceCode .OxComment {
+    color: rgb(96, 96, 96);
+    font-style: italic;
+}
+.OxThemeOxmedium .OxSourceCode .OxConstant {
+    color: rgb(128, 0, 0);
+    font-weight: bold;
+}
+.OxThemeOxmedium .OxSourceCode .OxError {
+    color: rgb(255, 255, 0);
+    background-color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+.OxThemeOxmedium .OxSourceCode .OxIdentifier {
+    color: rgb(0, 0, 0);
+}
+.OxThemeOxmedium .OxSourceCode .OxKeyword {
+    color: rgb(0, 0, 128);
+    font-weight: bold;
+}
+.OxThemeOxmedium .OxSourceCode .OxLinebreak {
+    color: rgb(192, 192, 192);
+}
+.OxThemeOxmedium .OxSourceCode .OxMethod {
+    color: rgb(0, 128, 128);
+}
+.OxThemeOxmedium .OxSourceCode .OxNumber {
+    color: rgb(128, 0, 0);
+}
+.OxThemeOxmedium .OxSourceCode .OxObject {
+    color: rgb(0, 128, 128);
+    font-weight: bold;
+}
+.OxThemeOxmedium .OxSourceCode .OxOperator {
+    color: rgb(0, 0, 128);
+}
+.OxThemeOxmedium .OxSourceCode .OxProperty {
+    color: rgb(0, 128, 0);
+    font-weight: bold;
+}
+.OxThemeOxmedium .OxSourceCode .OxRegexp {
+    color: rgb(128, 128, 0);
+}
+.OxThemeOxmedium .OxSourceCode .OxString {
+    color: rgb(0, 128, 0);
+}
+.OxThemeOxmedium .OxSourceCode .OxTab {
+    color: rgb(192, 192, 192);
+}
+.OxThemeOxmedium .OxSourceCode .OxWhitespace {
+    color: rgb(192, 192, 192);
+}
+.OxThemeOxmedium .OxSourceCode .OxWhitespace.OxLeading,
+.OxThemeOxmedium .OxSourceCode .OxWhitespace.OxTrailing {
+    background-color: rgb(255, 255, 0);
+}
+
+/*
+================================================================================
+Video
+================================================================================
+*/
+
+.OxThemeOxmedium .OxAnnotation {
+    border-color: rgb(128, 128, 128);
+}
+.OxThemeOxmedium .OxAnnotation.OxSelected {
+    background-color: rgb(112, 112, 112);
+}
+
+.OxThemeOxmedium .OxLargeVideoTimeline .OxOverlay {
+    background-color: rgb(144, 144, 144);
+}
+
+.OxThemeOxmedium .OxSmallVideoTimeline .OxMarkerPlay {
+    border-color: rgba(0, 0, 0, 0.5);
+}
+.OxThemeOxmedium .OxSmallVideoTimeline .OxMarkerPlay > div {
+    border-color: rgb(255, 255, 255);
+}
+.OxThemeOxmedium .OxSmallVideoTimeline .OxMarkerPlay.OxPaused > div {
+    border-color: rgba(255, 255, 255, 0.5);
+}
+.OxThemeOxmedium .OxSmallVideoTimeline .OxMarkerPlay > div > div {
+    border-color: rgba(0, 0, 0, 0.5);
+}
+
+.OxThemeOxmedium .OxVideoPlayer .OxControls.OxOnScreen,
+.OxThemeOxmedium .OxVideoPlayer .OxFind,
+.OxThemeOxmedium .OxVideoPlayer .OxVolume {
+    background-image: -moz-linear-gradient(top, rgba(160, 160, 160, 0.5), rgba(128, 128, 128, 0.5));
+    background: -ms-linear-gradient(top, rgba(160, 160, 160, 0.5), rgba(128, 128, 128, 0.5));
+    background-image: -o-linear-gradient(top, rgba(160, 160, 160, 0.5), rgba(128, 128, 128, 0.5));
+    background-image: -webkit-linear-gradient(top, rgba(160, 160, 160, 0.5), rgba(128, 128, 128, 0.5));
+    background-image: linear-gradient(top, rgba(160, 160, 160, 0.5), rgba(128, 128, 128, 0.5));
+}
+.OxThemeOxmedium .OxVideoPlayer input.OxInput {
+    background-image: -moz-linear-gradient(top, rgba(128, 128, 128, 0.75), rgba(160, 160, 160, 0.75));
+    background: -ms-linear-gradient(top, rgba(128, 128, 128, 0.75), rgba(160, 160, 160, 0.75));
+    background-image: -o-linear-gradient(top, rgba(128, 128, 128, 0.75), rgba(160, 160, 160, 0.75));
+    background-image: -webkit-linear-gradient(top, rgba(128, 128, 128, 0.75), rgba(160, 160, 160, 0.75));
+    background-image: linear-gradient(top, rgba(128, 128, 128, 0.75), rgba(160, 160, 160, 0.75));
+}
+.OxThemeOxmedium .OxVideoPlayer .OxSettings {
+    background-image: none;
+}
+.OxThemeOxmedium .OxVideoPlayer .OxSettings > div {
+    background-color: rgba(160, 160, 160, 0.5);
+}
+.OxThemeOxmedium .OxVideoPlayer .OxSettings > div.OxDisabled > div {
+    color: rgba(0, 0, 0, 0.5);
+}
+.OxThemeOxmedium .OxVideoPlayer .OxSettings > div.OxSelected {
+    background-image: -moz-linear-gradient(top, rgba(128, 128, 128, 0.5), rgba(128, 128, 128, 0.5));
+    background: -ms-linear-gradient(top, rgba(128, 128, 128, 0.5), rgba(128, 128, 128, 0.5));
+    background-image: -o-linear-gradient(top, rgba(128, 128, 128, 0.5), rgba(128, 128, 128, 0.5));
+    background-image: -webkit-linear-gradient(top, rgba(128, 128, 128, 0.5), rgba(128, 128, 128, 0.5));
+    background-image: linear-gradient(top, rgba(128, 128, 128, 0.5), rgba(128, 128, 128, 0.5));
+}
+.OxThemeOxmedium .OxVideoPlayer .OxSettings > div.OxLine {
+    background-color: rgba(144, 144, 144, 0.5);
+}
+.OxThemeOxmedium .OxVideoPlayer .OxVolume .OxRange .OxTrack {
+    background-image: -moz-linear-gradient(top, rgba(128, 128, 128, 0.75), rgba(160, 160, 160, 0.75));
+    background: -ms-linear-gradient(top, rgba(128, 128, 128, 0.75), rgba(160, 160, 160, 0.75));
+    background-image: -o-linear-gradient(top, rgba(128, 128, 128, 0.75), rgba(160, 160, 160, 0.75));
+    background-image: -webkit-linear-gradient(top, rgba(128, 128, 128, 0.75), rgba(160, 160, 160, 0.75));
+    background-image: linear-gradient(top, rgba(128, 128, 128, 0.75), rgba(160, 160, 160, 0.75));
+}
+.OxThemeOxmedium .OxVideoPlayer .OxVolume .OxRange .OxThumb {
+    background-image: -moz-linear-gradient(top, rgba(160, 160, 160, 0.75), rgba(128, 128, 128, 0.75));
+    background: -ms-linear-gradient(top, rgba(160, 160, 160, 0.75), rgba(128, 128, 128, 0.75));
+    background-image: -o-linear-gradient(top, rgba(160, 160, 160, 0.75), rgba(128, 128, 128, 0.75));
+    background-image: -webkit-linear-gradient(top, rgba(160, 160, 160, 0.75), rgba(128, 128, 128, 0.75));
+    background-image: linear-gradient(top, rgba(160, 160, 160, 0.75), rgba(128, 128, 128, 0.75));
+}
+.OxThemeOxmedium .OxVideoPlayer .OxVolume .OxRange .OxThumb:active {
+    background-image: -moz-linear-gradient(top, rgb(160, 160, 160), rgb(128, 128, 128));
+    background: -ms-linear-gradient(top, rgb(160, 160, 160), rgb(128, 128, 128));
+    background-image: -o-linear-gradient(top, rgb(160, 160, 160), rgb(128, 128, 128));
+    background-image: -webkit-linear-gradient(top, rgb(160, 160, 160), rgb(128, 128, 128));
+    background-image: linear-gradient(top, rgb(160, 160, 160), rgb(128, 128, 128));
+}
+
+.OxThemeOxmedium .OxVideoTimelinePlayer .OxVideoBox {
+    border-color: rgb(0, 0, 0);
+}
+
+.OxThemeOxmedium .OxLargeVideoTimeline .OxSubtitle .OxHighlight,
+.OxThemeOxmedium .OxVideoPlayer .OxSubtitle .OxHighlight {
+    background-image: none;
+    color: rgb(255, 255, 0);
+}
+
+
+.OxThemeOxmedium .OxAnnotationFolder .OxArrayEditable .OxSeparator {
+    color: rgb(96, 96, 96);
+}
+.OxThemeOxmedium .OxAnnotationFolder .OxEditableElement.OxSelected {
+    background-color: rgb(112, 112, 112);
+}
+.OxThemeOxmedium .OxAnnotationFolder .OxEditableElement.OxWarning .OxValue {
+    border-bottom: 2px dotted rgb(255, 64, 64);
+}
+.OxThemeOxmedium .OxAnnotationFolder .OxArrayEditable .OxEditableElement.OxEditable.OxGroup {
+    background-color: rgb(112, 112, 112);
+}
+.OxThemeOxmedium .OxAnnotationFolder .OxArrayEditable .OxEditableElement.OxEditable.OxSelected {
+    background-color: rgb(64, 128, 192);
+}
+.OxThemeOxmedium .OxAnnotationFolder .OxArrayEditable .OxEditableElement.OxSelected .OxHighlight {
+    background-color: transparent;
+    background-image: -moz-repeating-linear-gradient(
+        -45deg, transparent 0%, transparent 25%,
+        rgb(255, 255, 0) 25%, rgb(255, 255, 0) 50%,
+        transparent 50%, transparent 75%,
+        rgb(255, 255, 0) 75%, rgb(255, 255, 0) 100%
+    );
+    background-image: -ms-repeating-linear-gradient(
+        -45deg, transparent 0%, transparent 25%,
+        rgb(255, 255, 0) 25%, rgb(255, 255, 0) 50%,
+        transparent 50%, transparent 75%,
+        rgb(255, 255, 0) 75%, rgb(255, 255, 0) 100%
+    );
+    background-image: -o-repeating-linear-gradient(
+        -45deg, transparent 0%, transparent 25%,
+        rgb(255, 255, 0) 25%, rgb(255, 255, 0) 50%,
+        transparent 50%, transparent 75%,
+        rgb(255, 255, 0) 75%, rgb(255, 255, 0) 100%
+    );
+    background-image: -webkit-repeating-linear-gradient(
+        -45deg, transparent 0%, transparent 25%,
+        rgb(255, 255, 0) 25%, rgb(255, 255, 0) 50%,
+        transparent 50%, transparent 75%,
+        rgb(255, 255, 0) 75%, rgb(255, 255, 0) 100%
+    );
+    background-image: repeating-linear-gradient(
+        -45deg, transparent 0%, transparent 25%,
+        rgb(255, 255, 0) 25%, rgb(255, 255, 0) 50%,
+        transparent 50%, transparent 75%,
+        rgb(255, 255, 0) 75%, rgb(255, 255, 0) 100%
+    );
+    background-size: 4px 4px;
+}
+.OxThemeOxmedium .OxAnnotationFolder .OxArrayEditableInput .OxEditableElement.OxSelected {
+    box-shadow: 0 0 2px rgb(64, 64, 64);
+}
+.OxThemeOxmedium .OxAnnotationFolder .OxArrayEditableTextarea .OxEditableElement.OxEditable.OxEditing {
+    background-color: rgb(64, 192, 64);
+}
+.OxThemeOxmedium .OxAnnotationFolder .OxArrayEditable .OxInput.OxFocus {
+    box-shadow: none;
+}
+.OxThemeOxmedium .OxAnnotationFolder .OxEditableElement input,
+.OxThemeOxmedium .OxAnnotationFolder .OxEditableElement textarea {
+    background-color: rgb(64, 192, 64);
+    background-image: none;
+    color: rgb(0, 0, 0);
+}
+.OxThemeOxmedium .OxAnnotationFolder .OxEditableElement textarea:focus {
+    box-shadow: none;
+}
+
+/*
+================================================================================
+Miscellaneous
+================================================================================
+*/
+
+.OxThemeOxmedium .OxImageElement > .OxLoadingScreen {
+    background-image: -moz-linear-gradient(top, rgb(160, 160, 160), rgb(128, 128, 128));
+    background: -ms-linear-gradient(top, rgb(160, 160, 160), rgb(128, 128, 128));
+    background-image: -o-linear-gradient(top, rgb(160, 160, 160), rgb(128, 128, 128));
+    background-image: -webkit-linear-gradient(top, rgb(160, 160, 160), rgb(128, 128, 128));
+    background-image: linear-gradient(top, rgb(160, 160, 160), rgb(128, 128, 128));
+}
+.OxThemeOxmedium .OxDialog .OxImageElement > .OxLoadingScreen {
+    background-image: -moz-linear-gradient(top, rgb(176, 176, 176), rgb(144, 144, 144));
+    background: -ms-linear-gradient(top, rgb(176, 176, 176), rgb(144, 144, 144));
+    background-image: -o-linear-gradient(top, rgb(176, 176, 176), rgb(144, 144, 144));
+    background-image: -webkit-linear-gradient(top, rgb(176, 176, 176), rgb(144, 144, 144));
+    background-image: linear-gradient(top, rgb(176, 176, 176), rgb(144, 144, 144));
+}
+
+.OxThemeOxmedium .OxSelectableElement {
+    background-image: -moz-linear-gradient(top, rgb(144, 144, 144), rgb(144, 144, 144));
+    background: -ms-linear-gradient(top, rgb(144, 144, 144), rgb(144, 144, 144));
+    background-image: -o-linear-gradient(top, rgb(144, 144, 144), rgb(144, 144, 144));
+    background-image: -webkit-linear-gradient(top, rgb(144, 144, 144), rgb(144, 144, 144));
+    background-image: linear-gradient(top, rgb(144, 144, 144), rgb(144, 144, 144));
+}
+.OxThemeOxmedium .OxSelectableElement.OxSelected {
+    background-image: -moz-linear-gradient(top, rgb(128, 128, 128), rgb(128, 128, 128));
+    background: -ms-linear-gradient(top, rgb(128, 128, 128), rgb(128, 128, 128));
+    background-image: -o-linear-gradient(top, rgb(128, 128, 128), rgb(128, 128, 128));
+    background-image: -webkit-linear-gradient(top, rgb(128, 128, 128), rgb(128, 128, 128));
+    background-image: linear-gradient(top, rgb(128, 128, 128), rgb(128, 128, 128));
+}
+.OxThemeOxmedium .OxSelectableElement.OxSelected > div {
+    color: rgb(255, 255, 255);
+}
+.OxThemeOxmedium .OxSelectableElement.OxSelected.OxFocus {
+    background-image: -moz-linear-gradient(top, rgb(112, 112, 112), rgb(112, 112, 112));
+    background: -ms-linear-gradient(top, rgb(112, 112, 112), rgb(112, 112, 112));
+    background-image: -o-linear-gradient(top, rgb(112, 112, 112), rgb(112, 112, 112));
+    background-image: -webkit-linear-gradient(top, rgb(112, 112, 112), rgb(112, 112, 112));
+    background-image: linear-gradient(top, rgb(112, 112, 112), rgb(112, 112, 112));
+}
+.OxThemeOxmedium .OxSelectableElement.OxSelected.OxFocus > div {
+    color: rgb(255, 255, 255);
+}
+
+.OxThemeOxmedium .OxScreen {
+    background-color: rgb(128, 128, 128);
+    color: rgb(0, 0, 0);
+}
+.OxThemeOxmedium .OxScreen .OxReflection {
+    background-image: -moz-linear-gradient(top, rgba(128, 128, 128, 0.75), rgba(128, 128, 128, 1), rgba(128, 128, 128, 1));
+    background: -ms-linear-gradient(top, rgba(128, 128, 128, 0.75), rgba(128, 128, 128, 1), rgba(128, 128, 128, 1));
+    background-image: -o-linear-gradient(top, rgba(128, 128, 128, 0.75), rgba(128, 128, 128, 1), rgba(128, 128, 128, 1));
+    background-image: -webkit-linear-gradient(top, rgba(128, 128, 128, 0.75), rgba(128, 128, 128, 1), rgba(128, 128, 128, 1));
+    background-image: linear-gradient(top, rgba(128, 128, 128, 0.75), rgba(128, 128, 128, 1), rgba(128, 128, 128, 1));
+}
+
+.OxThemeOxmedium .OxTooltip {
+    border: 1px solid rgba(128, 128, 128, 0.96);
+    background-image: -moz-linear-gradient(top, rgba(160, 160, 160, 0.96), rgba(160, 160, 160, 0.96));
+    background: -ms-linear-gradient(top, rgba(160, 160, 160, 0.96), rgba(160, 160, 160, 0.96));
+    background-image: -o-linear-gradient(top, rgba(160, 160, 160, 0.96), rgba(160, 160, 160, 0.96));
+    background-image: -webkit-linear-gradient(top, rgba(160, 160, 160, 0.96), rgba(160, 160, 160, 0.96));
+    background-image: linear-gradient(top, rgba(160, 160, 160, 0.96), rgba(160, 160, 160, 0.96));
+    color: rgb(0, 0, 0);
+    -moz-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    -ms-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    -o-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.OxThemeOxmedium ::selection {
+    background: rgb(112, 112, 112);
+    color: rgb(255, 255, 255);
+}
+.OxThemeOxmedium ::-moz-selection {
+    background: rgb(112, 112, 112);
+    color: rgb(255, 255, 255);
+}
+.OxThemeOxmedium ::-ms-selection {
+    background: rgb(112, 112, 112);
+    color: rgb(255, 255, 255);
+}
+.OxThemeOxmedium ::-o-selection {
+    background: rgb(112, 112, 112);
+    color: rgb(255, 255, 255);
+}
+.OxThemeOxmedium ::-webkit-selection {
+    background: rgb(112, 112, 112);
+    color: rgb(255, 255, 255);
+}

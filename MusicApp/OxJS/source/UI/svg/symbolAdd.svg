@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256">
+    <g stroke="#808080" stroke-width="48">
+        <line x1="128" y1="16" x2="128" y2="240"/>
+        <line x1="16" y1="128" x2="240" y2="128"/>
+    </g>
+</svg>

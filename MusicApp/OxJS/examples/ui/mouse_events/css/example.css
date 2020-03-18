@@ -1,0 +1,64 @@
+#clear {
+    position: absolute;
+    left: 256px;
+    right: 0px;
+    height: 14px;
+    padding: 2px 0 0 2px;
+    cursor: pointer;
+}
+#log {
+    position: absolute;
+    left: 256px;
+    top: 16px;
+    right: 0;
+    bottom: 0;
+    border-width: 0;
+    overflow-y: auto;
+}
+#target {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 253px;
+    padding: 2px 0 0 2px;
+    border-width: 0;
+    font-weight: bold;
+    cursor: crosshair;
+}
+
+.OxThemeOxlight #clear {
+    background: rgb(240, 240, 240);
+}
+.OxThemeOxlight #log {
+    border-top: 1px solid rgb(208, 208, 208);
+    background: rgb(255, 255, 255);
+}
+.OxThemeOxlight #target {
+    border-right: 1px solid rgb(208, 208, 208);
+    background: rgb(224, 224, 224);
+}
+
+.OxThemeOxmedium #clear {
+    background: rgb(144, 144, 144);
+}
+.OxThemeOxmedium #log {
+    border-top: 1px solid rgb(112, 112, 112);
+    background: rgb(160, 160, 160);
+}
+.OxThemeOxmedium #target {
+    border-right: 1px solid rgb(112, 112, 112);
+    background: rgb(128, 128, 128);
+}
+
+.OxThemeOxdark #clear {
+    background: rgb(16, 16, 16);
+}
+.OxThemeOxdark #log {
+    border-top: 1px solid rgb(48, 48, 48);
+    background: rgb(0, 0, 0)
+}
+.OxThemeOxdark #target {
+    border-right: 1px solid rgb(48, 48, 48);
+    background: rgb(32, 32, 32);
+}

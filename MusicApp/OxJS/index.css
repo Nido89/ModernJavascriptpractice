@@ -1,0 +1,164 @@
+body {
+    margin: 0;
+}
+
+.animate, .loading, .warning {
+    position: absolute;
+    z-index: 1001;
+}
+
+.OxSyntaxHighlighter .doclink {
+    text-decoration: underline;
+}
+.OxComment .doclink {
+    padding: 1px 3px 1px 3px;
+    border-radius: 2px;
+    font-size: 11px;
+    line-height: 14px;
+    text-decoration: none;
+}
+.OxComment .doclink:hover {
+    text-decoration: underline;
+}
+
+.OxThemeOxlight .OxLabel.label,
+.OxThemeOxmedium .OxLabel.label,
+.OxThemeOxdark .OxLabel.label {
+    border-color: transparent;
+    background-color: transparent;
+}
+
+.loading {
+    left: 0;
+    right: 0;
+    width: 32px;
+    height: 32px;
+    margin: auto;
+}
+
+.page {
+    width: 576px;
+    padding: 32px;
+    margin: 32px auto 32px auto;
+    border-radius: 8px;
+    //font-size: 14px;
+    //line-height: 20px;
+    font-size: 13px;
+    line-height: 20px;
+}
+.page code, .page pre {
+    font-size: 12px;
+}
+.page h1 {
+    font-size: 18px;
+    line-height: 24px;
+}
+.page h2 {
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.readme .item {
+    padding: 4px 8px 4px 8px;
+    border-radius: 8px;
+    margin: 8px;
+    cursor: pointer;
+}
+.readme .item.selected {
+    cursor: default;
+}
+.readme .item .title {
+    font-size: 14px;
+}
+.readme .item .date {
+    margin-top: 2px;
+    font-size: 12px;
+}
+.readme .text > p,
+.readme .text > div {
+    margin-right: 256px;
+}
+.readme .text {
+    padding: 16px;
+    font-size: 14px;
+    line-height: 20px;
+}
+.readme .text code, .readme .text pre {
+    font-size: 12px;
+}
+.readme .text h1 {
+    font-size: 18px;
+    line-height: 24px;
+}
+.readme .text h2 {
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.screen {
+    width: 100%;
+    height: 100%;
+    z-index: 1000;    
+}
+
+.warning {
+    width: 256px;
+    text-align: justify;
+}
+
+body.OxThemeOxlight,
+.OxThemeOxlight .screen {
+    background-color: rgb(224, 224, 224);
+}
+body.OxThemeOxmedium,
+.OxThemeOxmedium .screen {
+    background-color: rgb(144, 144, 144);
+}
+body.OxThemeOxdark,
+.OxThemeOxdark .screen {
+    background-color: rgb(16, 16, 16);
+}
+
+.OxThemeOxlight .OxComment .doclink,
+.OxThemeOxlight .page {
+    background-color: rgb(255, 255, 255);
+}
+.OxThemeOxmedium .OxComment .doclink,
+.OxThemeOxmedium .page {
+    background-color: rgb(160, 160, 160);
+}
+.OxThemeOxdark .OxComment .doclink,
+.OxThemeOxdark .page {
+    background-color: rgb(0, 0, 0);
+}
+
+.OxThemeOxlight .readme .item.selected {
+    background: rgb(224, 224, 224);
+}
+.OxThemeOxmedium .readme .item.selected {
+    background: rgb(128, 128, 128);
+}
+.OxThemeOxdark .readme .item.selected {
+    background: rgb(32, 32, 32);
+}
+
+.OxThemeOxlight .OxComment .doclink,
+.OxThemeOxlight .logo,
+.OxThemeOxlight .page,
+.OxThemeOxlight .readme .OxSyntaxHighlighter {
+    box-shadow: 0 0 1px rgb(160, 160, 160)
+}
+.OxThemeOxmedium .OxComment .doclink,
+.OxThemeOxmedium .logo,
+.OxThemeOxmedium .page,
+.OxThemeOxmedium .readme .OxSyntaxHighlighter {
+    box-shadow: 0 0 1px rgb(128, 128, 128)
+}
+.OxThemeOxdark .OxComment .doclink {
+    box-shadow: 0 0 1px rgb(255, 255, 255)
+}
+.OxThemeOxdark .logo,
+.OxThemeOxdark .page,
+.OxThemeOxdark .readme .OxSyntaxHighlighter {
+    box-shadow: 0 0 1px rgb(96, 96, 96)
+}

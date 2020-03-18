@@ -1,0 +1,56 @@
+<h1>OxDoc — A JavaScript Documentation Language</h1>
+
+<p><code>OxDoc</code> is a new format for JavaScript documentation. It was developed for and is used throughout <code>OxJS</code>, which provides a <a href="#doc/Ox.doc">parser</a> and a <a href="#doc/Ox.DocPanel">browser</a> for it.</p>
+
+<p><code>OxDoc</code> itself isn't formally documented yet, but you may want to take a look at the detailed <a href="#examples/oxdoc_tutorial">OxDoc Tutorial</a>. The sample below should give you a rough first idea.</p>
+
+<p>For now, <code>OxDoc</code> should be considered a proposal, and this introduction is, above all, a request for <a href="#development">comments</a>.</p>
+
+<pre class="code">
+//@ Section Name
+this.My = {};
+//@ My.foo &lt;number> One-line summary, with *some* `markdown`
+My.foo = 23;
+/*@
+My.bar &lt;object> Summary
+    Optional multi-line description, with *some* `markdown`.
+    property &lt;object> A property of `My.bar`
+        Description of `property`.
+        foo &lt;number> A number
+        bar &lt;[string]> An array of strings
+    method &lt;function> A method of `My.bar`
+        (foo[, bar], callback) -> &lt;undefined> Return value
+        foo &lt;number|string> Argument, number or string
+        bar &lt;boolean|false> Optional argument, default is `false`
+        callback &lt;function> Callback function
+            arg &lt;boolean> Argument
+    baz &lt;event> An event triggered by `My.bar`
+        x &lt;number> Event property
+        y &lt;number> Event property
+    # This is a comment. Below are inline tests. The last one is asynchronous.
+    > My.bar.property.foo &lt; 1
+    true
+    > My.bar.property.bar.join('')
+    'string'
+    > My.bar.method(1, function(arg) { Ox.test(arg, true); })
+    undefined
+*/
+My.bar = {
+    property: {
+        foo: Math.random(),
+        bar: 'string'.split('') 
+    },
+    method: function(foo, bar, callback) {
+        if (arguments.length == 2) {
+            callback = bar;
+            bar = false;
+        }
+        if (bar) {
+            // trigger baz event
+        }
+        setTimeout(function() {
+            callback(!!foo);
+        });
+    }
+};
+</pre>

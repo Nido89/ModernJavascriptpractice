@@ -1,0 +1,1013 @@
+/*
+    354 countries
+    --  sovereign, dependent and disputed countries according to
+        http://en.wikipedia.org/wiki/List_of_sovereign_states
+    --  entities with country codes, according to
+        http://en.wikipedia.org/wiki/ISO_3166-1_alpha-2
+    --  dissolved countries, according to
+        http://en.wikipedia.org/wiki/ISO_3166-3 and http://www.imdb.com/country/
+*/
+{
+    "code": {
+        // http://en.wikipedia.org/wiki/ISO_3166-2:AE
+        "Abu Dhabi": "AE-AZ",
+        "Ajman": "AE-AJ",
+        "Dubai": "AE-DU",
+        "Fujairah": "AE-FU",
+        "Ras al-Khaimah": "AE-RK",
+        "Sharjah": "AE-SH",
+        "Umm al-Quwain": "AE-UQ",
+        // http://en.wikipedia.org/wiki/ISO_3166-2:AO
+        "Cabinda": "AO-CAB",
+        // http://en.wikipedia.org/wiki/ISO_3166-2:AU
+        "Ashmore and Cartier Islands": "AU-AC", // AQ
+        "Coral Sea Islands": "AU-CS", // AQ
+        // http://en.wikipedia.org/wiki/ISO_3166-2:AZ
+        "Nagorno-Karabakh": "AZ-NK", // multiple
+        // http://en.wikipedia.org/wiki/ISO_3166-2:CY
+        "Northern Cyprus": "CY-NC", // multiple
+        // http://en.wikipedia.org/wiki/ISO_3166-2:GB
+        "Akrotiri and Dhekelia": "GB-AD", // unknown
+        "England": "GB-ENG",
+        "Northern Ireland": "GB-NIR",
+        "Scotland": "GB-SCT",
+        "Sealand": "GB-SL", // none
+        "Wales": "GB-WLS",
+        // http://en.wikipedia.org/wiki/ISO_3166-2:GE
+        "Abkhazia": "GE-AB",
+        "South Ossetia": "GE-SK",
+        // http://en.wikipedia.org/wiki/ISO_3166-2:GG
+        "Alderney": "GG-AL", // none
+        "Herm": "GG-HE", // none
+        "Sark": "GG-SA", // none
+        // http://en.wikipedia.org/wiki/ISO_3166-2:IN
+        "Jammu and Kashmir": "IN-JK",
+        // http://en.wikipedia.org/wiki/ISO_3166-2:KM
+        "Anjouan": "KM-A",
+        "Mohéli": "KM-M",
+        // http://en.wikipedia.org/wiki/ISO_3166-2:MD
+        "Transnistria": "MD-SN",
+        // http://en.wikipedia.org/wiki/ISO_3166-2:ML
+        "Azawad": "ML-AZ", // none
+        // http://en.wikipedia.org/wiki/ISO_3166-2:NG
+        "Biafra": "NG-BI", // none
+        // http://en.wikipedia.org/wiki/ISO_3166-2:NO
+        "Peter I Island": "NO-PI", // AQ
+        // http://en.wikipedia.org/wiki/ISO_3166-2:PG
+        "Bougainville": "PG-NSA",
+        // http://en.wikipedia.org/wiki/ISO_3166-2:PK
+        "Azad Kashmir": "PK-JK",
+        "Gilgit-Baltistan": "PK-NA",
+        // http://en.wikipedia.org/wiki/ISO_3166-2:RU
+        "Chechnia": "RU-CE",
+        // http://en.wikipedia.org/wiki/ISO_3166-2:SO
+        "Somaliland": "SO-SO", // multiple
+        // http://en.wikipedia.org/wiki/ISO_3166-2:UG
+        "Rwenzururu": "UG-RW", // unknown
+        // http://en.wikipedia.org/wiki/ISO_3166-2:ZA
+        "Bophuthatswana": "ZA-BO", // none
+        "Ciskei": "ZA-CI", // none
+        "Transkei": "ZA-TR", // none
+        "Venda": "ZA-VE", // none
+        // http://en.wikipedia.org/wiki/List_of_sovereign_states_in_the_1970s
+        "British Honduras": "GBBZ",
+        "Ceylon": "LKLK",
+        "Ellice Islands": "GETV",
+        "Gilbert Islands": "GEKI",
+        "Kampuchea": "KAKH",
+        "Khmer Republic": "KHKA",
+        "North Yemen": "YEYE",
+        "Rhodesia": "RHZW-RH",
+        "Saint Christopher-Nevis-Anguilla": "GBKN",
+        "South Vietnam": "VNVN",
+        "Tanna": "NHVU-TN",
+        "Trucial States": "GBAE",
+        "Ukrainian Soviet Socialist Republic": "UAUA",
+        "United Arab Republic": "EGEG",
+        "West Germany": "DEDE",
+        "Zimbabwe Rhodesia": "RHZW-ZR",
+        // http://en.wikipedia.org/wiki/List_of_sovereign_states_in_the_1980s
+        "Tafea": "NHVU-TF",
+        "Vemerana": "NHVU-VE",
+        // http://en.wikipedia.org/wiki/Territorial_claims_in_Antarctica
+        "Adélie Land": "FR-AQ",
+        "Argentine Antarctica": "AR-AQ",
+        "Australian Antarctic Territory": "AU-AQ",
+        "Chilean Antarctic Territory": "CL-AQ",
+        "Ross Dependency": "NZ-AQ",
+        // http://www.imdb.com/country/
+        "Korea": "KOJP",
+        "Siam": "SITH"
+    },
+    // http://unstats.un.org/unsd/methods/m49/m49regin.htm
+    // http://en.wikipedia.org/wiki/List_of_sovereign_states_and_dependent_territories_by_continent
+    // http://en.wikipedia.org/wiki/Borders_of_the_continents
+    "continents": {
+        "Africa": {
+            "Eastern Africa": [
+                "Anjouan", "Burundi", "Comoros", "Djibouti", "Eritrea",
+                "Ethiopia", "French Afar and Issas", "Kenya", "Madagascar", "Malawi",
+                "Mauritius", "Mayotte", "Mohéli", "Mozambique", "Réunion", "Rhodesia",
+                "Rwanda", "Rwenzururu", "Seychelles", "Somalia", "Somaliland",
+                "Southern Rhodesia", "Tanzania", "Uganda", "Zambia", "Zimbabwe",
+                "Zimbabwe Rhodesia"
+            ],
+            "Middle Africa": [
+                "Angola", "Cabinda", "Cameroon", "Central African Republic", "Chad",
+                "Democratic Republic of the Congo", "Equatorial Guinea", "Gabon", "Republic of the Congo", "São Tomé and Príncipe",
+                "Zaire"
+            ],
+            "Northern Africa": [
+                "Algeria", "Canary Islands", "Ceuta and Melilla", "Egypt", "Libya",
+                "Morocco", "Sahrawi", "South Sudan", "Sudan", "Tunisia",
+                "United Arab Republic"
+            ],
+            "Southern Africa": [
+                "Bophuthatswana", "Botswana", "Ciskei", "Lesotho", "Namibia",
+                "South Africa", "Swaziland", "Transkei", "Venda"
+            ],
+            "Western Africa": [
+                "Ascension", "Azawad", "Benin", "Biafra", "Burkina Faso",
+                "Cape Verde", "Côte d'Ivoire", "Dahomey", "Gambia", "Ghana",
+                "Guinea", "Guinea-Bissau", "Liberia", "Mali", "Mauritania",
+                "Niger", "Nigeria", "Saint Helena, Ascension and Tristan da Cunha", "Senegal", "Sierra Leone",
+                "Togo", "Tristan da Cunha", "Upper Volta"
+            ]
+        },
+        "Antarctica": {
+            // http://en.wikipedia.org/wiki/Territorial_claims_in_Antarctica
+            "Antarctica": [
+                "Adélie Land", "Antarctica", "Argentine Antarctica", "Australian Antarctic Territory", "Bouvet Island",
+                "British Antarctic Territory", "Chilean Antarctic Territory",
+                "French Southern and Antarctic Territories",
+                "French Southern Territories", "Heard Island and McDonald Islands", 
+                "Queen Maud Land", "Peter I Island", "Ross Dependency", "South Georgia and the South Sandwich Islands"
+            ]
+        },
+        "Asia": {
+            "Central Asia": [
+                "Kazakhstan", "Kyrgyzstan", "Tajikistan", "Turkmenistan", "Uzbekistan"
+            ],
+            "Eastern Asia": [
+                "China", "Hong Kong", "Japan", "Korea", "Macau",
+                "Mongolia", "North Korea", "South Korea", "Taiwan"
+            ],
+            "South-Eastern Asia": [
+                "Brunei", "Burma", "Cambodia", "Christmas Island", "Cocos Islands",
+                "East Timor", "Indonesia", "Kampuchea", "Khmer Republic", "Laos",
+                "Malaysia", "Myanmar", "North Vietnam", "Philippines", "Siam",
+                "Singapore", "South Vietnam", "Thailand", "Timor-Leste", "Vietnam"
+            ],
+            "Southern Asia": [
+                "Afghanistan", "Azad Kashmir", "Bangladesh", "Bhutan", "British Indian Ocean Territory",
+                "Ceylon", "Diego Garcia", "Gilgit-Baltistan", "India", "Iran",
+                "Jammu and Kashmir", "Maldives", "Nepal", "Pakistan", "Sikkim",
+                "Sri Lanka"
+            ],
+            "Western Asia": [
+                "Abkhazia", "Abu Dhabi", "Akrotiri and Dhekelia", "Ajman", "Armenia",
+                "Azerbaijan", "Bahrain", "Cyprus", "Dubai", "Fujairah",
+                "Georgia", "Iraq", "Israel", "Jordan", "Kuwait",
+                "Lebanon", "Neutral Zone", "Nagorno-Karabakh", "North Yemen", "Northern Cyprus",
+                "Oman", "Palestine", "Qatar", "Ras al-Khaimah", "Saudi Arabia",
+                "Sharjah", "South Ossetia", "South Yemen", "Syria", "Trucial States",
+                "Turkey", "Umm al-Quwain", "United Arab Emirates", "Yemen"
+            ]
+        },
+        "Europe": {
+            "Eastern Europe": [
+                "Belarus", "Bulgaria", "Byelorussian Soviet Socialist Republic", "Chechnia", "Czech Republic",
+                "Czechoslovakia", "Hungary", "Moldova", "Poland", "Romania",
+                "Russia", "Slovakia", "Soviet Union", "Transnistria", "Ukraine",
+                "Ukrainian Soviet Socialist Republic"
+            ],
+            "Northern Europe": [
+                "Åland Islands", "Alderney", "Denmark", "England", "Estonia",
+                "Faroe Islands", "Finland", "Guernsey", "Herm", "Iceland",
+                "Ireland", "Isle of Man", "Jersey", "Latvia", "Lithuania",
+                "Northern Ireland", "Norway", "Sark", "Scotland", "Sealand",
+                "Svalbard and Jan Mayen", "Sweden", "United Kingdom", "Wales"
+            ],
+            "Southern Europe": [
+                "Albania", "Andorra", "Bosnia and Herzegovina", "Croatia", "Gibraltar",
+                "Greece", "Italy", "Kosovo", "Malta", "Macedonia",
+                "Montenegro", "Portugal", "San Marino", "Serbia", "Serbia and Montenegro",
+                "Slovenia", "Spain", "Vatican City", "Yugoslavia"
+            ],
+            "Western Europe": [
+                "Austria", "Belgium", "East Germany", "European Union", "France",
+                "Germany", "Liechtenstein", "Luxembourg", "Metropolitan France", "Monaco",
+                "Netherlands", "Switzerland", "West Germany"
+            ]
+        },
+        "North America": {
+            "Northern America": [
+                "Bermuda", "Canada", "Greenland", "Saint Pierre and Miquelon", "United States"
+            ]
+        },
+        "Oceania": {
+            "Australia and New Zealand": [
+                "Ashmore and Cartier Islands", "Australia", "New Zealand", "Coral Sea Islands", "Norfolk Island"
+            ],
+            "Melanesia": [
+                "Bougainville", "Fiji", "New Caledonia", "New Hebrides", "Papua New Guinea",
+                "Solomon Islands", "Tafea", "Tanna", "Vanuatu", "Vemerana"
+            ],
+            "Micronesia": [
+                // Gilbert and Ellice Islands split into Gilbert Islands and Ellice Islands.
+                // Ellice Islands became Tuvalu (Polynesia), Gilbert Islands and
+                // Canton and Enderbury Islands became Kiribati (Micronesia). 
+                // Wake Island is the only U.S. island not in Polynesia
+                // (http://en.wikipedia.org/wiki/Micronesia)
+                "Canton and Enderbury Islands", "Gilbert and Ellice Islands", "Gilbert Islands", "Guam", "Kiribati",
+                "Marshall Islands", "Micronesia", "Nauru", "Northern Mariana Islands", "Pacific Islands",
+                "Palau", "Wake Island"
+            ],
+            "Polynesia": [
+                "American Samoa", "Cook Islands", "Ellice Islands", "French Polynesia", "Johnston Island",
+                "Midway Islands", "Niue", "Pitcairn Islands", "Samoa", "Tokelau",
+                "Tonga", "Tuvalu", "United States Minor Outlying Islands", "United States Miscellaneous Pacific Islands", "Wallis and Futuna"
+            ]
+        },
+        "South America": {
+            "Central America": [
+                "Belize", "British Honduras", "Clipperton Island", "Costa Rica", "El Salvador",
+                "Guatemala", "Honduras", "Mexico", "Nicaragua", "Panama",
+                "Panama Canal Zone"
+            ],
+            "Caribbean": [
+                "Anguilla", "Antigua and Barbuda", "Aruba", "Bahamas", "Barbados",
+                "Bonaire, Sint Eustatius and Saba", "British Virgin Islands", "Cayman Islands", "Cuba", "Curaçao",
+                "Dominica", "Dominican Republic", "Grenada", "Guadeloupe", "Haiti",
+                "Jamaica", "Martinique", "Montserrat", "Netherlands Antilles", "Puerto Rico",
+                "Saint Barthélemy", "Saint Christopher-Nevis-Anguilla", "Saint Kitts and Nevis", "Saint Lucia", "Saint Martin",
+                "Saint Vincent and the Grenadines", "Sint Maarten", "Trinidad and Tobago", "Turks and Caicos Islands", "United States Virgin Islands"
+            ],
+            "Southern America": [
+                "Argentina", "Bolivia", "Brazil", "Chile", "Colombia",
+                "Ecuador", "Falkland Islands", "French Guiana", "Guyana", "Paraguay",
+                "Peru", "Suriname", "Uruguay", "Venezuela"
+            ]
+        }
+    },
+    "dependencies": {
+        "Argentina": ["Argentine Antarctica"],
+        "Argentina; Australia; Chile; France; New Zealand; Norway; United Kingdom": ["Antarctica"],
+        "Australia": [
+            "Ashmore and Cartier Islands", "Australian Antarctic Territory", "Christmas Island", "Cocos Islands", "Coral Sea Islands",
+            "Heard Island and McDonald Islands", "Norfolk Island"
+        ],
+        "British Indian Ocean Territory": ["Diego Garcia"],
+        "Chile": ["Chilean Antarctic Territory"],
+        "China": ["Hong Kong", "Macau"],
+        "Denmark": ["Faroe Islands", "Greenland"],
+        "Finland": ["Åland Islands"],
+        "France": [
+            "Adélie Land", "Clipperton Island", "French Afar and Issas", "French Guiana", "French Polynesia",
+            "French Southern and Antarctic Territories", "French Southern Territories", "Guadeloupe", "Martinique", "Mayotte",
+            "New Caledonia", "Réunion", "Saint Barthélemy", "Saint Martin", "Saint Pierre and Miquelon",
+            "Wallis and Futuna"
+        ],
+        "France; United Kingdom": ["New Hebrides"],
+        "Guernsey": ["Alderney", "Herm", "Sark"],
+        "India": ["Jammu and Kashmir"],
+        "Netherlands": [
+            "Aruba", "Bonaire, Sint Eustatius and Saba", "Curaçao", "Netherlands Antilles", "Sint Maarten"
+        ],
+        "New Zealand": ["Cook Islands", "Niue", "Ross Dependency", "Tokelau"],
+        "Norway": ["Bouvet Island", "Peter I Island", "Queen Maud Land", "Svalbard and Jan Mayen"],
+        "Pakistan": ["Azad Kashmir", "Gilgit-Baltistan"],
+        "Saint Helena, Ascension and Tristan da Cunha": ["Ascension", "Tristan da Cunha"],
+        "Spain": ["Canary Islands", "Ceuta and Melilla"],
+        "South Africa": ["Bophuthatswana", "Ciskei", "Transkei", "Venda"],
+        "Soviet Union": ["Byelorussian Soviet Socialist Republic", "Ukrainian Soviet Socialist Republic"],
+        "United Kingdom": [
+            "Akrotiri and Dhekelia", "Anguilla", "Bermuda", "British Antarctic Territory", "British Honduras",
+            "British Indian Ocean Territory", "British Virgin Islands", "Cayman Islands", "Ellice Islands", "England",
+            "Falkland Islands", "Gibraltar", "Gilbert and Ellice Islands", "Gilbert Islands", "Guernsey",
+            "Isle of Man", "Jersey", "Montserrat", "Northern Ireland", "Pitcairn Islands",
+            "Saint Christopher-Nevis-Anguilla", "Saint Helena, Ascension and Tristan da Cunha", "Scotland", "South Georgia and the South Sandwich Islands", "Southern Rhodesia",
+            "Trucial States", "Turks and Caicos Islands", "Wales"
+        ],
+        "United Kingdom; United States": ["Canton and Enderbury Islands"],
+        "United States": [
+            "American Samoa", "Guam", "Northern Mariana Islands", "Johnston Island", "Midway Islands",
+            "Pacific Islands", "Panama Canal Zone", "Puerto Rico", "United States Minor Outlying Islands", "United States Miscellaneous Pacific Islands",
+            "United States Virgin Islands", "Wake Island"
+        ]
+    },
+    "disputes": {
+        "Angola": ["Cabinda"],
+        "Azerbaijan": ["Nagorno-Karabakh"],
+        "Comoros": ["Anjouan", "Mohéli"],
+        "Cyprus": ["Northern Cyprus"],
+        "Georgia": ["Abkhazia", "South Ossetia"],
+        "Indonesia": ["East Timor"],
+        "Iraq; Saudi Arabia": ["Neutral Zone"],
+        "Mali": ["Azawad"],
+        "Moldova": ["Transnistria"],
+        "Morocco": ["Sahrawi"],
+        "New Hebrides": ["Tafea", "Tanna", "Vemerana"],
+        "Nigeria": ["Biafra"],
+        "Papua New Guinea": ["Bougainville"],
+        "Russia": ["Chechnia"],
+        "Serbia": ["Kosovo"],
+        "Somalia": ["Somaliland"],
+        "Southern Rhodesia": ["Rhodesia", "Zimbabwe Rhodesia"],
+        "Uganda": ["Rwenzururu"],
+        "United Kingdom": ["Sealand"]
+    },
+    // http://en.wikipedia.org/wiki/ISO_3166-1_alpha-2
+    "exception": ["AC", "CP", "DG", "EA", "EU", "FXFR", "IC", "TA", "UK"],
+    "flag": {
+        // no flag
+        "Antarctica": "Flag of the Antarctic Treaty",
+        "Ashmore and Cartier Islands": "Flag of Australia",
+        "Cabinda": "Flag of Cabinda",
+        "Canton and Enderbury Islands": "Flag of Gilbert and Ellice Islands",
+        "Chilean Antarctic Territory": "Flag of Magallanes, Chile",
+        "Coral Sea Islands": "Flag of Australia",
+        "Diego Garcia": "Flag of the British Indian Ocean Territory",
+        "Ellice Islands": "Flag of Gilbert and Ellice Islands",
+        "Gilbert Islands": "Flag of Gilbert and Ellice Islands",
+        "Gilgit-Baltistan": "Flag of Gilgit-Baltistan United Movement",
+        "Heard Island and McDonald Islands": "Flag of Australia",
+        "Neutral Zone": "Flag of the United Nations",
+        "New Hebrides": "Flag of Anglo-French Joint Naval Commission",
+        "Northern Ireland": "Ulster banner",
+        "Sikkim": "Flag of Sikkim monarchy",
+        "Svalbard and Jan Mayen": "Flag of Norway",
+        // France
+        "Mayotte": "Flag of Mayotte (local)",
+        "New Caledonia": "Flag of New Caledonia",
+        "Réunion": "Proposed flag of Réunion (ARF)",
+        "Saint Martin": "Flag of Saint-Martin (local)",
+        "Wallis and Futuna": "Flag of Wallis and Futuna",
+        // Netherlands
+        "Bonaire, Sint Eustatius and Saba": "Flag of Bonaire",
+        // UK
+        "Ascension": "Ascension Island flag proposal B.png",
+        // US
+        "United States Minor Outlying Islands": "Flag of the United States (Pantone)",
+        "United States Miscellaneous Pacific Islands": "Flag of the United States (Pantone)",
+        // renamed
+        "Burma": "Flag of Myanmar (1974-2010)",
+        "Siam": "State Flag of Thailand (1916)",
+        // ...
+        "Mohéli": "Flag of Mohéli",
+        "Tafea": "Tafea Flag",
+        "Tanna": "Bandera Tanna Vanuatu",
+        // identical
+        "Ajman": "Flag of Dubai",
+        "Ceylon": "Flag of Sri Lanka",
+        "Fujairah": "Flag of the United Arab Emirates",
+        "United Arab Republic": "Flag of Syria",
+        // regexp fails
+        "Panama Canal Zone": "Panama Canal Zone Flag.png",
+        "Rwenzururu": "Rwenzururu flag.png",
+        // ...
+        "Azawad": "MNLA flag",
+        "Sealand": "Flag of Sealand"
+    },
+    "flag_link": [
+        // these are dependent or dissolved countries that share their flag
+        // with another country and need to get a symlink to the other flag
+        "Adélie Land",
+        "Ajman",
+        "Canton and Enderbury Islands",
+        "Diego Garcia",
+        "Ellice Islands",
+        "French Southern and Antarctic Territories",
+        "Gilbert Islands",
+        "Ras al-Khaimah"
+    ],
+    "geocode": {
+        // construction of countries unknown to the google maps geocoder
+        "Abkhazia": ["Abkhazia, Georgia"],
+        "Abu Dhabi": ["Abu Dhabi Region"],
+        "Ajman": ["Ajman Region"],
+        "Akrotiri and Dhekelia": ["Akrotiri, Cyprus", "Dhekelia, Cyprus"],
+        "Ashmore and Cartier Islands": ["Cartier Island"],
+        "Azawad": ["Gao Region, Mali", "Kidal Region, Mali", "Tombouctou Region, Mali"],
+        "Biafra": ["Bayelsa, Nigeria", "Cross River, Nigeria", "Enugu, Nigeria"],
+        "Bonaire, Sint Eustatius and Saba": ["Bonaire", "Saba Island", "Sint Eustatius"],
+        "Bophuthatswana": ["Babelegi, South Africa", "Gaberone, Botswana", "Hotazel, South Africa", "Maseru, Lesotho"], // approximate
+        "British Honduras": ["Belize"],
+        "Byelorussian Soviet Socialist Republic": ["Belarus"],
+        "Canary Islands": ["Ferro, Canary Islands", "Isla Alegranza, Canary Islands"],
+        "Canton and Enderbury Islands": ["Canton Island", "Enderbury Island"],
+        "Ceuta and Melilla": ["Ceuta", "Melilla"],
+        "Ciskei": ["East London, South Africa", "Port Alfred, South Africa", "Queenstown, South Africa"], // approximate
+        "Coral Sea Islands": ["Coral Sea"],
+        "Czechoslovakia": ["Czech Republic", "Slovakia"],
+        "East Germany": ["Mecklenburg Vorpommern", "Saxony", "Thuringia"],
+        "East Timor": ["Timor-Leste"],
+        "Dahomey": ["Benin"],
+        "Dubai": ["Dubai Region"],
+        "European Union": ["Cyprus", "Finland", "Greece", "Portugal"],
+        "French Afar and Issas": ["Djibouti"],
+        // see http://en.wikipedia.org/wiki/French_Southern_and_Antarctic_Lands
+        // and http://en.wikipedia.org/wiki/Scattered_Islands_in_the_Indian_Ocean
+        "French Southern and Antarctic Territories": ["Adélie Land", "Bassas da India", "Glorioso Islands"],
+        "French Southern Territories": ["Amsterdam Island", "Bassas da India", "Glorioso Islands", "Kerguelen Island"],
+        "Fujairah": ["Fujairah Region"],
+        "Georgia": ["Georgia, Asia"],
+        "Gilbert and Ellice Islands": ["Gilbert Islands", "Ellice Islands"],
+        // "Jamaica": ["Clarendon Parish, Jamaica", "St. James Parish, Jamaica", "St. Thomas Parish, Jamaica", "Westmoreland Parish, Jamaica"], // in case results are us-biased
+        "Jammu and Kashmir": ["Jammu and Kashmir, India"],
+        "Johnston Island": ["Johnston Atoll"],
+        "Kampuchea": ["Cambodia"],
+        "Khmer Republic": ["Cambodia"],
+        "Korea": ["North Korea", "South Korea"],
+        "Lebanon": ["Lebanon, Asia"], // in case results are us-biased
+        "Metropolitan France": ["France"],
+        "Neutral Zone": ["39944, Saudi Arabia", "76611, Saudi Arabia"],
+        "New Hebrides": ["Vanuatu"],
+        "North Vietnam": ["Ha Giang Province, Vietnam", "Lai Chau Province, Vietnam", "Thua Thien-Hue Province, Vietnam"],
+        "North Yemen": ["Al Jawf, Yemen", "Hajjah, Yemen", "Ta'izz Province, Yemen"],
+        "Northern Cyprus": ["Karpass, Cyprus", "Kokkina, Cyprus", "Lympia, Cyprus"],
+        "Pacific Islands": ["Marshall Islands", "Micronesia", "Northern Mariana Islands", "Palau"],
+        // "Palestine": ["71, Israel", "El-arish Rafah, Egypt"],
+        "Panama Canal Zone": ["Amador, Panama", "Fort Sherman, Panama"],
+        "Ras al-Khaimah": ["Ras al-Khaimah Region"],
+        "Rwenzururu": ["Bundibugyo Region, Uganda", "Busongora, Uganda"],
+        "Sahrawi": ["Western Sahara"],
+        "Saint Christopher-Nevis-Anguilla": ["Anguilla", "Saint Kitts and Nevis"],
+        "Saint Helena, Ascension and Tristan da Cunha": ["Ascension Island", "Longwood, Saint Helena", "Tristan da Cunha"],
+        "San Marino": ["San Marino, Europe"], // in case results are us-biased
+        "Serbia and Montenegro": ["Montenegro", "Serbia"],
+        "Sharjah": ["Sharjah Region"],
+        "Siam": ["Thailand"],
+        "Sint Maarten": ["Great Bay, Sint Maarten", "Oyster Pond, Sint Maarten", "Simpson Bay Lagoon, Sint Maarten"],
+        "South Ossetia": ["Shida Kartli"],
+        // see http://en.wikipedia.org/wiki/Sudan#States_and_regions
+        // "South Sudan": [
+        //     "Central Equatoria, Sudan", "Eastern Equatoria, Sudan", "Jonglei, Sudan", "Lakes, Sudan", "Northern Bahr el Ghazal, Sudan",
+        //     "Upper Nile, Sudan", "Unity, Sudan", "Warrap, Sudan", "Western Bahr el Ghazal, Sudan", "Western Equatoria, Sudan"
+        // ],
+        "South Vietnam": ["Ca Mau Province, Vietnam", "Da Nang Province, Vietnam", "Khanh Hoa Province, Vietnam", "Kien Giang Province, Vietnam"],
+        "South Yemen": ["Al-Mahrah, Yemen", "Lahij, Yemen"],
+        "Southern Rhodesia": ["Zimbabwe"],
+        "Soviet Union": [
+            "Armenia", "Azerbaijan", "Belarus", "Estonia", "Georgia, Europe",
+            "Latvia", "Lithuania", "Kazakhstan", "Kyrgyzstan", "Moldova",
+            "Russia", "Tajikistan", "Turkmenistan", "Ukraine", "Uzbekistan"
+        ],
+        "Tanna": ["Tanna, Vanuatu"],
+        "Transkei": ["Matatiele, South Africa", "Port Edward, South Africa", "Queenstown, South Africa"], // approximate
+        "Trucial States": ["United Arab Emirates"],
+        "Ukrainian Soviet Socialist Republic": ["Ukraine"],
+        "Umm al-Quwain": ["Umm al-Quwain Region"],
+        "United Arab Republic": ["Egypt"],
+        "United Kingdom": ["England", "Northern Ireland", "Scotland"],
+        "United States Minor Outlying Islands": [
+            "Baker Island, UM", "Howland Island", "Jarvis Island", "Johnston Atoll", "Kingman Reef",
+            "Midway Islands", "Palmyra Atoll", "Wake Island"
+        ],
+        // see http://en.wikipedia.org/wiki/United_States_Miscellaneous_Pacific_Islands
+        "United States Miscellaneous Pacific Islands": [
+            "Baker Island, UM", "Howland Island", "Jarvis Island", "Kingman Reef", "Palmyra Atoll"
+        ],
+        "Upper Volta": ["Burkina Faso"],
+        "Vemerana": ["Espiritu Santo"],
+        "Venda": ["Pafuri, Mozambique", "Tzaneen, South Africa"], // approximate
+        "Wales": ["Wales, United Kingdom"],
+        "West Germany": ["Schleswig Holstein", "Northrhine Westphalia", "Bavaria, Germany"],
+        "Yugoslavia": [
+            "Bosnia and Herzegovina", "Croatia", "Serbia", "Slovenia", "Macedonia",
+            "Montenegro"
+        ]
+    },
+    "google": {
+        // this is what the google maps geocoder returns
+        "Bahamas": "The Bahamas",
+        "Brunei": "Brunei Darussalam",
+        "Cocos Islands": "Cocos (Keeling) Islands",
+        "Gambia": "The Gambia",
+        "Indonesia": "Republic of Indonesia",
+        "Kosovo": "Kosova (Kosovo)",
+        "Macedonia": "Macedonia (FYROM)",
+        "Myanmar": "Burma",
+        "Netherlands": "The Netherlands",
+        "Palestine": "Palestinian Territories",
+        "Republic of the Congo": "Congo",
+        "Sahrawi": "Western Sahara",
+        "United Kingdom": "UK",
+        "United States": "USA"
+    },
+    "imdb": {
+        // Some IMDb entries have different country names
+        "Brunei": "Brunei Darussalam", 
+        "Cocos Islands": "Cocos (Keeling) Islands", 
+        "Côte d'Ivoire": "Ivory Coast",
+        "Democratic Republic of the Congo": "Democratic Republic of Congo",
+        "Macau": "Macao", 
+        "Macedonia": "Republic of Macedonia",
+        "Micronesia": "Federated States of Micronesia", 
+        "Palestine": "Occupied Palestinian Territory",
+        "Pitcairn Islands": "Pitcairn", 
+        "Republic of the Congo": "Congo", 
+        "Sahrawi": "Western Sahara",
+        "Saint Helena, Ascension and Tristan da Cunha": "Saint Helena",
+        "Saint Martin": "Saint Martin (French part)",
+        "São Tomé and Príncipe": "Sao Tome and Principe",
+        // IMDb treats Socialist Yugoslavia (split in 1991) and Post-Socialist
+        // Yugoslavia (renamed to Serbia and Montenegro in 2003) as different
+        // countries, the latter named Federal Republic of Yugoslavia.
+        "Yugoslavia": "Federal Republic of Yugoslavia",
+        "United States Virgin Islands": "US Virgin Islands", 
+        "Vatican City": "Holy See (Vatican City State)"
+    },
+    "languages": {
+        "Abkhazian": "Abkhazia",
+        "Aboriginal": "Australia",
+        "Aché": "",
+        "Acholi": "",
+        "Afrikaans": "South Africa",
+        "Aidoukrou": "",
+        "Akan": "",
+        "Albanian": "Albania",
+        "Algonquin": "",
+        "American": "United States",
+        "Amharic": "Ethiopia",
+        "Apache": "",
+        "Arabic": "Saudi Arabia",
+        "Aragonese": "",
+        "Aramaic": "Syria",
+        "Arapaho": "",
+        "Armenian": "Armenia",
+        "Assamese": "India",
+        "Assyrian Neo-Aramaic": "",
+        "Athapascan": "",
+        "Australian": "Australia",
+        "Awadhi": "",
+        "Aymara": "Bolivia",
+        "Azerbaijani": "Azerbaijan",
+        "Bable": "",
+        "Baka": "",
+        "Balinese": "Indonesia",
+        "Bambara": "Mali",
+        "Basque": "Spain",
+        "Bassari": "",
+        "Belarusian": "Belarus",
+        "Bemba": "",
+        "Bengali": "Bangladesh",
+        "Berber": "Morocco", // ?, one of multiple
+        "Bhojpuri": "",
+        "Bicolano": "Philippines",
+        "Bodo": "",
+        "Bosnian": "Bosnia and Herzegovina",
+        "Brazilian": "Brazil",
+        "Breton": "France",
+        "British": "United Kingdom",
+        "Bulgarian": "Bulgaria",
+        "Burmese": "Burma",
+        "Cantonese": "China",
+        "Catalan": "Spain",
+        "Central Khmer": "Cambodia",
+        "Chaozhou": "China",
+        "Chechen": "Russia",
+        "Cherokee": "United States",
+        "Cheyenne": "United States",
+        "Chhattisgarhi": "India",
+        "Chinese": "China",
+        "Cornish": "United Kingdom",
+        "Corsican": "France",
+        "Cree": "Canada",
+        "Creek": "United States",
+        "Creole": "",
+        "Creoles and pidgins": "",
+        "Croatian": "Croatia",
+        "Crow": "",
+        "Czech": "Czech Republic",
+        "Danish": "Denmark",
+        "Dari": "Afghanistan",
+        "Desiya": "",
+        "Dinka": "",
+        "Djerma": "Niger",
+        "Dogri": "",
+        "Dutch": "Netherlands",
+        "Dyula": "",
+        "Dzongkha": "",
+        "East-Greenlandic": "Greenland",
+        "Eastern Frisian": "Germany",
+        "Egyptian (Ancient)": "Egypt",
+        "English": "United Kingdom",
+        "Esperanto": "",
+        "Estonian": "Estonia",
+        "Ewe": "",
+        "Faliasch": "",
+        "Faroese": "Faroe Islands",
+        "Filipino": "Philippines",
+        "Finnish": "Finland",
+        "Flemish": "Belgium",
+        "Fon": "",
+        "French": "France",
+        "Fulah": "",
+        "Fur": "",
+        "Gaelic": "Ireland",
+        "Galician": "Spain",
+        "Georgian": "Georgia",
+        "German": "Germany",
+        "Grebo": "",
+        "Greek": "Greece",
+        "Greek, Ancient (to 1453)": "Greece",
+        "Greenlandic": "Greenland",
+        "Guarani": "Paraguay",
+        "Gujarati": "India",
+        "Gumatj": "",
+        "Gunwinggu": "Australia",
+        "Haitian": "Haiti",
+        "Hakka": "China",
+        "Haryanvi": "",
+        "Hassanya": "Mauritania",
+        "Hausa": "Nigeria",
+        "Hawaiian": "United States",
+        "Hebrew": "Israel",
+        "Hindi": "India",
+        "Hmong": "",
+        "Hokkien": "China",
+        "Hopi": "United States",
+        "Hungarian": "Hungary",
+        "Iban": "",
+        "Ibo": "Nigeria",
+        "Icelandic": "Iceland",
+        "Indian": "India",
+        "Indonesian": "Indonesia",
+        "Inuktitut": "",
+        "Inupiaq": "",
+        "Irish Gaelic": "Ireland",
+        "Italian": "Italy",
+        "Japanese": "Japan",
+        "Jola-Fonyi": "",
+        "Ju'hoan": "",
+        "Kaado": "",
+        "Kabuverdianu": "Cape Verde",
+        "Kabyle": "",
+        "Kalmyk-Oirat": "",
+        "Kannada": "India",
+        "Karajá": "",
+        "Karbi": "",
+        "Karen": "",
+        "Kazakh": "Kazakhstan",
+        "Khanty": "Russia",
+        "Khasi": "",
+        "Kikuyu": "",
+        "Kinyarwanda": "",
+        "Kirundi": "",
+        "Klingon": "",
+        "Kodava": "",
+        "Konkani": "India",
+        "Korean": "South Korea",
+        "Korowai": "Papua New Guinea",
+        "Kriolu": "Cape Verde",
+        "Kru": "",
+        "Kudmali": "",
+        "Kuna": "",
+        "Kurdish": "Turkey", // ?, one of multiple
+        "Kwakiutl": "",
+        "Kyrgyz": "Kyrgyzstan",
+        "Ladakhi": "India",
+        "Ladino": "Italy",
+        "Lao": "Laos",
+        "Latin": "Italy",
+        "Latvian": "Latvia",
+        "Limbu": "",
+        "Lingala": "Democratic Republic of the Congo",
+        "Lithuanian": "Lithuania",
+        "Low German": "Germany",
+        "Luxembourgish": "Luxembourg",
+        "Macedonian": "Macedonia",
+        "Macro-Jê": "",
+        "Magahi": "",
+        "Maithili": "",
+        "Malagasy": "Madagascar",
+        "Malay": "Malaysia",
+        "Malayalam": "India",
+        "Malecite-Passamaquoddy": "",
+        "Malinka": "Guinea",
+        "Maltese": "Malta",
+        "Manchu": "",
+        "Mandarin": "China",
+        "Mandingo": "",
+        "Manipuri": "",
+        "Maori": "New Zealand",
+        "Mapudungun": "Chile",
+        "Marathi": "India",
+        "Marshallese": "Marshall Islands",
+        "Masai": "",
+        "Masalit": "",
+        "Maya": "Mexico",
+        "Mende": "Sierra Leone",
+        "Micmac": "",
+        "Middle English": "England",
+        "Min Nan": "China",
+        "Minangkabau": "",
+        "Mirandese": "",
+        "Mizo": "",
+        "Mohawk": "",
+        "Mongolian": "Mongolia",
+        "Montagnais": "",
+        "More": "Burkina Faso",
+        "Morisyen": "",
+        "Nagpuri": "India",
+        "Nahuatl": "",
+        "Nama": "",
+        "Navajo": "United States",
+        "Naxi": "China",
+        "Ndebele": "",
+        "Neapolitan": "Italy",
+        "Nenets": "",
+        "Nepali": "Nepal",
+        "Nisga'a": "Canada",
+        "None": "",
+        "Norse, Old": "",
+        "North American Indian": "",
+        "Norwegian": "Norway",
+        "Nushi": "",
+        "Nyaneka": "",
+        "Nyanja": "Malawi",
+        "Occitan": "",
+        "Ojibwa": "",
+        "Ojihimba": "",
+        "Old English": "England",
+        "Oriya": "",
+        "Papiamento": "",
+        "Parsee": "Iran",
+        "Pashtu": "Afghanistan",
+        "Pawnee": "",
+        "Persian": "Iran",
+        "Peul": "",
+        "Polish": "Poland",
+        "Polynesian": "",
+        "Portuguese": "Portugal",
+        "Pular": "",
+        "Punjabi": "India",
+        "Purepecha": "",
+        "Quechua": "Peru",
+        "Quenya": "",
+        "Rajasthani": "India",
+        "Rawan": "",
+        "Romanian": "Romania",
+        "Romansh": "Switzerland",
+        "Romany": "Romania",
+        "Rotuman": "",
+        "Russian": "Russia",
+        "Ryukyuan": "Japan",
+        "Saami": "Finland",
+        "Samoan": "Samoa",
+        "Sanskrit": "",
+        "Sardinian": "Italy",
+        "Scanian": "",
+        "Serbian": "Serbia",
+        "Serbo-Croatian": "Yugoslavia",
+        "Serer": "",
+        "Shanghainese": "China",
+        "Shanxi": "China",
+        "Shona": "Zimbabwe",
+        "Shoshoni": "United States",
+        "Sicilian": "Italy",
+        "Sindarin": "",
+        "Sindhi": "Pakistan",
+        "Sinhala": "Sri Lanka",
+        "Sioux": "United States",
+        "Slovak": "Slovakia",
+        "Slovenian": "Slovenia",
+        "Somali": "Somalia",
+        "Songhay": "",
+        "Soninke": "",
+        "Sorbian": "Germany",
+        "Sotho": "Lesotho",
+        "Sousson": "",
+        "Spanish": "Spain",
+        "Sranan": "",
+        "Swahili": "Kenya", // ?, one of multiple
+        "Swedish": "Sweden",
+        "Swiss German": "Switzerland",
+        "Sylheti": "",
+        "Tagalog": "Philippines",
+        "Tajik": "Tajikistan",
+        "Tamashek": "Algeria", // ?, one of multiple
+        "Tamil": "Sri Lanka",
+        "Tarahumara": "",
+        "Tatar": "Russia",
+        "Telugu": "India",
+        "Teochew": "",
+        "Thai": "Thailand",
+        "Tibetan": "China",
+        "Tigrigna": "",
+        "Tlingit": "",
+        "Tok Pisin": "",
+        "Tonga (Tonga Islands)": "Tonga",
+        "Tsonga": "",
+        "Tswa": "",
+        "Tswana": "",
+        "Tulu": "",
+        "Tupi": "Brazil",
+        "Turkish": "Turkey",
+        "Turkmen": "Turkmenistan",
+        "Tuvinian": "",
+        "Tzotzil": "",
+        "Ukrainian": "Ukraine",
+        "Uighur": "China",
+        "Ungwatsi": "",
+        "Urdu": "Pakistan",
+        "Uzbek": "Uzbekistan",
+        "Vietnamese": "Vietnam",
+        "Visayan": "",
+        "Washoe": "",
+        "Welsh": "Wales",
+        "Wolof": "Senegal", // ?, one of multiple
+        "Xhosa": "South Africa",
+        "Yakut": "",
+        "Yapese": "",
+        "Yiddish": "Israel",
+        "Yoruba": "Nigeria",
+        "Zulu": "South Africa"
+    },
+    "location": {
+        // locations of countries unknown to the google maps geocoder
+        // see http://en.wikipedia.org/wiki/Territorial_claims_in_Antarctica
+        // minimum latitude on a mercator projection:
+        // -math.degrees(math.atan(math.sinh(math.pi)))
+        "Adélie Land": {
+            "south": -85.0511287798,
+            "west": 136.0333333333,
+            "north": -60,
+            "east": 142.1833333333
+        },
+        "Antarctica": {
+            "south": -85.0511287798,
+            "west": -179.9999999999,
+            "north": -60,
+            "east": 179.9999999999
+        },
+        "Argentine Antarctica": {
+            "south": -85.0511287798,
+            "west": -74,
+            "north": -60,
+            "east": -25
+        },
+        "Australian Antarctic Territory": {
+            "south": -85.0511287798,
+            "west": 44.6333333333,
+            "north": -60,
+            "east": 160
+        },
+        "British Antarctic Territory": {
+            "south": -85.0511287798,
+            "west": -80,
+            "north": -60,
+            "east": -20
+        },
+        "Chilean Antarctic Territory": {
+            "south": -85.0511287798,
+            "west": -90,
+            "north": -60,
+            "east": -53
+        },
+        "Queen Maud Land": {
+            "south": -85.0511287798,
+            "west": 20,
+            "north": -60,
+            "east": 44.6333333333
+        },
+        "Ross Dependency": {
+            "south": -85.0511287798,
+            "west": 160,
+            "north": -60,
+            "east": -150
+        },
+        // see http://en.wikipedia.org/wiki/Sealand
+        // and http://en.wikipedia.org/wiki/HM_Fort_Roughs
+        // 51°53'42.6"N 1°28'49.8"E is 51.8951666667,1.4805
+        // 168 by 88 feet are 51.2064 by 26.8224 meters
+        // or 0.0007454112 by 0.0003904535 degrees
+        "Sealand": {
+            "south": 51.8949714399,
+            "west": 1.4801272944,
+            "north": 51.8953618934,
+            "east": 1.4808727056
+        }
+    },
+    "name": {
+        // http://en.wikipedia.org/wiki/ISO_3166-1_alpha-2
+        "Ceuta": "Ceuta and Melilla",
+        "Palestinian territories": "Palestine",
+        "Western Sahara": "Sahrawi",
+        // http://en.wikipedia.org/wiki/List_of_sovereign_states
+        "Kingdom of the Netherlands": "Netherlands", 
+        "Saint-Barthélemy": "Saint Barthélemy",
+        "Sahrawi Arab Democratic Republic": "Sahrawi",
+        "State of Palestine": "Palestine",
+        // normalize according to ISO 3361
+        "Ascension Island": "Ascension",
+        "Caribbean Netherlands": "Bonaire, Sint Eustatius and Saba",
+        "French Southern and Antarctic Lands": "French Southern and Antarctic Territories",
+        "French Southern Lands": "French Southern Territories",
+        "French Territory of the Afars and the Issas": "French Afar and Issas",
+        "Johnston Atoll": "Johnston Island",
+        "Midway Atoll": "Midway Islands",
+        "Saudi-Iraqi neutral zone": "Neutral Zone",
+        // shorten
+        "Autonomous Region of Bougainville": "Bougainville",
+        "Chechen Republic of Ichkeria": "Chechnia",
+        "Cocos (Keeling) Islands": "Cocos Islands",
+        "Collectivity of Saint Martin": "Saint Martin",
+        "Coral Sea Islands Territory": "Coral Sea Islands",
+        "Dominion of Ceylon": "Ceylon",
+        "Federated States of Micronesia": "Micronesia",
+        "Georgia (country)": "Georgia",
+        "Korean Empire": "Korea",
+        "Nagorno-Karabakh Republic": "Nagorno-Karabakh",
+        "People's Republic of China": "China",
+        "People's Republic of Kampuchea": "Kampuchea",
+        "Republic of China": "Taiwan",
+        "Republic of Dahomey": "Dahomey",
+        "Republic of Ireland": "Ireland",
+        "Republic of Kosovo": "Kosovo",
+        "Republic of Macedonia": "Macedonia",
+        "Republic of Upper Volta": "Upper Volta",
+        "Sharjah (emirate)": "Sharjah",
+        "Tanna (island)": "Tanna",
+        "The Bahamas": "Bahamas",
+        "The Gambia": "Gambia",
+        "Trust Territory of the Pacific Islands": "Pacific Islands",
+        "Yemen Arab Republic": "North Yemen",
+        // decode
+        "Gilgit–Baltistan": "Gilgit-Baltistan"
+    },
+    "wikipedia": [
+        // http://en.wikipedia.org/wiki/ISO_3166-2:GB
+        "England",
+        "Scotland",
+        "Northern Ireland",
+        "Wales",
+        // http://en.wikipedia.org/wiki/List_of_sovereign_states
+        "Jammu and Kashmir",
+        "Peter I Island",
+        // http://en.wikipedia.org/wiki/List_of_sovereign_states_in_the_1970s
+        "Abu Dhabi",
+        "Ajman",
+        "Biafra",
+        "Bophuthatswana",
+        "British Honduras",
+        "Cabinda",
+        "Ciskei",
+        "Dominion of Ceylon",
+        "Dubai",
+        "Ellice Islands",
+        "Fujairah",
+        "Gilbert Islands",
+        "Khmer Republic",
+        "People's Republic of Kampuchea",
+        "Ras al-Khaimah",
+        "Rhodesia",
+        "Rwenzururu",
+        "Saint Christopher-Nevis-Anguilla",
+        "Sharjah (emirate)",
+        "South Vietnam",
+        "Tanna (island)",
+        "Transkei",
+        "Trucial States",
+        "Umm al-Quwain",
+        "United Arab Republic",
+        "Ukrainian Soviet Socialist Republic",
+        "Venda",
+        "West Germany",
+        "Yemen Arab Republic",
+        "Zimbabwe Rhodesia",
+        // http://en.wikipedia.org/wiki/List_of_sovereign_states_in_the_1980s
+        "Tafea",
+        "Vemerana",
+        // http://en.wikipedia.org/wiki/List_of_sovereign_states_in_the_1990s
+        "Anjouan",
+        "Autonomous Region of Bougainville",
+        "Chechen Republic of Ichkeria",
+        "Mohéli",
+        // http://en.wikipedia.org/wiki/List_of_sovereign_states_in_the_2010s
+        "Azawad",
+        // ...
+        "Sealand",
+        // http://en.wikipedia.org/wiki/Territorial_claims_in_Antarctica
+        "Adélie Land",
+        "Argentine Antarctica",
+        "Chilean Antarctic Territory",
+        // http://www.imdb.com/country/
+        "Korean Empire",
+        "Siam"
+    ],
+    "wikipedia_url": {
+        // Wrong in http://en.wikipedia.org/wiki/ISO_3166-3
+        "Rhodesia": "Southern Rhodesia",
+        // Wrong in http://en.wikipedia.org/wiki/ISO_3166-1_alpha-2 (which we parse
+        // before the list of sovereign states in order to get the country codes).
+        // There is only one Wikipedia page for East Timor (TPTL) and Timor-Leste (TL)
+        "East Timor": "Timor-Leste",
+        // There is only one Wikipedia page for French Southern and Antarctic Lands (FQHH)
+        // and French Southern Lands (TF) (the same territory without Adélie Land (FRAQ)).
+        "French Southern and Antarctic Lands": "French Southern Lands",
+        "Taiwan": "Republic of China",
+        "Western Sahara": "Sahrawi Arab Democratic Republic"
+    }
+}

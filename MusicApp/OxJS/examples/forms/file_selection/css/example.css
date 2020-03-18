@@ -1,0 +1,7 @@
+.OxDialog .OxFileButton,
+.OxDialog .OxFileInput,
+.OxSplitPanel .OxFileButton,
+.OxSplitPanel .OxFileInput {
+    position: absolute;
+    left: 16px;
+}
